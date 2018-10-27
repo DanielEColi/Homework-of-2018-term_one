@@ -1,0 +1,24 @@
+
+Starting:    C:\Synopsys\fpga_E201103SP2\win64\mbin\synplify.exe
+Install:     C:\Synopsys\fpga_E201103SP2
+Date:        Wed Oct 24 14:27:35 2018
+Version:     E-201103-SP2
+
+Arguments:   -product synplify_premier -tcl D:/FPGALab/product/Lab4/Lab4_1/Project/Seg7_LED_open_file.tcl
+ProductType: synplify_premier
+
+License checkout: synplifypremier
+License: synplifypremier node-locked 
+Licensed Vendor: All FPGA
+License Feature: ident
+
+
+
+
+TCL script complete: "D:/FPGALab/product/Lab4/Lab4_1/Project/Seg7_LED_open_file.tcl"
+
+exit status=0
+
+
+License checkin: synplifypremier
+

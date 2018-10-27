@@ -1,0 +1,16 @@
+---------------------------------------
+Resource Usage Report for adder 
+
+Mapping to part: xc3s250etq144-4
+LUT3            4 uses
+I/O ports: 8
+I/O primitives: 8
+IBUF           5 uses
+OBUF           3 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+
+Mapping Summary:
+Total  LUTs: 4 (0%)
+

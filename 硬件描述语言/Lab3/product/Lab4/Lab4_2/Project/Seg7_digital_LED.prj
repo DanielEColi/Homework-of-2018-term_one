@@ -1,0 +1,4 @@
+vhdl work "../Code/shift.vhd"
+vhdl work "../Code/Seg7_disp.vhd"
+vhdl work "../Code/clk_gen_400hz.vhd"
+vhdl work "../Code/Seg7_digital_LED.vhd"

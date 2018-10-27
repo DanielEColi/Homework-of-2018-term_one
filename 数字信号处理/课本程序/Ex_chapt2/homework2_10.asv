@@ -1,0 +1,34 @@
+%b=[1];a=zeros(1,51);a(1)=1;a(51)=0.1;
+n=1:200;
+x=cos(0.2*pi*n)+0.5*cos(0.6*pi*n);
+ [x2,m] =sigshift(x,n,50);
+ [y,ny]=sigadd(x,n,0.1*x2,m);
+ [fy,nfy]=sigfold(y,ny);
+ [Ryy,L]=conv_m(y,ny,fy,nfy);
+ plot(L,Ryy);
+ figure
+ plot(ny,y);
+Y=[y,y,y,y];
+for r=1:600
+    Rxy(r-1)=x*y(r:r+199)';
+
+%{
+[Ryy,L]=xcorr(y)
+plot(L,Ryy)
+x=cos(0.2*pi*n)+0.5*cos(0.6*pi*n);
+figure
+[Rxx,xl]=xcorr(x);
+plot(xl,Rxx);
+z=Ryy-(1+0.01)*Rxx;
+figure
+plot(L,z);
+%}
+%{
+[z,nz]=sigfold(y2,n);
+[Ryy,ly]=conv_m(y,n,z,nz);
+plot(ly,Ryy)
+%}
+
+
+
+

@@ -1,0 +1,38 @@
+ISim log file
+Running: D:\FPGALab\product\lab2\project\water_led_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/FPGALab/product/lab2/project/water_led_tb_isim_beh.wdb 
+ISim P.40xd (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+ISim P.40xd (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 206248600 ns : File "D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd" Line 46
+# restart
+ISim P.40xd (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 58988585 ns : File "D:/FPGALab/product/lab2/code/water_led_tb.vhd" Line 75
+# run 1.00us
+# run all
+Stopped at time : 1722375435 ns : File "D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd" Line 46
+# run all
+Stopped at time : 1798404395 ns : File "D:/FPGALab/product/lab2/code/water_led_tb.vhd" Line 75
+ISim P.40xd (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 1556978525 ns : File "D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd" Line 50

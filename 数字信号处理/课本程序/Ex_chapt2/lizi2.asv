@@ -1,0 +1,8 @@
+clc
+n=-10:10;
+x=zeros(11,21);
+for k=-5:5;
+    x(k+6,:)=exp(-abs(k))*impseq(-2*k,-10,10);
+    y=y+sum(x)
+end
+

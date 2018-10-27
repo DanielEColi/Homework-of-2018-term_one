@@ -1,0 +1,11 @@
+clc
+n=-5:15;
+x=impseq(0,-5,15);
+[y1,n1]=sigshift(x,n,-2);
+[y2,n2]=sigshift(x,n,0);
+[y3,n3]=sigshift(x,n,3);
+[y4,n4]=sigshift(x,n,7);
+[z1,nz1]=sigadd(y1,n1,y2,n2);
+[z2,nz2]=sigadd(y3,n3,y4,n4);
+[y,ny]=sigadd(z1,nz1,z2,nz2);
+stem(ny,y);

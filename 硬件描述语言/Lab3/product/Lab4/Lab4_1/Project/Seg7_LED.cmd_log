@@ -1,0 +1,22 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe Seg7_LED.prj -tcl Seg7_LED_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab4/Lab4_1/Project/Seg7_LED_open_file.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe Seg7_LED.prj -tcl Seg7_LED_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab4/Lab4_1/Project/Seg7_LED_open_file.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe Seg7_LED.prj -tcl Seg7_LED_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab4/Lab4_1/Project/Seg7_LED_open_file.tcl 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-5 Seg7_LED.edn Seg7_LED.ngd  
+map -intstyle ise -p xc3s250e-tq144-5 -cm area -ir off -pr off -c 100 -o Seg7_LED_map.ncd Seg7_LED.ngd Seg7_LED.pcf 
+par -w -intstyle ise -ol high -t 1 Seg7_LED_map.ncd Seg7_LED.ncd Seg7_LED.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Seg7_LED.twx Seg7_LED.ncd -o Seg7_LED.twr Seg7_LED.pcf 
+bitgen -intstyle ise -f Seg7_LED.ut Seg7_LED.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-5 Seg7_LED.edn Seg7_LED.ngd  
+map -intstyle ise -p xc3s250e-tq144-5 -cm area -ir off -pr off -c 100 -o Seg7_LED_map.ncd Seg7_LED.ngd Seg7_LED.pcf 
+par -w -intstyle ise -ol high -t 1 Seg7_LED_map.ncd Seg7_LED.ncd Seg7_LED.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Seg7_LED.twx Seg7_LED.ncd -o Seg7_LED.twr Seg7_LED.pcf 
+bitgen -intstyle ise -f Seg7_LED.ut Seg7_LED.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab4/Lab4_1/Code/Seg7_LED.ucf -p xc3s250e-tq144-5 Seg7_LED.edn Seg7_LED.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab4/Lab4_1/Code/Seg7_LED.ucf -p xc3s250e-tq144-5 Seg7_LED.edn Seg7_LED.ngd  
+map -intstyle ise -p xc3s250e-tq144-5 -cm area -ir off -pr off -c 100 -o Seg7_LED_map.ncd Seg7_LED.ngd Seg7_LED.pcf 
+par -w -intstyle ise -ol high -t 1 Seg7_LED_map.ncd Seg7_LED.ncd Seg7_LED.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Seg7_LED.twx Seg7_LED.ncd -o Seg7_LED.twr Seg7_LED.pcf 
+bitgen -intstyle ise -f Seg7_LED.ut Seg7_LED.ncd 

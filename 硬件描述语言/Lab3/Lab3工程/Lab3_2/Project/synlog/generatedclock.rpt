@@ -1,0 +1,19 @@
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                           U2.s_shift[1]:C              Done
+                           U2.s_shift[2]:C              Done
+                           U2.s_shift[3]:C              Done
+                           U2.s_shift[4]:C              Done
+                           U2.s_shift[5]:C              Done
+                           U2.s_shift[6]:C              Done
+                           U2.s_shift[7]:C              Done
+                           U2.s_shift[0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+

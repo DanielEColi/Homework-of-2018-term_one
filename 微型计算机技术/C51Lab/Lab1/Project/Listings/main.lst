@@ -1,0 +1,75 @@
+C51 COMPILER V9.59.0.0   MAIN                                                              09/26/2018 01:19:50 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: F:\Keil_C51\C51\BIN\C51.EXE ..\Code\main.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\Code) DEBUG OBJECTEXT
+                    -END PRINT(.\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <STC12C5A60S2.h>   //加入STC的头文件
+   2          
+   3          sbit LED1 = P2^4;   //定义LED1的引脚P2.4
+   4          sbit LED2 = P2^5;   //定义LED2的引脚P2.5
+   5          sbit LED3 = P2^6;   //定义LED3的引脚P2.6
+   6          sbit LED4 = P2^7;   //定义LED4的引脚P2.7
+   7          
+   8          sbit BEEP = P1^0;   //定义蜂鸣器的引脚P1.0
+   9          
+  10          void main()                 //主函数
+  11          {
+  12   1        int i = 0;                //用于控制状态 
+  13   1        unsigned long int delay;  //声明延时计数器delay
+  14   1        P1M0 = 0x01;              //设置P1.0为推挽输出，这样蜂鸣器才会响
+  15   1        
+  16   1        while(1)                  //循环执行以下步骤
+  17   1        {
+  18   2          switch(i)
+  19   2          {
+  20   3            case 0:
+  21   3              LED1 = ~LED1;       //对LED1状态取反
+  22   3              BEEP = 0;           //蜂鸣器不响
+  23   3              break;              //跳出switch
+  24   3            case 1:
+  25   3              LED2 = ~LED2;       //对LED2状态取反
+  26   3              BEEP = 1;           //蜂鸣器响
+  27   3              break;              //跳出switch
+  28   3            case 2:
+  29   3              LED3 = ~LED3;       //对LED3状态取反
+  30   3              BEEP = 0;           //蜂鸣器不响
+  31   3              break;              //跳出switch
+  32   3            case 3:
+  33   3              LED4 = ~LED4;       //对LED4状态取反
+  34   3              BEEP = 1;           //蜂鸣器响
+  35   3              break;              //跳出switch
+  36   3          }
+  37   2          
+  38   2          if(i < 3)               //状态改变
+  39   2          {
+  40   3            i++;                  
+  41   3          }
+  42   2          else
+  43   2          {
+  44   3            i = 0;                
+  45   3          }
+  46   2          
+  47   2          for(delay = 0; delay < 50000; delay++);//延时
+  48   2        }
+  49   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    130    ----
+   CONSTANT SIZE    =   ----    ----
+C51 COMPILER V9.59.0.0   MAIN                                                              09/26/2018 01:19:50 PAGE 2   
+
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       6
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

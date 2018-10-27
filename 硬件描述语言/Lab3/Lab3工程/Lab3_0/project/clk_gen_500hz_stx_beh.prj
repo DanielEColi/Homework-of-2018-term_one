@@ -1,0 +1,1 @@
+vhdl isim_temp "../code/clk_gen_500hz.vhd"

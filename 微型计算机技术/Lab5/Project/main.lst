@@ -1,0 +1,104 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 10/23/2018 21:24:18 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.00d
+OBJECT MODULE PLACED IN .\main.obj
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE ..\Code\main.asm SET(SMALL) DEBUG PRINT(.\main.lst) OBJECT(.\main.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+  00B2                 1     KEY1 BIT P3.2
+  0069                 2     KEY1_State EQU 69H
+  006F                 3     DelayTimes_100MS EQU 6FH
+                       4     
+0000                   5     ORG 0000H
+0000 020100            6     LJMP START
+                       7     
+0100                   8     ORG 0100H
+0100                   9     START:
+0100 758170           10             MOV SP,#70H
+0103 7580FF           11             MOV P0,#0FFH
+0106 D2A0             12             SETB P2.0
+0108 D2A1             13             SETB P2.1
+010A D2A2             14             SETB P2.2
+010C C2A3             15             CLR  P2.3
+010E                  16     START1:
+010E 30B210           17             JNB KEY1,RUN1
+0111 02010E           18             LJMP START1
+                      19     
+                      20     ;**************************************
+                      21     ;“‘œ¬Œ™—” ±∫Ø 
+                      22     ;
+0114                  23     Delay100Ms:
+0114 AF6F             24             MOV R7,DelayTimes_100MS
+                      25     
+0116 7E1E             26             Delay100Ms_1:  MOV R6,#30
+0118 7DC8             27             Delay100Ms_2:  MOV R5,#200
+011A DDFE             28             Delay100Ms_3:  DJNZ R5,Delay100Ms_3
+011C DEFA             29                                             DJNZ R6,Delay100Ms_2
+011E DFF6             30                                             DJNZ R7,Delay100Ms_1
+0120 22               31     RET
+                      32     
+0121                  33     RUN1:
+0121 30B209           34             JNB KEY1,RUN2
+0124 756900           35             MOV KEY1_State,#00H
+0127 7580FF           36             MOV P0,#0FFH
+012A 020121           37             LJMP RUN1
+                      38     
+012D                  39     RUN2:
+012D E569             40             MOV A,KEY1_State
+012F C3               41             CLR C
+0130 940A             42             SUBB A,#10
+0132 5012             43             JNC OVER
+0134 E569             44             MOV A,KEY1_State
+0136 0569             45             INC KEY1_State
+0138 90014E           46             MOV DPTR,#TAB
+013B 93               47             MOVC A,@A+DPTR
+013C F580             48             MOV P0,A
+013E 756FC8           49             MOV DelayTimes_100MS,#200
+0141 120114           50             LCALL Delay100MS
+0144 80DB             51             JMP RUN1
+                      52     
+0146                  53     OVER:
+0146 756900           54             MOV KEY1_State,#00H
+0149 7580FF           55             MOV P0,#0FFH
+014C 80C0             56             JMP START1
+                      57     
+014E                  58     TAB:
+A51 MACRO ASSEMBLER  MAIN                                                                 10/23/2018 21:24:18 PAGE     2
+
+014E 039F250D         59             DB 0x03,0x9f,0x25,0x0d,0x99,0x49,0x41,0x1f,0x01,0x09
+0152 9949411F                
+0156 0109                    
+                      60             END
+A51 MACRO ASSEMBLER  MAIN                                                                 10/23/2018 21:24:18 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY100MS . . . .  C ADDR   0114H   A   
+DELAY100MS_1 . . .  C ADDR   0116H   A   
+DELAY100MS_2 . . .  C ADDR   0118H   A   
+DELAY100MS_3 . . .  C ADDR   011AH   A   
+DELAYTIMES_100MS .  N NUMB   006FH   A   
+KEY1 . . . . . . .  B ADDR   00B0H.2 A   
+KEY1_STATE . . . .  N NUMB   0069H   A   
+OVER . . . . . . .  C ADDR   0146H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+RUN1 . . . . . . .  C ADDR   0121H   A   
+RUN2 . . . . . . .  C ADDR   012DH   A   
+SP . . . . . . . .  D ADDR   0081H   A   
+START. . . . . . .  C ADDR   0100H   A   
+START1 . . . . . .  C ADDR   010EH   A   
+TAB. . . . . . . .  C ADDR   014EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

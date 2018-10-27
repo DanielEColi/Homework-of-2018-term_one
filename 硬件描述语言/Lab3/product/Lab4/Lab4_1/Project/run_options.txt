@@ -1,0 +1,73 @@
+#-- Synopsys, Inc.
+#-- Version E-201103-SP2
+#-- Project file D:\FPGALab\product\Lab4\Lab4_1\Project\run_options.txt
+#-- Written on Wed Oct 24 14:27:30 2018
+
+
+#project files
+add_file -verilog "C:/Synopsys/fpga_E201103SP2/bin/../lib/xilinx/unisim.v"
+add_file -vhdl -lib work "../Code/Seg7_LED.vhd"
+add_file -constraint "D:/FPGALab/product/Lab4/Lab4_1/Project/Seg7_LED.sdc"
+
+
+#implementation: "Project"
+impl -add Project -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -num_critical_paths 0
+set_option -num_startend_points 0
+
+#device options
+set_option -technology SPARTAN3E
+set_option -part xc3s250e
+set_option -package tq144
+set_option -speed_grade -5
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module "Seg7_LED"
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Xilinx Spartan3
+set_option -run_prop_extract 1
+set_option -maxfan 100
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fixgatedclocks 3
+set_option -fixgeneratedclocks 3
+set_option -no_sequential_opt 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 1
+set_option -resource_sharing 1
+
+#VIF options
+set_option -write_vif 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./Seg7_LED.edn"
+
+#design plan options
+set_option -nfilter_user_path ""
+impl -active "Project"

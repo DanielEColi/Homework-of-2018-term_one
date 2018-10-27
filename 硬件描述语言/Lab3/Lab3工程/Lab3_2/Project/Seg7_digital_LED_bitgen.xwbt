@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGALab\product\Lab4\Lab4_2\Project\Seg7_digital_LED.ncd
+OUTFILE=D:\FPGALab\product\Lab4\Lab4_2\Project\Seg7_digital_LED.bit
+FAMILY=Spartan3E
+PART=xc3s250e-5tq144
+WORKINGDIR=D:\FPGALab\product\Lab4\Lab4_2\Project
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Sat Sep 29 10:53:31 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rst_n_i" LOCATE = SITE "P85" LEVEL 1;
+COMP "clk_50mhz_i" LOCATE = SITE "P129" LEVEL 1;
+COMP "water_led_o<0>" LOCATE = SITE "P104" LEVEL 1;
+COMP "water_led_o<1>" LOCATE = SITE "P105" LEVEL 1;
+COMP "water_led_o<2>" LOCATE = SITE "P98" LEVEL 1;
+COMP "water_led_o<3>" LOCATE = SITE "P103" LEVEL 1;
+NET "clk_50mhz_i_BUFGP/IBUFG" BEL "clk_50mhz_i_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+

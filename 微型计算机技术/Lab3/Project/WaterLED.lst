@@ -1,0 +1,116 @@
+A51 MACRO ASSEMBLER  WATERLED                                                             10/09/2018 21:19:32 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.00d
+OBJECT MODULE PLACED IN .\WaterLED.obj
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE ..\Code\WaterLED.asm SET(SMALL) DEBUG PRINT(.\WaterLED.lst) OBJECT(.\Water
+                      LED.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+  00A4                 1     LED1 BIT P2.4   ;
+  00A5                 2     LED2 BIT P2.5   ;
+  00A6                 3     LED3 BIT P2.6   ;
+  00A7                 4     LED4 BIT P2.7   ;
+                       5     
+  0090                 6     BEEP BIT P1.0   ;
+                       7     
+  006F                 8     DelayTimes_100MS EQU 6FH  ;               
+  0092                 9     P1M0 EQU 092H
+  0091                10     P1M1 EQU 091H
+                      11     
+                      12     ;************************************************
+                      13     ;
+0000                  14     ORG 0000H
+0000 020100           15     LJMP START
+                      16     
+0100                  17     ORG 0100H
+                      18     
+0100                  19     START:
+0100 758170           20             MOV SP, #70H
+0103 759100           21             MOV P1M1,#00H
+0106 759201           22             MOV P1M0,#01H
+                      23     
+0109 D2A4             24             SETB LED1
+010B D2A5             25             SETB LED2
+010D D2A6             26             SETB LED3
+010F D2A7             27             SETB LED4
+                      28     
+0111                  29             START1:
+0111 120128           30                     LCALL LEDRUN
+0114 020111           31                     LJMP  START1
+                      32     
+                      33     ;*************************************************
+0117                  34     Delay100MS:
+0117 AF6F             35             MOV R7, DelayTimes_100MS
+                      36     
+0119 7E0A             37     Delay100MS_1:   MOV R6,#10
+011B 7D96             38     Delay100MS_2:   MOV R5,#150
+011D 7CC8             39     Delay100MS_3:   MOV R4,#200
+011F DCFE             40     Delay100MS_4:   DJNZ R4,Delay100MS_4
+0121 DDFA             41                                     DJNZ R5,Delay100MS_3
+0123 DEF6             42                                     DJNZ R6,Delay100MS_2
+0125 DFF2             43                                     DJNZ R7,Delay100MS_1
+0127 22               44     RET
+                      45     
+                      46     ;*************************************************
+                      47     
+                      48     ;*************************************************
+0128                  49     LEDRUN:
+0128 B2A4             50             CPL LED1
+012A D290             51             SETB BEEP
+012C 756F0A           52             MOV DelayTimes_100MS,#10
+012F 120117           53             LCALL Delay100MS
+                      54     
+0132 B2A5             55             CPL LED2
+0134 C290             56             CLR  BEEP
+0136 756F0A           57             MOV DelayTimes_100MS,#10
+A51 MACRO ASSEMBLER  WATERLED                                                             10/09/2018 21:19:32 PAGE     2
+
+0139 120117           58             LCALL Delay100MS
+                      59     
+013C B2A6             60             CPL LED3
+013E D290             61             SETB BEEP
+0140 756F0A           62             MOV DelayTimes_100MS,#10
+0143 120117           63             LCALL Delay100MS
+                      64     
+0146 B2A7             65             CPL LED4
+0148 C290             66             CLR  BEEP
+014A 756F0A           67             MOV DelayTimes_100MS,#10
+014D 120117           68             LCALL Delay100MS
+0150 22               69     RET
+                      70     
+                      71     END
+A51 MACRO ASSEMBLER  WATERLED                                                             10/09/2018 21:19:32 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+BEEP . . . . . . .  B ADDR   0090H.0 A   
+DELAY100MS . . . .  C ADDR   0117H   A   
+DELAY100MS_1 . . .  C ADDR   0119H   A   
+DELAY100MS_2 . . .  C ADDR   011BH   A   
+DELAY100MS_3 . . .  C ADDR   011DH   A   
+DELAY100MS_4 . . .  C ADDR   011FH   A   
+DELAYTIMES_100MS .  N NUMB   006FH   A   
+LED1 . . . . . . .  B ADDR   00A0H.4 A   
+LED2 . . . . . . .  B ADDR   00A0H.5 A   
+LED3 . . . . . . .  B ADDR   00A0H.6 A   
+LED4 . . . . . . .  B ADDR   00A0H.7 A   
+LEDRUN . . . . . .  C ADDR   0128H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P1M0 . . . . . . .  N NUMB   0092H   A   
+P1M1 . . . . . . .  N NUMB   0091H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+SP . . . . . . . .  D ADDR   0081H   A   
+START. . . . . . .  C ADDR   0100H   A   
+START1 . . . . . .  C ADDR   0111H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

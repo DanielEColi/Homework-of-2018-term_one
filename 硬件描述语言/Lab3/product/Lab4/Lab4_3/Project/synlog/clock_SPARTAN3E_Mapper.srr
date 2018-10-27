@@ -1,0 +1,344 @@
+Synopsys Xilinx Technology Mapper, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: FX493 |Applying Initial value "01111111" on instance: U11.U2.s_shift[7:0] 
+@N: MT206 |Autoconstrain Mode is ON
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[6:3] mapped in logic.
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[1:0] mapped in logic.
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[6:3]', 8 words by 4 bits 
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[1:0]', 8 words by 2 bits 
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[6:3] mapped in logic.
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[1:0] mapped in logic.
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[6:3]', 9 words by 4 bits 
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[1:0]', 9 words by 2 bits 
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[6:3] mapped in logic.
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[1:0] mapped in logic.
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[6:3]', 8 words by 4 bits 
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[1:0]', 8 words by 2 bits 
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[6:3] mapped in logic.
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[1:0] mapped in logic.
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[6:3]', 9 words by 4 bits 
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[1:0]', 9 words by 2 bits 
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[6:3] mapped in logic.
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[1:0] mapped in logic.
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[6:3]', 8 words by 4 bits 
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[1:0]', 8 words by 2 bits 
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[6:3] mapped in logic.
+@N: FA239 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Rom seg7_decode_o_1[1:0] mapped in logic.
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[6:3]', 9 words by 4 bits 
+@N: MO106 :"d:\fpgalab\product\lab4\lab4_3\code\decode.vhd":16:2:16:5|Found ROM, 'seg7_decode_o_1[1:0]', 9 words by 2 bits 
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
+
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 124MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                              U3.s_carry:C              Done
+                              U2.s_carry:C              Done
+                            U4.s_hour[5]:C              Done
+                            U4.s_hour[4]:C              Done
+                            U4.s_hour[3]:C              Done
+                            U4.s_hour[2]:C              Done
+                            U4.s_hour[1]:C              Done
+                            U4.s_hour[0]:C              Done
+                             U3.s_min[5]:C              Done
+                             U3.s_min[4]:C              Done
+                             U3.s_min[3]:C              Done
+                             U3.s_min[2]:C              Done
+                             U3.s_min[1]:C              Done
+                             U3.s_min[0]:C              Done
+                             U2.s_sec[5]:C              Done
+                             U2.s_sec[4]:C              Done
+                             U2.s_sec[3]:C              Done
+                             U2.s_sec[2]:C              Done
+                             U2.s_sec[1]:C              Done
+                             U2.s_sec[0]:C              Done
+                       U11.U2.s_shift[1]:C              Done
+                       U11.U2.s_shift[2]:C              Done
+                       U11.U2.s_shift[3]:C              Done
+                       U11.U2.s_shift[4]:C              Done
+                       U11.U2.s_shift[5]:C              Done
+                       U11.U2.s_shift[6]:C              Done
+                       U11.U2.s_shift[7]:C              Done
+                       U11.U2.s_shift[0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 125MB)
+
+
+Clock Buffers:
+  Inserting Clock buffer for port clk_50mhz_i,
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 126MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 126MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 127MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 127MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 127MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 147MB peak: 149MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -5.30ns		 294 /        73
+   2		0h:00m:00s		    -4.10ns		 294 /        73
+   3		0h:00m:00s		    -4.10ns		 294 /        73
+------------------------------------------------------------
+
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\hour_counter.vhd":20:2:20:3|Instance "U4.s_hour[4]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\min_couter.vhd":22:2:22:3|Instance "U3.s_min[2]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\sec_counter.vhd":22:2:22:3|Instance "U2.s_sec[2]" with 13 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\sec_counter.vhd":22:2:22:3|Instance "U2.s_sec[1]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\min_couter.vhd":22:2:22:3|Instance "U3.s_min[1]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\hour_counter.vhd":20:2:20:3|Instance "U4.s_hour[1]" with 11 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 6 Registers via timing driven replication
+Added 6 LUTs via timing driven replication
+
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\sec_counter.vhd":22:2:22:3|Instance "U2.s_sec[3]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\min_couter.vhd":22:2:22:3|Instance "U3.s_min[3]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\hour_counter.vhd":20:2:20:3|Instance "U4.s_hour[2]" with 14 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\clk_gen_400hz.vhd":25:2:25:3|Instance "U11.U1.s_cnt[1]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\hour_counter.vhd":20:2:20:3|Instance "U4.s_hour[3]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\sec_counter.vhd":22:2:22:3|Instance "U2.s_sec[4]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\min_couter.vhd":22:2:22:3|Instance "U3.s_min[4]" with 12 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\hour_counter.vhd":20:2:20:3|Instance "U4.s_hour[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\sec_counter.vhd":22:2:22:3|Instance "U2.s_sec[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\min_couter.vhd":22:2:22:3|Instance "U3.s_min[5]" with 13 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\sec_counter.vhd":22:2:22:3|Instance "U2.s_sec[0]" with 6 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 15 Registers via timing driven replication
+Added 14 LUTs via timing driven replication
+
+
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\clk_gen_400hz.vhd":25:2:25:3|Instance "U11.U1.s_cnt[2]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -2.37ns		 340 /        95
+
+   2		0h:00m:01s		    -2.37ns		 340 /        95
+   3		0h:00m:01s		    -2.37ns		 340 /        95
+   4		0h:00m:01s		    -2.37ns		 340 /        95
+------------------------------------------------------------
+
+
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_3\code\clk_gen_400hz.vhd":25:2:25:3|Instance "U11.U1.s_cnt[3]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -2.31ns		 342 /        96
+   2		0h:00m:01s		    -2.30ns		 342 /        96
+   3		0h:00m:01s		    -2.20ns		 342 /        96
+
+   4		0h:00m:01s		    -2.20ns		 342 /        96
+   5		0h:00m:01s		    -2.21ns		 343 /        96
+   6		0h:00m:01s		    -2.21ns		 343 /        96
+   7		0h:00m:01s		    -2.21ns		 343 /        96
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: MT453 |clock period is too big for clock clock|clk_50mhz_i, changing period from 10000.0 to 1000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000.0 ns to 500.0 ns. 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+Writing Analyst data base D:\FPGALab\product\Lab4\Lab4_3\Project\clock.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 149MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst         Instance Port     Clock          Reason for not converting                                                         
+------------------------------------------------------------------------------------------------------------------------------------
+U5.s_mod[2]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U5.s_mod[1]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U5.s_mod[0]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U6.s_mod[1]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U6.s_mod[0]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U6.s_mod[2]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U7.s_mod[2]      G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U7.s_mod[1]      G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U7.s_mod[0]      G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[3]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[2]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[1]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[0]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[2]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[1]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[0]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[3]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[3]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[2]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[1]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[0]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+====================================================================================================================================
+
+================= End gated clock report =================
+
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+@W: MT420 |Found inferred clock clock|clk_50mhz_i with period 5.99ns. A user-defined clock should be declared on object "p:clk_50mhz_i"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Oct 24 22:31:58 2018
+#
+
+
+Top view:               clock
+Requested Frequency:    127.1 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\Lab4\Lab4_3\Project\clock.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.526
+
+                      Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock        Frequency     Frequency     Period        Period        Slack      Type         Group                
+---------------------------------------------------------------------------------------------------------------------------
+clock|clk_50mhz_i     166.9 MHz     133.1 MHz     5.990         7.516         -1.526     inferred     Autoconstr_clkgroup_1
+System                1.0 MHz       NA            1000.000      NA            NA         system       system_clkgroup      
+===========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                |    rise  to  rise    |    fall  to  fall   |    rise  to  fall    |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------
+Starting           Ending             |  constraint  slack   |  constraint  slack  |  constraint  slack   |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------
+clock|clk_50mhz_i  System             |  No paths    -       |  No paths    -      |  5.990       -1.113  |  No paths    -    
+clock|clk_50mhz_i  clock|clk_50mhz_i  |  5.990       -1.526  |  No paths    -      |  No paths    -       |  No paths    -    
+==============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for clock 
+
+Mapping to part: xc3s250etq144-5
+Cell usage:
+FDC             46 uses
+FDCE            43 uses
+FDPE            7 uses
+GND             15 uses
+LD              21 uses
+MUXCY           2 uses
+MUXCY_L         51 uses
+MUXF5           13 uses
+VCC             15 uses
+XORCY           41 uses
+LUT1            45 uses
+LUT2            68 uses
+LUT3            54 uses
+LUT4            174 uses
+
+I/O ports: 18
+I/O primitives: 18
+IBUF           1 use
+IBUFG          1 use
+OBUF           16 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   96 (1%)
+Latch bits not including I/Os:      21 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+Total load per clock:
+   clock|clk_50mhz_i: 49
+
+Mapping Summary:
+Total  LUTs: 341 (6%)
+
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Oct 24 22:31:58 2018
+
+###########################################################]

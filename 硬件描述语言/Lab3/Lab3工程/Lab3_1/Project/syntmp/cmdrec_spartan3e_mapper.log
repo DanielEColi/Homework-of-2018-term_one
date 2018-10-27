@@ -1,0 +1,18 @@
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe  -prodtype synplify_premier -encrypt  -pro  -part xc3s250etq144-5   -maxfan 100  -m1  -pipe   -fixgatedclocks 3 -fixgeneratedclocks 3         -fast_synthesis 0  -do_enhanced_opt    -reporting_ctd 0 -top_level_module  Seg7_LED  -flow mapping  -mp 1 -prjfile  D:\FPGALab\product\Lab4\Lab4_1\Project\scratchproject.prs  -implementation Project -licensetype  synplifypremier  -ta_num_paths 0  -ta_num_points 0  -oedif  D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.edn  -autoconstraint  -freq 1.000  -tcl  D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.sdc  D:\FPGALab\product\Lab4\Lab4_1\Project\synwork\Seg7_LED_premapping.srd  -sap  D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.sap  -otap  D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.tap  -omap  D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.map  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v  -ena_vif  D:\FPGALab\product\Lab4\Lab4_1\Project\verif\Seg7_LED.vif  -sap  D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.sap  -ologparam  D:\FPGALab\product\Lab4\Lab4_1\Project\syntmp\Seg7_LED.plg  -osyn  D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.srm  -prjdir D:\FPGALab\product\Lab4\Lab4_1\Project\  -log  D:\FPGALab\product\Lab4\Lab4_1\Project\synlog\Seg7_LED_SPARTAN3E_Mapper.srr 
+rc:0 success:1
+D:\FPGALab\product\Lab4\Lab4_1\Project\scratchproject.prs|o|1540361538|1817
+D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.edn|o|1540362452|18662
+D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.sdc|i|1540361537|0
+D:\FPGALab\product\Lab4\Lab4_1\Project\synwork\Seg7_LED_premapping.srd|i|1540362451|1440
+D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.sap|o|1540362451|138
+D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.tap|o|0|0
+D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.map|o|1540362452|28
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v|i|1304943026|948675
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v|i|1310477882|1053112
+D:\FPGALab\product\Lab4\Lab4_1\Project\verif\Seg7_LED.vif|o|1540362451|1355
+D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.sap|o|1540362451|138
+D:\FPGALab\product\Lab4\Lab4_1\Project\syntmp\Seg7_LED.plg|o|1540362452|277
+D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.srm|o|1540362451|13545
+D:\FPGALab\product\Lab4\Lab4_1\Project\synlog\Seg7_LED_SPARTAN3E_Mapper.srr|o|1540362452|6342
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe|i|1306154528|23379968
+C:\Synopsys\fpga_E201103SP2\bin\m_xilinx.exe|i|1306154386|18460672

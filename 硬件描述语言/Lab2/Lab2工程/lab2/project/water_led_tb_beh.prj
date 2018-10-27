@@ -1,0 +1,5 @@
+vhdl work "../code/mux4.vhd"
+vhdl work "../code/counter.vhd"
+vhdl work "../code/clk_gen_1hz.vhd"
+vhdl work "../code/water_led.vhd"
+vhdl work "../code/water_led_tb.vhd"

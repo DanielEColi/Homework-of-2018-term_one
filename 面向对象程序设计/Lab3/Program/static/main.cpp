@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+typedef struct
+{
+  char name[20];
+  bool sex;
+  short age;
+  long num;
+}Student;
+
+float getAverage(Student *student, int num);
+
+int main()
+{
+  Student stu[5];
+
+  strcpy(stu[0].name, "Tim");
+  strcpy(stu[1].name, "Amay"); 
+  strcpy(stu[2].name, "John"); 
+  strcpy(stu[3].name, "Lisa"); 
+  strcpy(stu[4].name, "Jack");
+  
+  for(int i = 0; i < 5; i++)
+  {
+    stu[i].sex = (bool)(i % 2);
+    stu[i].age = i + 20;
+    stu[i].num = i + 2016222001;
+  }
+
+  for(int i = 0; i < 5; i++)
+  {
+    cout << "No." << i << " student's name is " << stu[i].name << "\t";
+
+    if(stu[i].sex)
+    {
+      cout << "GIRL\t";
+    }
+    else
+    {
+      cout << "BOY\t";
+    }
+
+    cout << stu[i].age << " years old\t";
+    cout << stu[i].num << endl;
+  }
+
+  float average = getAverage(stu, 5);
+
+  cout << "The average of student's age is " << average;
+
+  return 0;
+}
+
+float getAverage(Student *student, int num)
+{
+  int sum = 0;
+
+  for(int i = 0; i < num; i++)
+  {
+    sum += student->age;
+    student++;
+  }
+
+  return sum / num;
+}
+

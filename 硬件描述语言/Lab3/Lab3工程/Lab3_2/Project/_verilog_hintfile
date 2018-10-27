@@ -1,0 +1,39 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_2\\Code\\shift.vhd":1540365886
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_2\\Code\\Seg7_disp.vhd":1540366712
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_2\\Code\\clk_gen_400hz.vhd":1540363908
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_2\\Code\\Seg7_digital_LED.vhd":1540366598
+@E8lFkRDC1(Co_o8HHD0N_7p 
+LDHs$NsRsIF	M
+HbRk0O_D	6EjlxR_H4M
+HbRk0s_#0MR_H4k
+F00bkRo#C(C_#DR_FUk
+F00bkRo#C(C_8OCF8_UFR
+8CMlkF8DlC
+FD8kCDRO	C_oMj_cj
+ExDsHLNRs$I	Fs
+sbNN0lCCBsRhva_qHXRMo0CCbs
+NlsNCs0CRaBh_p]qwMRH0CCosM
+HbRk0s_#0MR_H-H4
+M0bkR	OD_-HR4k
+F00bkR	OD_-FR4M
+C88lFk
+DClkF8D1CRC_o(8bH#
+LDHs$NsRsIF	M
+HbRk0#VEH0R_HUk
+F00bkRo#C(F_O8FC_RCU
+MF8l8CkD
+8lFkRDC#VEH0H
+DLssN$FRIsH	
+M0bkR	OD_4HR
+bHMks0R#M0__4HR
+0FkbRk0#VEH0R_FUM
+C88lFk
+DC

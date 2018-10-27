@@ -1,0 +1,2 @@
+vhdl isim_temp "../code/adder.vhd"
+vhdl isim_temp "../code/adder_tb.vhd"

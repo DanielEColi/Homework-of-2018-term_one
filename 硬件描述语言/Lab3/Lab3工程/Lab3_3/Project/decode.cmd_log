@@ -1,0 +1,2 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe decode.prj -tcl decode_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab4/Lab4_3/Project/decode_open_file.tcl 

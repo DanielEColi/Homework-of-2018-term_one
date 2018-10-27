@@ -1,0 +1,3 @@
+".\main.obj" 
+TO "Seg7LED" 
+RAMSIZE(256) 

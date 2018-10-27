@@ -1,0 +1,68 @@
+%%% protect protected_file
+@E
+@ 
+# Created by Synplify VHDL Compiler version comp550rcp1, Build 072R from Synplicity, Inc.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+# Synthesis Netlist written on Wed Oct 24 14:13:06 2018
+#
+#
+#OPTIONS:"|-mixedhdl|-top|Seg7_LED|-layerid|0|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_1\\Code\\Seg7_LED.vhd":1540361582
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "D:\FPGALab\product\Lab4\Lab4_1\Code\Seg7_LED.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\arith.vhd"; # file 3
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\unsigned.vhd"; # file 4
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@n4::n(::R4cI	FsRo1C( _p70RsDN;
+PHR3#8PED;R4
+RNP3_H#PDE8R
+4;N3PR#_$MVblNRF"Is\	R"\7:\twuqLpN\s\bFO8k0p\\N\Lc\LpNc\_4\8BFC1\\C_o(p3 7P\E8";
+"
+RNP3HFsolhNC1R"C_o(p" 7;
+
+
+
+@HR@U4::Uc::R4n#(Co_O8CF_8CH:rcj#9RC_o(8FCO8HC_rjc:9N;
+HsR30FD_sMHoNRlC"o#C(C_8OCF8_;H"
+@FR@g4::gc::R4d#(Co_D#C_(Fr:Rj9V#NDCN,VD,#CV#NDCN,VD,#CV#NDCN,VD,#CV#NDCN,VD;#C
+RNH3Ds0_HFsolMNC#R"C_o(#_CDF
+";
+@FR@44:j::c44j:nCR#o8(_C8OFCr_F(9:jRk0sCC,#o8(_C8OFC__F4:rnj
+9;N3HRs_0DFosHMCNlRC"#o8(_C8OFC"_F;R
+b@:@j4::44R:.0CskRk0sCsR0k
+C;b@R@j::44::4.NRVDR#CV#NDCNRVD;#C
+@bR@44:(6:4::4(4snRF#lRC_o(8FCO8FC__n4r:Rj9#(Co_O8CF_8CFr_4n9:jRo#C(C_8OCF8_cHr:;j9
+RNH3lsF0DNLCjR"jjjjRj4jjjjj;j
+jjRj44444j;j4
+jjj4jjR44jjj
+j;j4jj44Rj4jjjjj;
+jj4jR4jj44jj;j
+j4Rj4jjj4j;4j
+4jj4jjRjjjj4
+j;j4j444R44j4jjj;
+4jjjRjjjjjjj;4
+jjRj4jjj4j;jj
+jj44jjRjjj4j
+j;j44j4jRjj4jj4j;
+4j4jRj4jjj44;4
+j4Rj4jj4jj;j4
+4j44jjRj4jj4
+j;j4444jRjj444j4;
+jjjjRj4jjjjj;j
+4jRj44jjjj;jj
+V8CN0kDRj4jjjjj;;
+"

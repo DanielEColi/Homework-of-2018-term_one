@@ -1,0 +1,4 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe water_led.prj -tcl water_led_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/lab2/project/water_led_open_file.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe water_led.prj -tcl water_led_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/lab2/project/water_led_open_file.tcl 

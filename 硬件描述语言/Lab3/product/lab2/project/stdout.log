@@ -1,0 +1,24 @@
+
+Starting:    C:\Synopsys\fpga_E201103SP2\win64\mbin\synplify.exe
+Install:     C:\Synopsys\fpga_E201103SP2
+Date:        Tue Oct 23 20:13:13 2018
+Version:     E-201103-SP2
+
+Arguments:   -product synplify_premier -tcl D:/FPGALab/product/lab2/project/water_led_open_file.tcl
+ProductType: synplify_premier
+
+License checkout: synplifypremier
+License: synplifypremier node-locked 
+Licensed Vendor: All FPGA
+License Feature: ident
+
+
+
+
+TCL script complete: "D:/FPGALab/product/lab2/project/water_led_open_file.tcl"
+
+exit status=0
+
+
+License checkin: synplifypremier
+

@@ -1,0 +1,20 @@
+Net "clk_50mhz_i"     LOC=P129;   
+Net "rst_n_i"         LOC=P85;   
+
+Net "seg7_sel_o<7>" LOC=P8;
+Net "seg7_sel_o<6>" LOC=P14;
+Net "seg7_sel_o<5>" LOC=P15;
+Net "seg7_sel_o<4>" LOC=P16;
+Net "seg7_sel_o<3>" LOC=P17;
+Net "seg7_sel_o<2>" LOC=P20;
+Net "seg7_sel_o<1>" LOC=P21;
+Net "seg7_sel_o<0>" LOC=P22;
+
+Net "seg7_decode_o<7>" LOC=P139;
+Net "seg7_decode_o<6>" LOC=P140;
+Net "seg7_decode_o<5>" LOC=P142;
+Net "seg7_decode_o<4>" LOC=P2;
+Net "seg7_decode_o<3>" LOC=P3;
+Net "seg7_decode_o<2>" LOC=P4;
+Net "seg7_decode_o<1>" LOC=P5;
+Net "seg7_decode_o<0>" LOC=P7;

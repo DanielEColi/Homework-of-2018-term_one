@@ -1,0 +1,19 @@
+
+Starting:    C:\Synopsys\fpga_E201103SP2\win64\mbin\synplify.exe
+Install:     C:\Synopsys\fpga_E201103SP2
+Date:        Fri Sep 14 14:28:38 2018
+Version:     E-201103-SP2
+
+Arguments:   -product synplify_premier_dp -tcl H:/FPGALabs/product/lab1/project/adder_open_file.tcl
+ProductType: synplify_premier_dp
+
+License checkout: synplifypremierdp
+License: synplifypremierdp node-locked 
+Licensed Vendor: All FPGA
+License Feature: ident
+
+
+
+
+TCL script complete: "H:/FPGALabs/product/lab1/project/adder_open_file.tcl"
+

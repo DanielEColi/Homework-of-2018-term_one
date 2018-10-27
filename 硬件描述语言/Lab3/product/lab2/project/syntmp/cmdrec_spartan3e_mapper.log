@@ -1,0 +1,18 @@
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe  -prodtype synplify_premier -encrypt  -pro  -part xc3s250etq144-4   -maxfan 100  -m1  -pipe   -fixgatedclocks 3 -fixgeneratedclocks 3         -fast_synthesis 0  -do_enhanced_opt    -reporting_ctd 0 -top_level_module  water_led  -flow mapping  -mp 1 -prjfile  D:\FPGALab\product\lab2\project\scratchproject.prs  -implementation project -licensetype  synplifypremier  -ta_num_paths 0  -ta_num_points 0  -oedif  D:\FPGALab\product\lab2\project\water_led.edn  -autoconstraint  -freq 1.000  -tcl  D:\FPGALab\product\lab2\project\water_led.sdc  D:\FPGALab\product\lab2\project\synwork\water_led_premapping.srd  -sap  D:\FPGALab\product\lab2\project\water_led.sap  -otap  D:\FPGALab\product\lab2\project\water_led.tap  -omap  D:\FPGALab\product\lab2\project\water_led.map  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v  -ena_vif  D:\FPGALab\product\lab2\project\verif\water_led.vif  -sap  D:\FPGALab\product\lab2\project\water_led.sap  -ologparam  D:\FPGALab\product\lab2\project\syntmp\water_led.plg  -osyn  D:\FPGALab\product\lab2\project\water_led.srm  -prjdir D:\FPGALab\product\lab2\project\  -log  D:\FPGALab\product\lab2\project\synlog\water_led_SPARTAN3E_Mapper.srr 
+rc:1 success:1
+D:\FPGALab\product\lab2\project\scratchproject.prs|o|1538187778|1994
+D:\FPGALab\product\lab2\project\water_led.edn|o|1540296788|74642
+D:\FPGALab\product\lab2\project\water_led.sdc|i|1538187778|0
+D:\FPGALab\product\lab2\project\synwork\water_led_premapping.srd|i|1540296787|6031
+D:\FPGALab\product\lab2\project\water_led.sap|o|1540296787|1540
+D:\FPGALab\product\lab2\project\water_led.tap|o|0|0
+D:\FPGALab\product\lab2\project\water_led.map|o|1540296788|28
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v|i|1304943026|948675
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v|i|1310477882|1053112
+D:\FPGALab\product\lab2\project\verif\water_led.vif|o|1540296788|1663
+D:\FPGALab\product\lab2\project\water_led.sap|o|1540296787|1540
+D:\FPGALab\product\lab2\project\syntmp\water_led.plg|o|1540296788|917
+D:\FPGALab\product\lab2\project\water_led.srm|o|1540296788|67790
+D:\FPGALab\product\lab2\project\synlog\water_led_SPARTAN3E_Mapper.srr|o|1540296788|9156
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe|i|1306154528|23379968
+C:\Synopsys\fpga_E201103SP2\bin\m_xilinx.exe|i|1306154386|18460672

@@ -1,0 +1,4 @@
+work	"../code/clk_gen_1hz.vhd"
+work	"../code/counter.vhd"
+work	"../code/mux4.vhd"
+work	"../code/water_led.vhd"

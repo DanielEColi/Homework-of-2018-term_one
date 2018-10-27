@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Release 14.3 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.3\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml Seg7_LED.twx Seg7_LED.ncd -o Seg7_LED.twr Seg7_LED.pcf
+
+Design file:              Seg7_LED.ncd
+Physical constraint file: Seg7_LED.pcf
+Device,package,speed:     xc3s250e,tq144,-5 (PRODUCTION 1.27 2012-10-12)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+----------------+----------------+---------+
+Source Pad      |Destination Pad |  Delay  |
+----------------+----------------+---------+
+seg7_decode_i(0)|seg7_decode_o(0)|    9.480|
+seg7_decode_i(0)|seg7_decode_o(1)|    8.756|
+seg7_decode_i(0)|seg7_decode_o(2)|    9.164|
+seg7_decode_i(0)|seg7_decode_o(3)|    9.034|
+seg7_decode_i(0)|seg7_decode_o(4)|    9.506|
+seg7_decode_i(0)|seg7_decode_o(5)|    9.048|
+seg7_decode_i(0)|seg7_decode_o(6)|    8.951|
+seg7_decode_i(1)|seg7_decode_o(0)|    8.817|
+seg7_decode_i(1)|seg7_decode_o(1)|    8.198|
+seg7_decode_i(1)|seg7_decode_o(2)|    8.501|
+seg7_decode_i(1)|seg7_decode_o(3)|    8.333|
+seg7_decode_i(1)|seg7_decode_o(4)|    8.805|
+seg7_decode_i(1)|seg7_decode_o(5)|    8.452|
+seg7_decode_i(1)|seg7_decode_o(6)|    8.355|
+seg7_decode_i(2)|seg7_decode_o(0)|    8.709|
+seg7_decode_i(2)|seg7_decode_o(1)|    8.094|
+seg7_decode_i(2)|seg7_decode_o(2)|    8.393|
+seg7_decode_i(2)|seg7_decode_o(3)|    8.358|
+seg7_decode_i(2)|seg7_decode_o(4)|    8.830|
+seg7_decode_i(2)|seg7_decode_o(5)|    8.481|
+seg7_decode_i(2)|seg7_decode_o(6)|    8.384|
+seg7_decode_i(3)|seg7_decode_o(0)|    8.700|
+seg7_decode_i(3)|seg7_decode_o(1)|    8.085|
+seg7_decode_i(3)|seg7_decode_o(2)|    8.384|
+seg7_decode_i(3)|seg7_decode_o(3)|    8.397|
+seg7_decode_i(3)|seg7_decode_o(4)|    8.869|
+seg7_decode_i(3)|seg7_decode_o(5)|    8.520|
+seg7_decode_i(3)|seg7_decode_o(6)|    8.423|
+seg7_decode_i(4)|seg7_decode_o(0)|    8.017|
+seg7_decode_i(4)|seg7_decode_o(1)|    7.450|
+seg7_decode_i(4)|seg7_decode_o(2)|    7.701|
+seg7_decode_i(4)|seg7_decode_o(3)|    7.584|
+seg7_decode_i(4)|seg7_decode_o(4)|    8.380|
+seg7_decode_i(4)|seg7_decode_o(5)|    8.079|
+seg7_decode_i(4)|seg7_decode_o(6)|    7.658|
+----------------+----------------+---------+
+
+
+Analysis completed Wed Oct 24 14:38:37 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 157 MB
+
+
+

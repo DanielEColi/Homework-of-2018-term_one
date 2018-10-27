@@ -1,0 +1,21 @@
+---------------------------------------
+Resource Usage Report for Seg7_LED 
+
+Mapping to part: xc3s250etq144-5
+Cell usage:
+GND             1 use
+VCC             1 use
+LUT2            7 uses
+LUT4            7 uses
+
+I/O ports: 21
+I/O primitives: 21
+IBUF           5 uses
+OBUF           16 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+
+Mapping Summary:
+Total  LUTs: 14 (0%)
+

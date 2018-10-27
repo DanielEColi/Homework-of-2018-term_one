@@ -1,0 +1,237 @@
+Synopsys Xilinx Technology Mapper, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: FX493 |Applying Initial value "01111111" on instance: U2.s_shift[7:0] 
+@N: MT206 |Autoconstrain Mode is ON
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                           U2.s_shift[1]:C              Done
+                           U2.s_shift[2]:C              Done
+                           U2.s_shift[3]:C              Done
+                           U2.s_shift[4]:C              Done
+                           U2.s_shift[5]:C              Done
+                           U2.s_shift[6]:C              Done
+                           U2.s_shift[7]:C              Done
+                           U2.s_shift[0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Clock Buffers:
+  Inserting Clock buffer for port clk_50mhz_i,
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.76ns		  60 /        26
+   2		0h:00m:00s		    -2.52ns		  60 /        26
+   3		0h:00m:00s		    -1.57ns		  61 /        26
+   4		0h:00m:00s		    -1.57ns		  61 /        26
+------------------------------------------------------------
+
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_2\code\clk_gen_400hz.vhd":25:2:25:3|Instance "U1.s_cnt[4]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_2\code\clk_gen_400hz.vhd":25:2:25:3|Instance "U1.s_cnt[1]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_2\code\clk_gen_400hz.vhd":25:2:25:3|Instance "U1.s_cnt[9]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab4\lab4_2\code\clk_gen_400hz.vhd":25:2:25:3|Instance "U1.s_cnt[2]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 4 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -1.90ns		  64 /        30
+
+   2		0h:00m:00s		    -1.90ns		  64 /        30
+   3		0h:00m:00s		    -1.90ns		  64 /        30
+   4		0h:00m:00s		    -1.90ns		  64 /        30
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -1.90ns		  64 /        30
+
+   2		0h:00m:00s		    -1.90ns		  64 /        30
+   3		0h:00m:00s		    -1.90ns		  64 /        30
+   4		0h:00m:00s		    -1.90ns		  64 /        30
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: MT453 |clock period is too big for clock Seg7_digital_LED|clk_50mhz_i, changing period from 10000.0 to 1000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000.0 ns to 500.0 ns. 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+Writing Analyst data base D:\FPGALab\product\Lab4\Lab4_2\Project\Seg7_digital_LED.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 123MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+@W: MT420 |Found inferred clock Seg7_digital_LED|clk_50mhz_i with period 5.30ns. A user-defined clock should be declared on object "p:clk_50mhz_i"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Oct 24 15:43:44 2018
+#
+
+
+Top view:               Seg7_digital_LED
+Requested Frequency:    188.7 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\Lab4\Lab4_2\Project\Seg7_digital_LED.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.149
+
+                                 Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock                   Frequency     Frequency     Period        Period        Slack      Type         Group                
+--------------------------------------------------------------------------------------------------------------------------------------
+Seg7_digital_LED|clk_50mhz_i     188.7 MHz     155.1 MHz     5.299         6.448         -1.149     inferred     Autoconstr_clkgroup_1
+======================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                      Ending                        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Seg7_digital_LED|clk_50mhz_i  Seg7_digital_LED|clk_50mhz_i  |  5.299       -1.149  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for Seg7_digital_LED 
+
+Mapping to part: xc3s250etq144-5
+Cell usage:
+FDC             21 uses
+FDCE            2 uses
+FDPE            7 uses
+GND             4 uses
+MUXCY_L         15 uses
+VCC             4 uses
+XORCY           16 uses
+LUT1            16 uses
+LUT2            8 uses
+LUT3            15 uses
+LUT4            24 uses
+
+I/O ports: 18
+I/O primitives: 18
+IBUF           1 use
+IBUFG          1 use
+OBUF           16 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   30 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+Total load per clock:
+   Seg7_digital_LED|clk_50mhz_i: 23
+
+Mapping Summary:
+Total  LUTs: 63 (1%)
+
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Oct 24 15:43:44 2018
+
+###########################################################]

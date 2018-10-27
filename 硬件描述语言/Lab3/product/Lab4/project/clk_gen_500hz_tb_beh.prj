@@ -1,0 +1,2 @@
+vhdl work "../code/clk_gen_500hz.vhd"
+vhdl work "../code/clk_gen_500hz_tb.vhd"

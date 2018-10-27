@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\FPGALab\product\lab1\project//adder -x xcf04s -u 00000000 D:/FPGALab/product/lab1/project/adder.bit 
+
+PROM D:\FPGALab\product\lab1\project\adder.prm map: Wed Sep 19 17:16:55 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 0565cc5a
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0002:94ff     Sep 19 17:06:21 2018 D:/FPGALab/product/lab1/project/adder.bit

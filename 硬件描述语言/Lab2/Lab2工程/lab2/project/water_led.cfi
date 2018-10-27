@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.40xd
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.40xd
+DATE            09/29/2018 - 10:58
+SOURCE          D:\FPGALab\product\lab2\project\water_led.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x0566BBBF
+START_ADDRESS   0x00000000 END_ADDRESS 0x000294FF DIRECTION_UP   "D:/FPGALab/product/lab2/project/water_led.bit" 3s250etq144

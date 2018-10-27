@@ -1,0 +1,12 @@
+function [Hr,w,a,L] = Hr_Type1(h)
+%Hr = amplitude response
+%w = 500 frequencies between [0 pi] over which Hr is computed
+%a = Type-1 LP filter coefficients
+% L = order of Hr
+%h = Type_1 LP filter impulse response
+M = length(h);
+L = (M-1)/2;
+a = [h(L+1) 2*h(L:-1:1)];
+n = 0:L;
+w = [0:1:500]'*pi/500;%×¢Òâ×ªÖÃ
+Hr = cos(w*n)*a';

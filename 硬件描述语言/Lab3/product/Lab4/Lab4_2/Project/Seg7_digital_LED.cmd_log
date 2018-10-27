@@ -1,0 +1,13 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe Seg7_digital_LED.prj -tcl Seg7_digital_LED_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab4/Lab4_2/Project/Seg7_digital_LED_open_file.tcl 
+xst -intstyle ise -ifn "D:/FPGALab/product/Lab4/Lab4_2/Project/Seg7_digital_LED.xst" -ofn "D:/FPGALab/product/Lab4/Lab4_2/Project/Seg7_digital_LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab4/Lab4_2/Code/seg7_led.ucf -p xc3s250e-tq144-5 Seg7_digital_LED.ngc Seg7_digital_LED.ngd  
+map -intstyle ise -p xc3s250e-tq144-5 -cm area -ir off -pr off -c 100 -o Seg7_digital_LED_map.ncd Seg7_digital_LED.ngd Seg7_digital_LED.pcf 
+par -w -intstyle ise -ol high -t 1 Seg7_digital_LED_map.ncd Seg7_digital_LED.ncd Seg7_digital_LED.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Seg7_digital_LED.twx Seg7_digital_LED.ncd -o Seg7_digital_LED.twr Seg7_digital_LED.pcf 
+bitgen -intstyle ise -f Seg7_digital_LED.ut Seg7_digital_LED.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab4/Lab4_2/Code/seg7_led.ucf -p xc3s250e-tq144-5 Seg7_digital_LED.ngc Seg7_digital_LED.ngd  
+map -intstyle ise -p xc3s250e-tq144-5 -cm area -ir off -pr off -c 100 -o Seg7_digital_LED_map.ncd Seg7_digital_LED.ngd Seg7_digital_LED.pcf 
+par -w -intstyle ise -ol high -t 1 Seg7_digital_LED_map.ncd Seg7_digital_LED.ncd Seg7_digital_LED.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Seg7_digital_LED.twx Seg7_digital_LED.ncd -o Seg7_digital_LED.twr Seg7_digital_LED.pcf 
+bitgen -intstyle ise -f Seg7_digital_LED.ut Seg7_digital_LED.ncd 

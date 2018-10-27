@@ -1,0 +1,4 @@
+vhdl work "D:\FPGALab\product\Lab4\code\shifter.vhd"
+vhdl work "D:\FPGALab\product\Lab4\code\seg7_decoder.vhd"
+vhdl work "D:\FPGALab\product\Lab4\code\clk_gen_500hz.vhd"
+vhdl work "D:\FPGALab\product\Lab4\code\seg7.vhd"

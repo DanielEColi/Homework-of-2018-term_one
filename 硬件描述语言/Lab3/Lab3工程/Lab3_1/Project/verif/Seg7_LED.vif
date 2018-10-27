@@ -1,0 +1,52 @@
+#
+# Synplicity Verification Interface File
+# Generated using Synplify-pro
+#
+# Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+# All rights reserved
+#
+
+# Set logfile options
+vif_set_result_file  Seg7_LED.vlf
+
+# Set technology for TCL script
+vif_set_technology -architecture FPGA -vendor Xilinx
+
+# RTL and technology files
+vif_add_file -original -vhdl -lib work ../Code/Seg7_LED.vhd
+vif_set_top_module -original -top Seg7_LED
+ 
+vif_add_library -translated $XILINX/verilog/verification/unisims
+vif_add_library -translated $XILINX/verilog/verification/simprims
+vif_add_file -translated -verilog Seg7_LED.vm
+vif_set_top_module -translated -top Seg7_LED 
+# Read FSM encoding
+
+# Memory map points
+
+# SRL map points
+
+# Compiler constant registers
+
+# Compiler constant latches
+
+# Compiler RTL sequential redundancies
+
+# RTL sequential redundancies
+
+# Technology sequential redundancies
+
+# Inversion map points
+
+# Port mappping and directions
+
+# Black box mapping
+
+
+# Other sequential cells, including multidimensional arrays
+
+# Constant Registers
+
+# Retimed Registers
+

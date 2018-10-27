@@ -1,0 +1,26 @@
+V3 15
+FL D:/FPGALab/product/Lab4/code/clk_gen_500hz.vhd 2018/10/17.16:45:18 P.40xd
+EN work/clk_gen_500hz 1539779941 \
+      FL D:/FPGALab/product/Lab4/code/clk_gen_500hz.vhd PB ieee/std_logic_1164 1350103243 \
+      PB ieee/std_logic_arith 1350103244 PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/clk_gen_500hz/rtl 1539779942 \
+      FL D:/FPGALab/product/Lab4/code/clk_gen_500hz.vhd EN work/clk_gen_500hz 1539779941
+FL D:/FPGALab/product/Lab4/code/seg7.vhd 2018/10/17.20:38:58 P.40xd
+EN work/seg7 1539779947 FL D:/FPGALab/product/Lab4/code/seg7.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/seg7/rtl 1539779948 \
+      FL D:/FPGALab/product/Lab4/code/seg7.vhd EN work/seg7 1539779947 \
+      CP clk_gen_500hz CP shifter CP seg7_decoder
+FL D:/FPGALab/product/Lab4/code/seg7_decoder.vhd 2018/10/17.20:37:36 P.40xd
+EN work/seg7_decoder 1539779945 FL D:/FPGALab/product/Lab4/code/seg7_decoder.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/seg7_decoder/rtl 1539779946 \
+      FL D:/FPGALab/product/Lab4/code/seg7_decoder.vhd EN work/seg7_decoder 1539779945
+FL D:/FPGALab/product/Lab4/code/shifter.vhd 2018/10/17.17:09:18 P.40xd
+EN work/shifter 1539779943 FL D:/FPGALab/product/Lab4/code/shifter.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/shifter/rtl 1539779944 \
+      FL D:/FPGALab/product/Lab4/code/shifter.vhd EN work/shifter 1539779943

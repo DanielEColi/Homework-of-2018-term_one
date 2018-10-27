@@ -1,0 +1,40 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\lab2\\code\\mux4.vhd":1539223543
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\lab2\\code\\counter.vhd":1539161650
+#CUR:"D:\\FPGALab\\product\\lab2\\code\\clk_gen_1hz.vhd":1539218224
+#CUR:"D:\\FPGALab\\product\\lab2\\code\\water_led.vhd":1539220050
+@E8lFkRDCICN0sC_D8H
+DLssN$FRIsH	
+M0bkR	OD_l6jEHx_RH4
+M0bkR0s#_HM_RF4
+kk0b0NRI0_CsD_C8F
+RcClM8FD8kCF
+l8CkDR	OD_MoC_x4E
+LDHs$NsRsIF	N
+bsCNl0RCsB_havRqXHCM0o
+CsbNNslCC0shRBaq_]pHwRMo0CCHs
+M0bkR0s#_HM_R
+-4HkMb0DRO	R_H-F4
+kk0b0DRO	R_F-C4
+MF8l8CkD
+8lFkRDCOMFk0
+CsDsHLNRs$I	Fs
+bHMkO0RD4	R
+bHMks0R#M0_RF4
+kk0b0_ROFRk0.M
+C88lFk
+DClkF8DlCRk
+GcDsHLNRs$I	Fs
+bHMk#0RCHD_RF.
+kk0b0_R$F
+RcClM8FD8kC
+
+
+

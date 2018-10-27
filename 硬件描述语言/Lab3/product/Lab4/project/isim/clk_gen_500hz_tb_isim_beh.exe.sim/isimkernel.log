@@ -1,0 +1,28 @@
+Command line:
+   clk_gen_500hz_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  4312
+
+Wed Oct 17 21:39:25 2018
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 506.126 Meg
+
+ Total Signals          : 7
+ Total Nets             : 4
+ Total Signal Drivers   : 4
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 3
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 385
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 506.126 Meg
+
+Wed Oct 17 21:39:35 2018
+

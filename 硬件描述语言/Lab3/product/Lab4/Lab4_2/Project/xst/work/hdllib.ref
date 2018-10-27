@@ -1,0 +1,8 @@
+AR seg7_digital_led rtl D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_digital_LED.vhd sub00/vhpl07 1540367298
+AR clk_gen_400hz rtl D:/FPGALab/product/Lab4/Lab4_2/Code/clk_gen_400hz.vhd sub00/vhpl01 1540367292
+AR seg7_disp rtl D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_disp.vhd sub00/vhpl05 1540367296
+EN seg7_digital_led NULL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_digital_LED.vhd sub00/vhpl06 1540367297
+AR shift rtl D:/FPGALab/product/Lab4/Lab4_2/Code/shift.vhd sub00/vhpl03 1540367294
+EN shift NULL D:/FPGALab/product/Lab4/Lab4_2/Code/shift.vhd sub00/vhpl02 1540367293
+EN seg7_disp NULL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_disp.vhd sub00/vhpl04 1540367295
+EN clk_gen_400hz NULL D:/FPGALab/product/Lab4/Lab4_2/Code/clk_gen_400hz.vhd sub00/vhpl00 1540367291

@@ -1,0 +1,110 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\shift.vhd":1540365886
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\Seg7_disp.vhd":1540385476
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\decode.vhd":1540386851
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\clk_gen_400hz.vhd":1540363908
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\Seg7_digital_LED.vhd":1540386972
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\sec_counter.vhd":1540370036
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\min_couter.vhd":1540391387
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\hour_counter.vhd":1540372143
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\clk_gen_1hz.vhd":1540369477
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\calc_rem.vhd":1540391445
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\calc_mod.vhd":1540389464
+#CUR:"D:\\FPGALab\\product\\Lab4\\Lab4_3\\Code\\clock.vhd":1540391490
+@E8lFkRDCOODF	H
+DLssN$FRIsH	
+M0bkR	OD_l6jEHx_RH4
+M0bkR0s#_HM_RF4
+kk0b0CR#o#(_CFD_RFU
+kk0b0CR#oO(_F_8CF
+RUClM8FD8kCF
+l8CkDRDONOF_l8H
+DLssN$FRIsH	
+M0bkR08NNR_Hnk
+F00bkR08NNR_F6M
+C88lFk
+DClkF8DOCRN_DOs
+ClDsHLNRs$I	Fs
+bHMk80RN_0NH
+RnFbk0k80RN_0NF
+R6ClM8FD8kCF
+l8CkDR	OD_MoC_x4E
+LDHs$NsRsIF	N
+bsCNl0RCsB_havRqXHCM0o
+CsbNNslCC0shRBaq_]pHwRMo0CCHs
+M0bkR0s#_HM_R
+-4HkMb0DRO	R_H-F4
+kk0b0DRO	R_F-C4
+MF8l8CkD
+8lFkRDCEsFk_kOFMs0C
+LDHs$NsRsIF	M
+HbRk0O_D	H
+R4HkMb0#Rs0__MH
+R4Fbk0kE0RF_ksO_M0F
+RnClM8FD8kCF
+l8CkDRMlH_kOFMs0C
+LDHs$NsRsIF	M
+HbRk0O_D	H
+R4HkMb0#Rs0__MH
+R4Fbk0kl0RHOM_MF0_RFn
+kk0b0FREkOs_N$ss_4FR
+8CMlkF8DlC
+FD8kCCR#OF_OkCM0sH
+DLssN$FRIsH	
+M0bkR	OD_4HR
+bHMks0R#M0__4HR
+0FkbRk0#_COO_M0F
+RnFbk0kl0RHOM_N$ss_4FR
+8CMlkF8DlC
+FD8kCCR1o8(_H0oHNpD_ D7
+HNLssI$RF
+s	HkMb0DRO	j_6l_ExH
+R4HkMb0#Rs0__MH
+R4HkMb0FREkEs__6HR
+bHMkE0RF_ksDR_H6M
+HbRk0l_HMER_H6M
+HbRk0l_HMDR_H6M
+HbRk0#_COER_H6M
+HbRk0#_CODR_H6k
+F00bkRo#C(C_#DR_FUk
+F00bkRo#C(C_8OCF8_UFR
+8CMlkF8DlC
+FD8kCDRO	C_oMj_cj
+ExDsHLNRs$I	Fs
+sbNN0lCCBsRhva_qHXRMo0CCbs
+NlsNCs0CRaBh_p]qwMRH0CCosM
+HbRk0s_#0MR_H-H4
+M0bkR	OD_-HR4k
+F00bkR	OD_-FR4M
+C88lFk
+DClkF8D8CRC8OFCH
+DLssN$FRIsH	
+M0bkRo#C(B_A78OFCR_H6k
+F00bkRo#C(C_8OCF8_UFR
+8CMlkF8DlC
+FD8kCCR1o8(_H
+#bDsHLNRs$I	Fs
+bHMk#0RE0HV_UHR
+bHMk80RH_#bEsFk_HE_RHU
+M0bkR#8HbF_EkDs__UHR
+bHMk80RH_#bl_HMER_HUM
+HbRk08bH#_MlH_HD_RHU
+M0bkR#8HbC_#O__EH
+RUHkMb0HR8##b_CDO__UHR
+0FkbRk0#(Co_8OFCR_FUM
+C88lFk
+DClkF8D#CRE0HV
+LDHs$NsRsIF	M
+HbRk0O_D	H
+R4HkMb0#Rs0__MH
+R4Fbk0k#0RE0HV_UFR
+8CMlkF8D
+C
+

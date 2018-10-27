@@ -1,0 +1,2 @@
+vhdl work "../code/adder.vhd"
+vhdl work "../code/adder_tb.vhd"

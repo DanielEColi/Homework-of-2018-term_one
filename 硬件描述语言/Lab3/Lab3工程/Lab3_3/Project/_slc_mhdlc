@@ -1,0 +1,10 @@
+|work.sec_counter|work.sec_counter.rtl|
+|work.min_counter|work.min_counter.rtl|
+|work.hour_counter|work.hour_counter.rtl|
+|work.calc_mod|work.calc_mod.rtl|
+|work.calc_rem|work.calc_rem.rtl|
+|work.shift|work.shift.rtl|
+|work.decode|work.decode.rtl|
+|work.Seg7_disp|work.Seg7_disp.rtl|
+|work.Seg7_digital_LED|work.Seg7_digital_LED.rtl|
+|work.clock|work.clock.rtl|

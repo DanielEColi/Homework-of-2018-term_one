@@ -1,0 +1,26 @@
+V3 15
+FL D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd 2017/09/21.18:46:12 P.40xd
+EN work/clk_gen_1hz 1538187988 FL D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/clk_gen_1hz/rtl 1538187989 \
+      FL D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd EN work/clk_gen_1hz 1538187988
+FL D:/FPGALab/product/lab2/code/counter.vhd 2018/09/27.09:07:46 P.40xd
+EN work/counter 1538187990 FL D:/FPGALab/product/lab2/code/counter.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/counter/rtl 1538187991 \
+      FL D:/FPGALab/product/lab2/code/counter.vhd EN work/counter 1538187990
+FL D:/FPGALab/product/lab2/code/mux4.vhd 2018/09/26.18:03:39 P.40xd
+EN work/mux4 1538187992 FL D:/FPGALab/product/lab2/code/mux4.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/mux4/rtl 1538187993 \
+      FL D:/FPGALab/product/lab2/code/mux4.vhd EN work/mux4 1538187992
+FL D:/FPGALab/product/lab2/code/water_led.vhd 2018/09/29.10:22:28 P.40xd
+EN work/water_led 1538187994 FL D:/FPGALab/product/lab2/code/water_led.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/water_led/structural 1538187995 \
+      FL D:/FPGALab/product/lab2/code/water_led.vhd EN work/water_led 1538187994 \
+      CP clk_gen_1hz CP counter CP mux4

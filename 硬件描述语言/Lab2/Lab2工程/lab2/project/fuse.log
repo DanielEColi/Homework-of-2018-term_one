@@ -1,0 +1,26 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/FPGALab/product/lab2/project/water_led_tb_isim_beh.exe" -prj "D:/FPGALab/product/lab2/project/water_led_tb_beh.prj" "work.water_led_tb" 
+ISim P.40xd (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/FPGALab/product/lab2/project/../code/mux4.vhd" into library work
+Parsing VHDL file "D:/FPGALab/product/lab2/project/../code/counter.vhd" into library work
+Parsing VHDL file "D:/FPGALab/product/lab2/project/../code/clk_gen_1hz.vhd" into library work
+Parsing VHDL file "D:/FPGALab/product/lab2/project/../code/water_led.vhd" into library work
+Parsing VHDL file "D:/FPGALab/product/lab2/project/../code/water_led_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture rtl of entity clk_gen_1hz [\clk_gen_1hz(50000000,25000000)\]
+Compiling architecture rtl of entity counter [counter_default]
+Compiling architecture rtl of entity mux4 [mux4_default]
+Compiling architecture structural of entity water_led [water_led_default]
+Compiling architecture behavior of entity water_led_tb
+Time Resolution for simulation is 1ps.
+Compiled 13 VHDL Units
+Built simulation executable D:/FPGALab/product/lab2/project/water_led_tb_isim_beh.exe
+Fuse Memory Usage: 34252 KB
+Fuse CPU Usage: 343 ms

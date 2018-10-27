@@ -1,0 +1,8 @@
+AR counter rtl D:/FPGALab/product/lab2/code/counter.vhd sub00/vhpl03 1538187991
+EN mux4 NULL D:/FPGALab/product/lab2/code/mux4.vhd sub00/vhpl04 1538187992
+AR water_led structural D:/FPGALab/product/lab2/code/water_led.vhd sub00/vhpl07 1538187995
+AR mux4 rtl D:/FPGALab/product/lab2/code/mux4.vhd sub00/vhpl05 1538187993
+AR clk_gen_1hz rtl D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd sub00/vhpl01 1538187989
+EN counter NULL D:/FPGALab/product/lab2/code/counter.vhd sub00/vhpl02 1538187990
+EN clk_gen_1hz NULL D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd sub00/vhpl00 1538187988
+EN water_led NULL D:/FPGALab/product/lab2/code/water_led.vhd sub00/vhpl06 1538187994

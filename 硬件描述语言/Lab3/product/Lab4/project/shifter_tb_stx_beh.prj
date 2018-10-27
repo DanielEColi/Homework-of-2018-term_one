@@ -1,0 +1,2 @@
+vhdl isim_temp "../code/shifter.vhd"
+vhdl isim_temp "../code/shifter_tb.vhd"

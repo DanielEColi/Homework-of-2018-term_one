@@ -1,0 +1,18 @@
+@P:  Worst Slack : -0.628
+@P:  water_led|clk_50mhz_i - Estimated Frequency : 173.6 MHz
+@P:  water_led|clk_50mhz_i - Requested Frequency : 194.9 MHz
+@P:  water_led|clk_50mhz_i - Estimated Period : 5.760
+@P:  water_led|clk_50mhz_i - Requested Period : 5.132
+@P:  water_led|clk_50mhz_i - Slack : -0.628
+@P:  Worst Slack(min analysis) : 1.785
+@P:  water_led|clk_50mhz_i - Estimated Frequency(min analysis) : 173.6 MHz
+@P:  water_led|clk_50mhz_i - Requested Frequency(min analysis) : 194.9 MHz
+@P:  water_led|clk_50mhz_i - Estimated Period(min analysis) : 5.760
+@P:  water_led|clk_50mhz_i - Requested Period(min analysis) : 5.132
+@P:  water_led|clk_50mhz_i - Slack(min analysis) : -0.628
+@P: water_led Part : xc3s250etq144-4
+@P: water_led I/O primitives : 6
+@P: water_led I/O Register bits : 0
+@P: water_led Register bits (Non I/O) : 31 (0%)
+@P: water_led Total Luts : 62 (1%)
+@P:  CPU Time : 0h:00m:00s

@@ -1,0 +1,55 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Sep 29 10:23:01 2018
+#
+
+
+Top view:               water_led
+Requested Frequency:    194.9 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\lab2\project\water_led.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 1.785
+
+                          Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock            Frequency     Frequency     Period        Period        Slack      Type         Group                
+-------------------------------------------------------------------------------------------------------------------------------
+water_led|clk_50mhz_i     194.9 MHz     173.6 MHz     5.132         5.760         -0.628     inferred     Autoconstr_clkgroup_1
+===============================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------
+water_led|clk_50mhz_i  water_led|clk_50mhz_i  |  0.000       1.785  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+

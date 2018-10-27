@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/FPGALab/product/lab1_test/project/adder_tb_isim_beh.exe" -prj "D:/FPGALab/product/lab1_test/project/adder_tb_beh.prj" "work.adder_tb" 

@@ -1,0 +1,153 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 10/23/2018 20:55:52 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.00d
+OBJECT MODULE PLACED IN .\main.obj
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE ..\Code\main.asm SET(SMALL) DEBUG PRINT(.\main.lst) OBJECT(.\main.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+  00A4                 1     LED1 BIT P2.4
+  00A5                 2     LED2 BIT P2.5
+  00A6                 3     LED3 BIT P2.6
+  00A7                 4     LED4 BIT P2.7
+                       5     
+  00B2                 6     KEY1 BIT P3.2
+                       7     
+  0069                 8     KEY1_State EQU 69H
+                       9     
+  006F                10     DelayTimes_2MS EQU 6FH
+                      11     
+                      12     ;*************************************
+                      13     ;--Ö÷³ÌÐò¿ªÊ¼--
+0000                  14     ORG 0000H
+0000 020100           15     LJMP START
+                      16     
+0100                  17     ORG 0100H
+0100                  18     START:
+0100 758170           19             MOV SP,#70H
+0103 D2A4             20             SETB LED1
+0105 D2A5             21             SETB LED2
+0107 D2A6             22             SETB LED3
+0109 D2A7             23             SETB LED4
+                      24     
+010B 02010E           25             LJMP START1
+                      26     
+010E                  27     START1:
+010E 120121           28             LCALL SCANKEY
+                      29     
+0111 02010E           30             LJMP START1
+                      31     
+                      32     
+                      33     ;**************************************
+                      34     ;ÒÔÏÂÎªÑÓÊ±º¯Ê
+                      35     ;
+0114                  36     Delay2Ms:
+0114 AF6F             37             MOV R7,DelayTimes_2MS
+                      38     
+0116 7E1E             39             Delay2Ms_1:  MOV R6,#30
+0118 7DC8             40             Delay2Ms_2:  MOV R5,#200
+011A DDFE             41             Delay2Ms_3:  DJNZ R5,Delay2Ms_3
+011C DEFA             42                                             DJNZ R6,Delay2Ms_2
+011E DFF6             43                                             DJNZ R7,Delay2Ms_1
+0120 22               44     RET
+                      45     
+0121                  46     SCANKEY:
+0121 20B21F           47             JB KEY1, UP
+0124                  48             DOWN:
+0124 756F01           49                     MOV DelayTimes_2MS,#1
+0127 120114           50                     LCALL Delay2Ms
+012A 20B202           51                     JB KEY1, PRESS
+012D 80F5             52                             JMP DOWN
+012F                  53                     PRESS:
+012F E569             54                             MOV A, KEY1_State
+0131 2401             55                             ADD A, #1
+0133 F569             56                             MOV KEY1_State, A
+0135 C3               57                             CLR C
+0136 9404             58                             SUBB A, #4
+A51 MACRO ASSEMBLER  MAIN                                                                 10/23/2018 20:55:52 PAGE     2
+
+0138 20D703           59                             JB CY, NORESET
+013B 756900           60                                     MOV KEY1_State, #0
+013E                  61                             NORESET:
+013E 7400             62                                     MOV A, #0
+0140 120144           63                             LCALL LEDRUN
+0143                  64             UP:
+0143 22               65                     RET
+                      66     
+0144                  67     LEDRUN:
+0144 E569             68             MOV A, KEY1_State
+0146 23               69             RL A
+0147 2569             70             ADD A, KEY1_State
+0149 90014D           71             MOV DPTR, #KEY1_Flash
+014C 73               72             JMP @A+DPTR
+014D                  73             KEY1_Flash:
+014D 02015D           74                     LJMP KEY1_Flash0
+0150 020166           75                     LJMP KEY1_Flash1
+0153 020169           76                     LJMP KEY1_Flash2
+0156 02016C           77                     LJMP KEY1_Flash3
+0159 02016F           78                     LJMP KEY1_Flash4
+015C 22               79             RET
+                      80     
+015D                  81             KEY1_Flash0:
+015D C2A4             82                     CLR LED1
+015F C2A5             83                     CLR LED2
+0161 C2A6             84                     CLR LED3
+0163 C2A7             85                     CLR LED4
+0165 22               86                     RET
+0166                  87         KEY1_Flash1:
+0166 B2A7             88                     CPL LED4
+0168 22               89                     RET
+0169                  90             KEY1_Flash2:
+0169 B2A6             91                     CPL LED3
+016B 22               92                     RET
+016C                  93             KEY1_Flash3:
+016C B2A5             94                     CPL LED2
+016E 22               95                     RET
+016F                  96             KEY1_Flash4:
+016F B2A4             97                     CPL  LED1
+0171 22               98                     RET
+                      99     END
+A51 MACRO ASSEMBLER  MAIN                                                                 10/23/2018 20:55:52 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CY . . . . . . . .  B ADDR   00D0H.7 A   
+DELAY2MS . . . . .  C ADDR   0114H   A   
+DELAY2MS_1 . . . .  C ADDR   0116H   A   
+DELAY2MS_2 . . . .  C ADDR   0118H   A   
+DELAY2MS_3 . . . .  C ADDR   011AH   A   
+DELAYTIMES_2MS . .  N NUMB   006FH   A   
+DOWN . . . . . . .  C ADDR   0124H   A   
+KEY1 . . . . . . .  B ADDR   00B0H.2 A   
+KEY1_FLASH . . . .  C ADDR   014DH   A   
+KEY1_FLASH0. . . .  C ADDR   015DH   A   
+KEY1_FLASH1. . . .  C ADDR   0166H   A   
+KEY1_FLASH2. . . .  C ADDR   0169H   A   
+KEY1_FLASH3. . . .  C ADDR   016CH   A   
+KEY1_FLASH4. . . .  C ADDR   016FH   A   
+KEY1_STATE . . . .  N NUMB   0069H   A   
+LED1 . . . . . . .  B ADDR   00A0H.4 A   
+LED2 . . . . . . .  B ADDR   00A0H.5 A   
+LED3 . . . . . . .  B ADDR   00A0H.6 A   
+LED4 . . . . . . .  B ADDR   00A0H.7 A   
+LEDRUN . . . . . .  C ADDR   0144H   A   
+NORESET. . . . . .  C ADDR   013EH   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+PRESS. . . . . . .  C ADDR   012FH   A   
+SCANKEY. . . . . .  C ADDR   0121H   A   
+SP . . . . . . . .  D ADDR   0081H   A   
+START. . . . . . .  C ADDR   0100H   A   
+START1 . . . . . .  C ADDR   010EH   A   
+UP . . . . . . . .  C ADDR   0143H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/FPGALab/product/lab2/project/water_led.xst" -ofn "D:/FPGALab/product/lab2/project/water_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/lab2/code/water_led.ucf -p xc3s250e-tq144-4 water_led.ngc water_led.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o water_led_map.ncd water_led.ngd water_led.pcf 
+par -w -intstyle ise -ol high -t 1 water_led_map.ncd water_led.ncd water_led.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml water_led.twx water_led.ncd -o water_led.twr water_led.pcf 
+bitgen -intstyle ise -f water_led.ut water_led.ncd 

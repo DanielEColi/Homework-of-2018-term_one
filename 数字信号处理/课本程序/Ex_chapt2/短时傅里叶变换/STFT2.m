@@ -1,0 +1,43 @@
+clf;
+N=400;
+t=[0:N-1];
+x=zeros(1,N);
+f1=0.2;
+f2=0.3;
+%复合信号 
+x(40:90)=sin(2*pi*f1*(t(40:90)-40));
+x(300:360)=sin(2*pi*f2*(t(300:360)-300));
+subplot(221);
+%信号时域特性
+plot(t,x);
+xlabel('t');
+ylabel('x(t)');
+title('x(t)时域特性');
+X=fft(x);
+X=fftshift(X);
+subplot(222);
+%信号频域特性
+f=(t-N/2)/N;
+plot(f,abs(X));
+xlabel('f');
+ylabel('|X(w)|');
+title('x(t)频域特性');
+Nw=20;
+L=Nw/2;
+Tn=(N-Nw)/L+1;
+nfft=32;
+TF=zeros(Tn,nfft);
+for i=1:Tn
+    xw=x((i-1)*L+1:i*L+L);
+    %xw=xw.*hanning(2*L)';
+    temp=fft(xw,nfft);
+    temp=fftshift(temp);
+    TF(i,:)=temp;
+end
+subplot(223);
+fnew=((1:nfft)-nfft/2)/nfft;
+tnew=(1:Tn)*L;
+[F,T]=meshgrid(fnew,tnew);
+mesh(F,T,abs(TF));
+subplot(224);
+contour(F,T,abs(TF));

@@ -1,0 +1,4 @@
+work	"../Code/Seg7_digital_LED.vhd"
+work	"../Code/Seg7_disp.vhd"
+work	"../Code/clk_gen_400hz.vhd"
+work	"../Code/shift.vhd"

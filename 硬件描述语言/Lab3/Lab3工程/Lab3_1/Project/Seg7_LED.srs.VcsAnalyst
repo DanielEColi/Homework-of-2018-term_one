@@ -1,0 +1,17 @@
+[DVE]
+DBCode=1
+DBPath=
+SessionPath=
+SignalExportPath=
+SignalGroup=Analyst
+SignalGroupFilter=
+[Interface]
+annotate=false
+annotatestyle=2
+loadendtime=-1
+loadlimitedtime=false
+loadstarttime=-1
+loadtimeunits=-1
+path=
+root=
+tipbeforeandafter=true

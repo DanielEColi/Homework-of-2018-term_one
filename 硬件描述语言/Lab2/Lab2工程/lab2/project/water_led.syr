@@ -1,0 +1,432 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: water_led.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "water_led.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "water_led"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-tq144
+
+---- Source Options
+Top Module Name                    : water_led
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd" in Library work.
+Entity <clk_gen_1hz> compiled.
+Entity <clk_gen_1hz> (Architecture <rtl>) compiled.
+Compiling vhdl file "D:/FPGALab/product/lab2/code/counter.vhd" in Library work.
+Entity <counter> compiled.
+Entity <counter> (Architecture <rtl>) compiled.
+Compiling vhdl file "D:/FPGALab/product/lab2/code/mux4.vhd" in Library work.
+Entity <mux4> compiled.
+Entity <mux4> (Architecture <rtl>) compiled.
+Compiling vhdl file "D:/FPGALab/product/lab2/code/water_led.vhd" in Library work.
+Entity <water_led> compiled.
+Entity <water_led> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <water_led> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <clk_gen_1hz> in library <work> (architecture <rtl>) with generics.
+	CNT_HALF = 25000000
+	CNT_MAX = 50000000
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <mux4> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <water_led> in library <work> (Architecture <structural>).
+Entity <water_led> analyzed. Unit <water_led> generated.
+
+Analyzing generic Entity <clk_gen_1hz> in library <work> (Architecture <rtl>).
+	CNT_HALF = 25000000
+	CNT_MAX = 50000000
+Entity <clk_gen_1hz> analyzed. Unit <clk_gen_1hz> generated.
+
+Analyzing Entity <counter> in library <work> (Architecture <rtl>).
+WARNING:Xst:819 - "D:/FPGALab/product/lab2/code/counter.vhd" line 36: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <s_cnt>
+Entity <counter> analyzed. Unit <counter> generated.
+
+Analyzing Entity <mux4> in library <work> (Architecture <rtl>).
+INFO:Xst:1561 - "D:/FPGALab/product/lab2/code/mux4.vhd" line 41: Mux is complete : default of case is discarded
+Entity <mux4> analyzed. Unit <mux4> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_gen_1hz>.
+    Related source file is "D:/FPGALab/product/lab2/code/clk_gen_1hz.vhd".
+    Found 1-bit register for signal <clk_o>.
+    Found 26-bit up counter for signal <s_cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clk_gen_1hz> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "D:/FPGALab/product/lab2/code/counter.vhd".
+    Found 2-bit up counter for signal <s_cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <mux4>.
+    Related source file is "D:/FPGALab/product/lab2/code/mux4.vhd".
+    Found 1-of-4 decoder for signal <y>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <mux4> synthesized.
+
+
+Synthesizing Unit <water_led>.
+    Related source file is "D:/FPGALab/product/lab2/code/water_led.vhd".
+Unit <water_led> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <water_led> ...
+
+Optimizing unit <clk_gen_1hz> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block water_led, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : water_led.ngr
+Top Level Output File Name         : water_led
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 6
+
+Cell Usage :
+# BELS                             : 129
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 25
+#      LUT2                        : 32
+#      LUT4                        : 12
+#      LUT4_D                      : 2
+#      LUT4_L                      : 2
+#      MUXCY                       : 25
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 29
+#      FDC                         : 29
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 1
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250etq144-4 
+
+ Number of Slices:                       40  out of   2448     1%  
+ Number of Slice Flip Flops:             29  out of   4896     0%  
+ Number of 4 input LUTs:                 76  out of   4896     1%  
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    108     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+U1/clk_o                           | NONE(U2/s_cnt_0)       | 2     |
+clk_50mhz_i                        | BUFGP                  | 27    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------+------------------------+-------+
+Control Signal                      | Buffer(FF name)        | Load  |
+------------------------------------+------------------------+-------+
+U1/rst_n_i_inv(rst_n_i_inv1_INV_0:O)| NONE(U1/clk_o)         | 29    |
+------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.423ns (Maximum Frequency: 155.690MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.831ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_o'
+  Clock period: 2.692ns (frequency: 371.471MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.692ns (Levels of Logic = 1)
+  Source:            U2/s_cnt_0 (FF)
+  Destination:       U2/s_cnt_0 (FF)
+  Source Clock:      U1/clk_o rising
+  Destination Clock: U1/clk_o rising
+
+  Data Path: U2/s_cnt_0 to U2/s_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.591   0.669  U2/s_cnt_0 (U2/s_cnt_0)
+     INV:I->O              1   0.704   0.420  U2/Mcount_s_cnt_xor<0>11_INV_0 (Result<0>)
+     FDC:D                     0.308          U2/s_cnt_0
+    ----------------------------------------
+    Total                      2.692ns (1.603ns logic, 1.089ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50mhz_i'
+  Clock period: 6.423ns (frequency: 155.690MHz)
+  Total number of paths / destination ports: 1064 / 27
+-------------------------------------------------------------------------
+Delay:               6.423ns (Levels of Logic = 4)
+  Source:            U1/s_cnt_19 (FF)
+  Destination:       U1/s_cnt_12 (FF)
+  Source Clock:      clk_50mhz_i rising
+  Destination Clock: clk_50mhz_i rising
+
+  Data Path: U1/s_cnt_19 to U1/s_cnt_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  U1/s_cnt_19 (U1/s_cnt_19)
+     LUT4:I0->O            1   0.704   0.595  U1/s_cnt_cmp_eq0000141 (U1/s_cnt_cmp_eq0000141)
+     LUT4_D:I0->O          2   0.704   0.451  U1/s_cnt_cmp_eq0000160 (U1/clk_o_and0000)
+     LUT4_D:I3->O         12   0.704   1.040  U1/s_cnt_cmp_eq000049_1 (U1/s_cnt_cmp_eq000049)
+     LUT2:I1->O            1   0.704   0.000  U1/Mcount_s_cnt_eqn_110 (U1/Mcount_s_cnt_eqn_1)
+     FDC:D                     0.308          U1/s_cnt_1
+    ----------------------------------------
+    Total                      6.423ns (3.715ns logic, 2.708ns route)
+                                       (57.8% logic, 42.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/clk_o'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              5.831ns (Levels of Logic = 2)
+  Source:            U2/s_cnt_0 (FF)
+  Destination:       water_led_o<3> (PAD)
+  Source Clock:      U1/clk_o rising
+
+  Data Path: U2/s_cnt_0 to water_led_o<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.591   0.844  U2/s_cnt_0 (U2/s_cnt_0)
+     LUT2:I0->O            1   0.704   0.420  U3/Mdecod_y31 (water_led_o_3_OBUF)
+     OBUF:I->O                 3.272          water_led_o_3_OBUF (water_led_o<3>)
+    ----------------------------------------
+    Total                      5.831ns (4.567ns logic, 1.264ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.41 secs
+ 
+--> 
+
+Total memory usage is 255592 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

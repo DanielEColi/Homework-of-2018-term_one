@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\FPGALab\product\lab2\project//water_led -x xcf04s -u 00000000 D:/FPGALab/product/lab2/project/water_led.bit 
+
+PROM D:\FPGALab\product\lab2\project\water_led.prm map: Sat Sep 29 10:58:47 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 0566bbbf
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0002:94ff     Sep 29 10:53:44 2018 D:/FPGALab/product/lab2/project/water_led.bit

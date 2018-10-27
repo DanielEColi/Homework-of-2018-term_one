@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGALab\product\lab1_test\project\adder.ncd
+OUTFILE=D:\FPGALab\product\lab1_test\project\adder.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4tq144
+WORKINGDIR=D:\FPGALab\product\lab1_test\project
+LICENSE=WebPack
+USER_INFO=__0_0_0

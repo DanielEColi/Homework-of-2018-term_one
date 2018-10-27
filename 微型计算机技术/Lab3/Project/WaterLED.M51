@@ -1,0 +1,93 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        10/09/2018  21:19:32  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE .\WaterLED.obj TO WaterLED RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  .\WaterLED.obj (WATERLED)
+
+
+LINK MAP OF MODULE:  WaterLED (WATERLED)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0151H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  WaterLED (WATERLED)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        WATERLED
+  B:0090H.0       SYMBOL        BEEP
+  C:0117H         SYMBOL        DELAY100MS
+  C:0119H         SYMBOL        DELAY100MS_1
+  C:011BH         SYMBOL        DELAY100MS_2
+  C:011DH         SYMBOL        DELAY100MS_3
+  C:011FH         SYMBOL        DELAY100MS_4
+  N:006FH         SYMBOL        DELAYTIMES_100MS
+  B:00A0H.4       SYMBOL        LED1
+  B:00A0H.5       SYMBOL        LED2
+  B:00A0H.6       SYMBOL        LED3
+  B:00A0H.7       SYMBOL        LED4
+  C:0128H         SYMBOL        LEDRUN
+  D:0090H         SYMBOL        P1
+  N:0092H         SYMBOL        P1M0
+  N:0091H         SYMBOL        P1M1
+  D:00A0H         SYMBOL        P2
+  D:0081H         SYMBOL        SP
+  C:0100H         SYMBOL        START
+  C:0111H         SYMBOL        START1
+  C:0000H         LINE#         15
+  C:0100H         LINE#         20
+  C:0103H         LINE#         21
+  C:0106H         LINE#         22
+  C:0109H         LINE#         24
+  C:010BH         LINE#         25
+  C:010DH         LINE#         26
+  C:010FH         LINE#         27
+  C:0111H         LINE#         30
+  C:0114H         LINE#         31
+  C:0117H         LINE#         35
+BL51 BANKED LINKER/LOCATER V6.05                                                      10/09/2018  21:19:32  PAGE 2
+
+
+  C:0119H         LINE#         37
+  C:011BH         LINE#         38
+  C:011DH         LINE#         39
+  C:011FH         LINE#         40
+  C:0121H         LINE#         41
+  C:0123H         LINE#         42
+  C:0125H         LINE#         43
+  C:0127H         LINE#         44
+  C:0128H         LINE#         50
+  C:012AH         LINE#         51
+  C:012CH         LINE#         52
+  C:012FH         LINE#         53
+  C:0132H         LINE#         55
+  C:0134H         LINE#         56
+  C:0136H         LINE#         57
+  C:0139H         LINE#         58
+  C:013CH         LINE#         60
+  C:013EH         LINE#         61
+  C:0140H         LINE#         62
+  C:0143H         LINE#         63
+  C:0146H         LINE#         65
+  C:0148H         LINE#         66
+  C:014AH         LINE#         67
+  C:014DH         LINE#         68
+  C:0150H         LINE#         69
+  -------         ENDMOD        WATERLED
+
+Program Size: data=8.0 xdata=0 code=337
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

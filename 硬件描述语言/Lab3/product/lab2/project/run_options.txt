@@ -1,0 +1,76 @@
+#-- Synopsys, Inc.
+#-- Version E-201103-SP2
+#-- Project file D:\FPGALab\product\lab2\project\run_options.txt
+#-- Written on Tue Oct 23 20:13:05 2018
+
+
+#project files
+add_file -verilog "C:/Synopsys/fpga_E201103SP2/bin/../lib/xilinx/unisim.v"
+add_file -vhdl -lib work "../code/mux4.vhd"
+add_file -vhdl -lib work "../code/counter.vhd"
+add_file -vhdl -lib work "../code/clk_gen_1hz.vhd"
+add_file -vhdl -lib work "../code/water_led.vhd"
+add_file -constraint "D:/FPGALab/product/lab2/project/water_led.sdc"
+
+
+#implementation: "project"
+impl -add project -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -num_critical_paths 0
+set_option -num_startend_points 0
+
+#device options
+set_option -technology SPARTAN3E
+set_option -part xc3s250e
+set_option -package tq144
+set_option -speed_grade -4
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module "water_led"
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Xilinx Spartan3
+set_option -run_prop_extract 1
+set_option -maxfan 100
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fixgatedclocks 3
+set_option -fixgeneratedclocks 3
+set_option -no_sequential_opt 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 1
+set_option -resource_sharing 1
+
+#VIF options
+set_option -write_vif 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./water_led.edn"
+
+#design plan options
+set_option -nfilter_user_path ""
+impl -active "project"

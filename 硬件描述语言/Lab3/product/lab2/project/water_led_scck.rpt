@@ -1,0 +1,18 @@
+# Synospys Constraint Checker(syntax only), version maprc, Build 517R, built May 23 2011
+# Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+# Written on Tue Oct 23 20:13:07 2018
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "water_led"
+Constraint File(s):      "D:\FPGALab\product\lab2\project\water_led.sdc"
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+

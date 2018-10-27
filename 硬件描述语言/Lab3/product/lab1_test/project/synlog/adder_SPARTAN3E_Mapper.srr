@@ -1,0 +1,161 @@
+Synopsys Xilinx Technology Mapper, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Autoconstrain Mode is ON
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+Writing Analyst data base D:\FPGALab\product\lab1_test\project\adder.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Sep 14 15:55:48 2018
+#
+
+
+Top view:               adder
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\lab1_test\project\adder.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for adder 
+
+Mapping to part: xc3s250etq144-4
+LUT3            4 uses
+I/O ports: 8
+I/O primitives: 8
+IBUF           5 uses
+OBUF           3 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+Total load per clock:
+
+Mapping Summary:
+Total  LUTs: 4 (0%)
+
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Sep 14 15:55:48 2018
+
+###########################################################]

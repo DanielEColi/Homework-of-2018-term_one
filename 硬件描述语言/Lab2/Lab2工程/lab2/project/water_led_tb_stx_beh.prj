@@ -1,0 +1,5 @@
+vhdl isim_temp "../code/mux4.vhd"
+vhdl isim_temp "../code/counter.vhd"
+vhdl isim_temp "../code/clk_gen_1hz.vhd"
+vhdl isim_temp "../code/water_led.vhd"
+vhdl isim_temp "../code/water_led_tb.vhd"

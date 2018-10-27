@@ -1,0 +1,8 @@
+AR clk_gen_500hz rtl D:/FPGALab/product/Lab4/code/clk_gen_500hz.vhd sub00/vhpl01 1539779942
+AR seg7 rtl D:/FPGALab/product/Lab4/code/seg7.vhd sub00/vhpl07 1539779948
+EN clk_gen_500hz NULL D:/FPGALab/product/Lab4/code/clk_gen_500hz.vhd sub00/vhpl00 1539779941
+EN shifter NULL D:/FPGALab/product/Lab4/code/shifter.vhd sub00/vhpl02 1539779943
+EN seg7 NULL D:/FPGALab/product/Lab4/code/seg7.vhd sub00/vhpl06 1539779947
+EN seg7_decoder NULL D:/FPGALab/product/Lab4/code/seg7_decoder.vhd sub00/vhpl04 1539779945
+AR seg7_decoder rtl D:/FPGALab/product/Lab4/code/seg7_decoder.vhd sub00/vhpl05 1539779946
+AR shifter rtl D:/FPGALab/product/Lab4/code/shifter.vhd sub00/vhpl03 1539779944

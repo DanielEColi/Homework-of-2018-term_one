@@ -1,0 +1,13 @@
+function [Hr,w,d,L] = Hr_Type4(h)
+%Hr = amplitude response
+%w = 500 frequencies between [0 pi] over which Hr is computed
+%a = Type-4 LP filter coefficients
+% L = order of Hr
+%h = Type_4 LP filter impulse response
+N = length(h);
+L = N/2;
+d = 2*h(L:-1:1);
+n = 1:1:L;
+n= n-1/2;
+w = [0:1:500]'*pi/500;%×¢Òâ×ªÖÃ
+Hr = sin(w*n)*d';

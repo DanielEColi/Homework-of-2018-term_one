@@ -1,0 +1,2 @@
+vhdl isim_temp "../code/clk_gen_500hz.vhd"
+vhdl isim_temp "../code/clk_gen_500hz_tb.vhd"

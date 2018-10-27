@@ -1,0 +1,92 @@
+C51 COMPILER V9.59.0.0   MAIN                                                              09/19/2018 13:06:51 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: F:\Keil_C51\C51\BIN\C51.EXE ..\Code\main.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\Code) DEBUG OBJECTEXT
+                    -END PRINT(.\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <STC12C5A60S2.h>
+   2          
+   3          sbit Key1 = P3^2;
+   4          
+   5          sbit SM_G1 = P2^0;
+   6          sbit SM_G2 = P2^1;
+   7          sbit SM_G3 = P2^2;
+   8          sbit SM_G4 = P2^3;
+   9          
+  10          void main()
+  11          {
+  12   1        unsigned int i = 0;
+  13   1        unsigned int num = 0;
+  14   1        SM_G4 = 0;
+  15   1        
+  16   1        while(1)
+  17   1        {
+  18   2          if(Key1 == 0)
+  19   2          {
+  20   3            switch(num)
+  21   3            {
+  22   4              case 0:
+  23   4                P0 = 0x03;
+  24   4                break;
+  25   4              case 1:
+  26   4                P0 = 0x9F;
+  27   4                break;
+  28   4              case 2:
+  29   4                P0 = 0x25;
+  30   4                break;
+  31   4              case 3:
+  32   4                P0 = 0x0d;
+  33   4                break;
+  34   4              case 4:
+  35   4                P0 = 0x99;
+  36   4                break;
+  37   4              case 5:
+  38   4                P0 = 0x49;
+  39   4                break;
+  40   4              case 6:
+  41   4                P0 = 0x41;
+  42   4                break;
+  43   4              case 7:
+  44   4                P0 = 0x1F;
+  45   4                break;
+  46   4              case 8:
+  47   4                P0 = 0x01;
+  48   4                break;
+  49   4              case 9:
+  50   4                P0 = 0x09;
+  51   4                break;
+  52   4            } 
+  53   3            num++;
+  54   3            if(num > 9)
+C51 COMPILER V9.59.0.0   MAIN                                                              09/19/2018 13:06:51 PAGE 2   
+
+  55   3            {
+  56   4              num = 0;
+  57   4            }
+  58   3            for(i = 0; i < 50000; i++);
+  59   3          }
+  60   2          else
+  61   2          {
+  62   3            num = 0;
+  63   3            P0 = 0xFF;
+  64   3          }
+  65   2        }
+  66   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    183    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

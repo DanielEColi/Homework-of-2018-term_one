@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Fri Sep 14 14:50:39 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "a_i<0>" LOCATE = SITE "P93" LEVEL 1;
+COMP "a_i<1>" LOCATE = SITE "P97" LEVEL 1;
+COMP "sum_o<0>" LOCATE = SITE "P103" LEVEL 1;
+COMP "sum_o<1>" LOCATE = SITE "P98" LEVEL 1;
+COMP "cin_i" LOCATE = SITE "P96" LEVEL 1;
+COMP "b_i<0>" LOCATE = SITE "P91" LEVEL 1;
+COMP "b_i<1>" LOCATE = SITE "P94" LEVEL 1;
+COMP "cout_o" LOCATE = SITE "P105" LEVEL 1;
+SCHEMATIC END;
+

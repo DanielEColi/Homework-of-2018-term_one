@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/FPGALab/product/lab2/project/water_led_tb_isim_beh.exe" -prj "D:/FPGALab/product/lab2/project/water_led_tb_beh.prj" "work.water_led_tb" 

@@ -1,0 +1,42 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/FPGALab/product/Lab4/project/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to D:/FPGALab/product/Lab4/project/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/FPGALab/product/Lab4/code/clk_gen_500hz.vhd" in Library work.
+Architecture rtl of Entity clk_gen_500hz is up to date.
+Compiling vhdl file "D:/FPGALab/product/Lab4/code/shifter.vhd" in Library work.
+Architecture rtl of Entity shifter is up to date.
+Compiling vhdl file "D:/FPGALab/product/Lab4/code/seg7_decoder.vhd" in Library work.
+Entity <seg7_decoder> compiled.
+Entity <seg7_decoder> (Architecture <rtl>) compiled.
+Compiling vhdl file "D:/FPGALab/product/Lab4/code/seg7.vhd" in Library work.
+Entity <seg7> compiled.
+Entity <seg7> (Architecture <rtl>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+
+Total memory usage is 211036 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

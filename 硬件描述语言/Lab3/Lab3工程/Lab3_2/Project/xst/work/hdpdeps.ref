@@ -1,0 +1,27 @@
+V3 15
+FL D:/FPGALab/product/Lab4/Lab4_2/Code/clk_gen_400hz.vhd 2018/10/24.14:51:48 P.40xd
+EN work/clk_gen_400hz 1540367291 \
+      FL D:/FPGALab/product/Lab4/Lab4_2/Code/clk_gen_400hz.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/clk_gen_400hz/rtl 1540367292 \
+      FL D:/FPGALab/product/Lab4/Lab4_2/Code/clk_gen_400hz.vhd \
+      EN work/clk_gen_400hz 1540367291
+FL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_digital_LED.vhd 2018/10/24.15:36:38 P.40xd
+EN work/Seg7_digital_LED 1540367297 \
+      FL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_digital_LED.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/Seg7_digital_LED/rtl 1540367298 \
+      FL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_digital_LED.vhd \
+      EN work/Seg7_digital_LED 1540367297 CP clk_gen_400hz CP shift CP Seg7_disp
+FL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_disp.vhd 2018/10/24.15:38:32 P.40xd
+EN work/Seg7_disp 1540367295 FL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_disp.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/Seg7_disp/rtl 1540367296 \
+      FL D:/FPGALab/product/Lab4/Lab4_2/Code/Seg7_disp.vhd EN work/Seg7_disp 1540367295
+FL D:/FPGALab/product/Lab4/Lab4_2/Code/shift.vhd 2018/10/24.15:24:46 P.40xd
+EN work/shift 1540367293 FL D:/FPGALab/product/Lab4/Lab4_2/Code/shift.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/shift/rtl 1540367294 \
+      FL D:/FPGALab/product/Lab4/Lab4_2/Code/shift.vhd EN work/shift 1540367293

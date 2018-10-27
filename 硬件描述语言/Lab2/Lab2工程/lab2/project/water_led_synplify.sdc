@@ -1,0 +1,2 @@
+#define_clock -internal  {6} [get_nets {U1.clk_o}] -name  {clk_gen_1hz_work_water_led_structural_0layer0|clk_o_inferred_clock} -ref_rise  {0.0} -ref_fall  {1.163900} -uncertainty  {0.000000} -period  {2.327800} -clockgroup  {Autoconstr_clkgroup_0} -rise  {0.0} -fall  {1.163900} 
+#define_clock -internal  {6} [get_ports {clk_50mhz_i}] -name  {water_led|clk_50mhz_i} -ref_rise  {0.0} -ref_fall  {2.565950} -uncertainty  {0.000000} -period  {5.131900} -clockgroup  {Autoconstr_clkgroup_1} -rise  {0.0} -fall  {2.565950} 

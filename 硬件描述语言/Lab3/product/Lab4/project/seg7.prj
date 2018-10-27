@@ -1,0 +1,4 @@
+vhdl work "../code/shifter.vhd"
+vhdl work "../code/seg7_decoder.vhd"
+vhdl work "../code/clk_gen_500hz.vhd"
+vhdl work "../code/seg7.vhd"

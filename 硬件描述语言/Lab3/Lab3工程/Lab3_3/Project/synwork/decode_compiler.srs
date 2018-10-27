@@ -1,0 +1,68 @@
+%%% protect protected_file
+#
+# Netlist written on Wed Oct 24 21:04:34 2018
+# Synplicity netlist linker, built on May 17 2011.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+#
+#
+#OPTIONS:"|-link|-top"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\syn_nfilter.exe":1305606860
+#CUR:"layer0.srs":1540386274
+@E"VRMNFMl;C"RHyVDjCR
+"VRB1:\$bMF#\$#VNbo_j .4d4j1\u.D\HLP\E8#308P"E8;VRyHRDC4V
+NRHR3#E_P84DR;R
+V"\7:wqutp\NLb8sFk\O0pcNL\LpNc\_dBCF8\O8CF38CP"E8;VRyHRDC.V
+NRHR3#E_P84DR;R
+V"\B:1F$Mb##$\oVbN._ jj44d.1u\LDH\8PE\8#04c4n38PE"y;RVCHDRNd
+V3RRHP#_ER8D4e;
+h qvRF'Is8	3C8OFC03sDR';yHRPCHIR8
+Rj@
+ 
+
+ftell;
+@E@MR@c.::c(::R4.RsIF	CR8OCF8RDs0;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\7\:\wqutp\NL\Fbs80kO\N\pL\c\pcNL_\d\BCF8\C\8OCF838PE\M"\"N;
+PFR3shHoNRlC"O8CF"8C;P
+NRD3VF#I_0CN0RN{
+PVR3D_FIbbsF#b_NbCDH8;R4
+RNP3FVDIM_kHHJkV8HCR
+j;}N;
+P$R#M#_HlCHG8MDNo;R4
+@HR@6.:::446c:.:o#C(B_A78OFCr_Hc9:jRo#C(B_A78OFCr_Hc9:jRo#C(B_A78OFCr_Hc9:j;H
+NR03sDs_FHNoMl"CR#(Co_7ABOCF8_;H"
+@FR@n.:::44nd:.:o#C(C_8OCF8_(Fr:Rj9#(Co_O8CF_8CF:r(j#9RC_o(8FCO8FC_rj(:9N;
+HsR30FD_sMHoNRlC"o#C(C_8OCF8_;F"
+RoM#(Co_7ABOCF8_jHr9o;
+MCR#oA(_BF7O8HC_r;49
+RoM#(Co_7ABOCF8_.Hr9o;
+MCR#oA(_BF7O8HC_r;d9
+RoM#(Co_7ABOCF8_cHr9o;
+MCR#o8(_C8OFCr_Fj
+9;o#MRC_o(8FCO8FC_r;49
+RoM#(Co_O8CF_8CF9r.;M
+oRo#C(C_8OCF8_dFr9o;
+MCR#o8(_C8OFCr_Fc
+9;o#MRC_o(8FCO8FC_r;69
+RoM#(Co_O8CF_8CF9rn;M
+oRo#C(C_8OCF8_(Fr9o;
+MMRk4C_#oL(_OF8O8HC_r;49
+RNM3P#NCC_M0D_VN4o#Rn.6;M
+oR4kM_o#C(O_L88OFCr_Hd
+9;N3MR#CNP_0MC_NVDoR#4.;6n
+RoMk_M4#(Co_8LOOCF8_cHr9N;
+M#R3N_PCM_C0VoDN#.4R6
+n;okMRM#4_C_o(LOO8F_8CH9r6;M
+NRN3#PMC_CV0_D#No46R.nb;
+R.@@::4.4.:4:j(+:4kM_o#C(O_L88OFCr_H4f9RjR:jHRMPk_M4#(Co_8LOOCF8_4Hr9MRk4C_#oL(_OF8O8HC_rR49#(Co_7ABOCF8_jHr9b;
+R.@@::4.4.:4:j(+:4kM_o#C(O_L88OFCr_H69:dR:fjjMRHPMRk4C_#oL(_OF8O8HC_rd6:9MRk4C_#oL(_OF8O8HC_rd6:9CR#oA(_BF7O8HC_r.c:9b;
+R4@@:44::.4:+0j:sRkCfjj:Rk0sCsR0k#CRC_o(8FCO8FC_r;(9
+@bR@4.:c::.46c:+#j:C_o(8FCO8FC__44r:Rj9fjj:RlsFRo#C(C_8OCF8_4F_rj4:9CR#o8(_C8OFCr_F49:jRo#C(B_A78OFCr_Hc9:j;H
+NRF3slL0ND"CRjjjjjjRj;j\Mj4jjR;j4\jMjjR4jj\j;Mjjj4j4RjM;\jjj4j4Rj;j\Mj44jR;4j\jMj4R4j4\j;M4jj4j4RjM;\jj4jjjRj;j\M44jjR;jj\CM8VDNk0jRj;"\M;R
+b@:@.4.c:::4c6:+j#(Co_O8CF_8CFr_4n9:dR:fjjFRslCR#o8(_C8OFC__F4:rnd#9RC_o(8FCO8FC_rdn:9CR#oA(_BF7O8HC_rjc:9N;
+HsR3FNl0LRDC"jjjj4jRj;jj\jMjjRj44444;j\Mjjj4Rjj4jM;\j4jj44Rj4\j;M4jjjjjRj;44\jMj4Rj4jjj4;j\Mjj44RjjjjM;\j4j444R44\4;Mjj4jjjRj;jj\4MjjRj4jjj4;8\MCkVND40Rj;jj\;M"
+@bR@4.:(::d44(:(:+j#(Co_O8CF_8CFR4cfjj:R8NMPCR#o8(_C8OFC4_FcCR#o8(_C8OFCr_F.k9RM#4_C_o(LOO8F_8CH9r4Ro#C(B_A78OFCr_H4k9RM#4_C_o(LOO8F_8CH9rdR4kM_o#C(O_L88OFCr_Hck9RM#4_C_o(LOO8F_8CH9r6;
+
+
+

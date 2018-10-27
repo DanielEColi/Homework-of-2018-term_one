@@ -1,0 +1,8 @@
+C:\Synopsys\fpga_E201103SP2\bin64\c_hdl.exe  -osyn D:\FPGALab\product\Lab4\Lab4_1\Project\synwork\Seg7_LED_compiler.srs  -top Seg7_LED  -hdlloga D:\FPGALab\product\Lab4\Lab4_1\Project\Seg7_LED.srr  -encrypt  -vhdl  -dw  -primux -fixsmult -sdff_counter -infer_seqShift   -nram -divnmod -fast_synthesis 0 -loadunimacro -encrypt  -pro  -dmgen  D:\FPGALab\product\Lab4\Lab4_1\Project\dm  -lite -ll 2000 -compiler_compatible  -proto -ui -fid2 -ram -sharing on   -autosm -ignore_undefined_lib  -lib work D:\FPGALab\product\Lab4\Lab4_1\Code\Seg7_LED.vhd -verilog  -dw  -primux -fixsmult -sdff_counter -infer_seqShift   -nram -divnmod -fast_synthesis 0 -loadunimacro -I D:\FPGALab\product\Lab4\Lab4_1\Project\  -I C:\Synopsys\fpga_E201103SP2\lib  -v2001  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v  -encrypt  -pro  -dmgen  D:\FPGALab\product\Lab4\Lab4_1\Project\dm  -ll 2000 -compiler_compatible  -proto -ui -fid2 -ram -sharing on   -autosm -lib work C:\Synopsys\fpga_E201103SP2\bin\..\lib\xilinx\unisim.v
+rc:0 success:1
+D:\FPGALab\product\Lab4\Lab4_1\Project\dm|o|1540361538|0
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v|i|1304943026|948675
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v|i|1310477882|1053112
+D:\FPGALab\product\Lab4\Lab4_1\Project\dm|o|1540361538|0
+C:\Synopsys\fpga_E201103SP2\bin64\c_hdl.exe|i|1306290820|3778048
+C:\Synopsys\fpga_E201103SP2\bin\c_hdl.exe|i|1306290686|569344

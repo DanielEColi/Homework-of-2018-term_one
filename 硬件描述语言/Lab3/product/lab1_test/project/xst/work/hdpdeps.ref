@@ -1,0 +1,7 @@
+V3 3
+FL D:/FPGALab/product/lab1_test/code/adder.vhd 2018/09/19.17:44:52 P.40xd
+EN work/adder 1537350294 FL D:/FPGALab/product/lab1_test/code/adder.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/adder/rtl 1537350295 \
+      FL D:/FPGALab/product/lab1_test/code/adder.vhd EN work/adder 1537350294

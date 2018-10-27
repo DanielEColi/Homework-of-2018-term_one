@@ -1,0 +1,34 @@
+---------------------------------------
+Resource Usage Report for water_led 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             30 uses
+FDCE            1 use
+GND             4 uses
+MUXCY           4 uses
+MUXCY_L         37 uses
+VCC             4 uses
+XORCY           25 uses
+LUT1            25 uses
+LUT2            19 uses
+LUT3            1 use
+LUT4            17 uses
+
+I/O ports: 6
+I/O primitives: 6
+IBUF           1 use
+IBUFG          1 use
+OBUF           4 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   31 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+
+Mapping Summary:
+Total  LUTs: 62 (1%)
+

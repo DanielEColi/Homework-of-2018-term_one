@@ -1,0 +1,32 @@
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst         Instance Port     Clock          Reason for not converting                                                         
+------------------------------------------------------------------------------------------------------------------------------------
+U5.s_mod[2]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U5.s_mod[1]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U5.s_mod[0]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U6.s_mod[1]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U6.s_mod[0]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U6.s_mod[2]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U7.s_mod[2]      G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U7.s_mod[1]      G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U7.s_mod[0]      G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[3]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[2]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[1]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U8.s_rem[0]      G                 U5.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[2]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[1]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[0]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U9.s_rem[3]      G                 U6.un13_i      Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[3]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[2]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[1]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+U10.s_rem[0]     G                 U10.un21_i     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+====================================================================================================================================
+
+================= End gated clock report =================
+

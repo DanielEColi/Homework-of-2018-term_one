@@ -1,0 +1,63 @@
+%%% protect protected_file
+@E
+@ 
+# Created by Synplify VHDL Compiler version comp550rcp1, Build 072R from Synplicity, Inc.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+# Synthesis Netlist written on Fri Sep 14 15:55:46 2018
+#
+#
+#OPTIONS:"|-mixedhdl|-top|adder|-layerid|0|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\lab1_test\\code\\adder.vhd":1536911686
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "D:\FPGALab\product\lab1_test\code\adder.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\arith.vhd"; # file 3
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\unsigned.vhd"; # file 4
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@.4:c::(.4c:4FRIsN	R8s8CRDs0;P
+NR#3HPDE8R
+4;N3PRHP#_ER8D4N;
+P#R3$VM_lRNb"sIF	"R\7\:\wqutp\NL\Fbs80kO\N\DL04_C\#0\8OFCN\\8s8C38PE\""
+;P
+NRs3FHNohl"CRNC88s
+";
+@HR@.4:n::c.nn:RHN_rj4:9_RNH:r4j
+9;N3HRs_0DFosHMCNlR_"NH
+";
+@HR@.4:(::c.n(:RHL_rj4:9_RLH:r4j
+9;N3HRs_0DFosHMCNlR_"LH
+";
+@HR@.4:U::c.UU:RMOH_OHRHHM_;H
+NR03sDs_FHNoMl"CRO_HMH
+";
+@FR@d4:j::cdUj:Rl#k_4Fr:Rj9#_klFr_44#9,kFl__j4r9N;
+HsR30FD_sMHoNRlC"l#k_;F"
+@FR@d4:4::cdg4:RkOF0R_F#N_Osrs$.
+9;N3HRs_0DFosHMCNlRF"OkF0_"b;
+Rj@@:44::.4:Rk0sCsR0k0CRs;kC
+@bR@4j::44::V.RNCD#RDVN#VCRNCD#;R
+b@:@4c46:c6:c:Rc6GPFsRl#k_4F_rRj9#_klFr_4jO9RHHM_RHN_rRj9Lr_Hj
+9;b@R@4n:c::n(cUn:(MRN8kPRM#6__sONsk$RM#6__sONsL$R_jHr9HROM;_H
+@bR@c4:n(:4::cndNdRMR8Pk_Mg#N_OsRs$k_Mg#N_OsRs$Nr_HjL9R_jHr9b;
+R4@@::cnccj:nj:nR8NMPMRk4#d__sONsk$RM_4d#N_OsRs$Nr_HjO9RHHM_;R
+b@:@4c4g:(g:c:RddNPM8R.kM6__#OsNs$MRk.#6__sONsN$R_4Hr9_RLH9r4;R
+b@:@4c4n:(n:c:RU(FRsP#N_Osrs$4#9R_sONs4$r9MRk6__#OsNs$MRkg__#OsNs$MRk4#d__sONs
+$;b@R@4U:c::4cccU:6FRGs#PRkFl__44r9kR#l__F49r4RO#_N$ssrR49Nr_H4L9R_4Hr9b;
+R4@@::cgnc(:g(:UR8NMPMRk.#4__sONsk$RM_.4#N_OsRs$Lr_H4#9R_sONs4$r9b;
+R4@@::cgccj:gj:nR8NMPMRk.#g__sONsk$RM_.g#N_OsRs$Nr_H4#9R_sONs4$r9b;
+R4@@::cg4c(:g(:URPFsRO#_N$ssrR.9#N_Osrs$.k9RM_.4#N_OsRs$k6M._O#_N$ssR.kMg__#OsNs$
+;
+
