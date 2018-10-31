@@ -1,0 +1,151 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 10/31/2018 09:02:24 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\main.obj
+ASSEMBLER INVOKED BY: F:\Keil C51\C51\BIN\A51.EXE ..\Code\main.asm SET(SMALL) DEBUG PRINT(.\main.lst) OBJECT(.\main.obj)
+                       EP
+
+LOC  OBJ            LINE     SOURCE
+
+  00A4                 1     LED1 BIT P2.4
+  00A5                 2     LED2 BIT P2.5
+  00A6                 3     LED3 BIT P2.6
+  00A7                 4     LED4 BIT P2.7
+                       5     
+  0090                 6     BEEP BIT P1.0
+                       7     
+  006F                 8     DelayTimes_100MS EQU 6FH
+                       9     
+                      10     ;*************************************
+                      11     ;--主程序开始--
+0000                  12     ORG 0000H
+0000 021000           13     LJMP MAIN
+0003                  14     ORG 0003H
+0003 022000           15     LJMP INT0_ISR
+                      16     
+1000                  17     ORG 1000H
+1000                  18     MAIN:
+1000 758170           19             MOV SP,#70H
+                      20             
+1003 021006           21             LJMP START1
+                      22     
+1006                  23     START1:
+1006 12101D           24             LCALL WATERLED
+1009 021006           25             LJMP  START1
+                      26     
+100C                  27     Delay100MS:
+100C AF6F             28             MOV R7, DelayTimes_100MS
+100E 7E0A             29             Delay100MS_1:  MOV R6,#10
+1010 7D96             30             Delay100MS_2:  MOV R5,#150
+1012 7CC8             31             Delay100MS_3:  MOV R4,#200
+1014 DCFE             32             Delay100MS_4:  DJNZ R4,Delay100MS_4
+1016 DDFA             33                                             DJNZ R5,Delay100MS_3
+1018 DEF6             34                                             DJNZ R6,Delay100MS_2
+101A DFF2             35                                             DJNZ R7,Delay100MS_1
+101C 22               36     RET
+                      37                                     
+101D                  38     WATERLED:
+101D C2A4             39             CLR  LED1
+101F D2A5             40             SETB LED2
+1021 D2A6             41             SETB LED3
+1023 D2A7             42             SETB LED4
+1025 756F0A           43             MOV DelayTimes_100MS,#10
+1028 12100C           44             LCALL Delay100MS
+                      45     
+102B D2A4             46             SETB  LED1
+102D C2A5             47             CLR LED2
+102F D2A6             48             SETB LED3
+1031 D2A7             49             SETB LED4
+1033 756F0A           50             MOV DelayTimes_100MS,#10
+1036 12100C           51             LCALL Delay100MS
+                      52     
+1039 D2A4             53             SETB  LED1
+103B D2A5             54             SETB LED2
+103D C2A6             55             CLR LED3
+103F D2A7             56             SETB LED4
+1041 756F0A           57             MOV DelayTimes_100MS,#10
+A51 MACRO ASSEMBLER  MAIN                                                                 10/31/2018 09:02:24 PAGE     2
+
+1044 12100C           58             LCALL Delay100MS
+                      59     
+1047 D2A4             60             SETB  LED1
+1049 D2A5             61             SETB LED2
+104B D2A6             62             SETB LED3
+104D C2A7             63             CLR LED4
+104F 756F0A           64             MOV DelayTimes_100MS,#10
+1052 12100C           65             LCALL Delay100MS
+1055 22               66     RET
+                      67     
+2000                  68     ORG 2000H
+2000                  69     INT0_ISR:
+2000 C0D0             70             PUSH PSW
+2002 C0E0             71             PUSH ACC
+2004 C2D3             72             CLR  RS0
+2006 D2D4             73             SETB RS1
+                      74     ;*********************
+                      75     ;中断服务函数主要内容
+2008 D290             76             SETB Beep
+200A 756F05           77             MOV DelayTimes_100MS,#5
+200D 12100C           78             LCALL Delay100MS
+                      79             
+2010 C290             80             CLR Beep
+2012 756F05           81             MOV DelayTimes_100MS,#5
+2015 12100C           82             LCALL Delay100MS
+                      83             
+2018 D290             84             SETB Beep
+201A 756F05           85             MOV DelayTimes_100MS,#5
+201D 12100C           86             LCALL Delay100MS
+                      87             
+2020 C290             88             CLR Beep
+2022 756F05           89             MOV DelayTimes_100MS,#5
+2025 12100C           90             LCALL Delay100MS
+                      91             
+2028 D290             92             SETB Beep
+202A 756F05           93             MOV DelayTimes_100MS,#5
+202D 12100C           94             LCALL Delay100MS
+                      95             
+2030 C290             96             CLR Beep
+2032 756F05           97             MOV DelayTimes_100MS,#5
+2035 12100C           98             LCALL Delay100MS
+                      99     ;*********************
+2038 D0E0            100             POP ACC
+203A D0D0            101             POP PSW
+203C 32              102     RETI
+                     103     END     
+A51 MACRO ASSEMBLER  MAIN                                                                 10/31/2018 09:02:24 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+BEEP . . . . . . .  B ADDR   0090H.0 A   
+DELAY100MS . . . .  C ADDR   100CH   A   
+DELAY100MS_1 . . .  C ADDR   100EH   A   
+DELAY100MS_2 . . .  C ADDR   1010H   A   
+DELAY100MS_3 . . .  C ADDR   1012H   A   
+DELAY100MS_4 . . .  C ADDR   1014H   A   
+DELAYTIMES_100MS .  N NUMB   006FH   A   
+INT0_ISR . . . . .  C ADDR   2000H   A   
+LED1 . . . . . . .  B ADDR   00A0H.4 A   
+LED2 . . . . . . .  B ADDR   00A0H.5 A   
+LED3 . . . . . . .  B ADDR   00A0H.6 A   
+LED4 . . . . . . .  B ADDR   00A0H.7 A   
+MAIN . . . . . . .  C ADDR   1000H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+PSW. . . . . . . .  D ADDR   00D0H   A   
+RS0. . . . . . . .  B ADDR   00D0H.3 A   
+RS1. . . . . . . .  B ADDR   00D0H.4 A   
+SP . . . . . . . .  D ADDR   0081H   A   
+START1 . . . . . .  C ADDR   1006H   A   
+WATERLED . . . . .  C ADDR   101DH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
