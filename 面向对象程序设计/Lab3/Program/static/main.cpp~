@@ -1,5 +1,9 @@
 #include <iostream>
+#include <stdlib.h>
+
 using namespace std;
+
+#define random(x)  (rand() % x)
 
 typedef struct
 {
@@ -24,8 +28,8 @@ int main()
   for(int i = 0; i < 5; i++)
   {
     stu[i].sex = (bool)(i % 2);
-    stu[i].age = i + 20;
-    stu[i].num = i + 2016222001;
+    stu[i].age = random(10) + 15;
+    stu[i].num = random(10) + 2016222001;
   }
 
   for(int i = 0; i < 5; i++)
@@ -48,7 +52,7 @@ int main()
   float average = getAverage(stu, 5);
 
   cout << "The average of student's age is " << average;
-
+  system("pause");
   return 0;
 }
 

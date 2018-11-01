@@ -64,13 +64,13 @@ int &method5(int a, int b)
 	return c;
 }
 
-int *method6(int a, int b)
+int &method6(int &a, int &b)
 {
 	int c;
 
 	c = a*a+b*b;
 
-	return &c;
+	return c;
 }
 
 void method7(int a, int b, int &c)
@@ -104,9 +104,31 @@ int main()
 	int &q_a = a, &q_b = b, &q_c = c;
 	int *p_a = &a, *p_b = &b, *p_c = &c;
 
-	p_c = method6(a, b);
+  c = method0(p_a, b);
+  cout << "method0: c = " << c << endl;
+  c = method1(a, b);
+  cout << "method1: c = " << c << endl;
+  c = method2(a, b);
+  cout << "method2: c = " << c << endl;
+  c = method3(p_a, p_b);
+  cout << "method3: c = " << c << endl;
+  c = method4(a, b);
+  cout << "method4: c = " << c << endl;
+  c = method5(a, b);
+  cout << "method5: c = " << c << endl;
+  c = method6(a, b);
+  cout << "method6: c = " << c << endl;
+  method7(a, b, c);
+  cout << "method7: c = " << c << endl;
+  method8(a, b, c);
+  cout << "method8: c = " << c << endl;
+  method9(a, b, p_c);
+  cout << "method9: c = " << c << endl;
+  method10(p_a, p_b, p_c);
+  cout << "method10: c = " << c << endl;
+  method11(a, b, p_c);
+  cout << "method11: c = " << c << endl;
 
-	cout << *p_c << endl;
-
+  system("pause");
 	return 0;
 }
