@@ -14,5 +14,6 @@ k2 = 0:1:50;
 w2 = 2 * pi / 100 * k2;
 subplot(212);
 plot(w2 / pi, magY2);
+axis([0,1,0,10]);
 title('DTFT Magnitude');
 xlabel('frequency in pi units')

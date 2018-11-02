@@ -9,7 +9,7 @@ sbit Beep =  P1^0; //设置Beep的引脚为P1.0
 void INT0_ISR()interrupt 0 //外部中断服务函数0
 {
   unsigned long int i; //定义延时变量i
-
+  
   Beep = 1;  //蜂鸣器响
   for(i = 0; i < 50000; i++);//延时
   Beep = 0;  //蜂鸣器不响
@@ -25,7 +25,7 @@ void INT0_ISR()interrupt 0 //外部中断服务函数0
 
 void ISR_Init()   //中断初始化函数
 {
-  IT0 = 0;  //设置边沿触发
+  IT0 = 1;  //设置边沿触发
   PX0 = 0;  //设置优先级
   EX0 = 1;  //设置外部中断使能
   EA =  1;  //中断总开关

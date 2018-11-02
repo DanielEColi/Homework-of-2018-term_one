@@ -17,7 +17,7 @@ LJMP INT0_ISR   ;长跳转到中断服务函数0
 ORG 1000H       ;MAIN函数写在1000H的位置
 MAIN:
 	MOV SP,#70H   ;修改SP指针的指向
-  SETB IT0      ;设置为边沿触发
+  CLR IT0       ;设置为电平触发
   CLR PX0       ;设置优先级
   SETB EX0      ;外部中断使能
   SETB EA       ;中断总开关
