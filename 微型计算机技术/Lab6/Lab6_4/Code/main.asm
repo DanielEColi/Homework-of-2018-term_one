@@ -6,6 +6,8 @@ LED4 BIT P2.7   ;设置LED4的引脚为P2.7
 BEEP BIT P1.0   ;设置蜂鸣器的引脚为P1.0
 
 DelayTimes_100MS EQU 6FH  ;设置延时计数器存放的寄存器
+P1M0 EQU 092H             ;端口配置寄存器
+P1M1 EQU 091H             ;端口配置寄存器
 
 ;*************************************
 ;--主程序开始--
@@ -23,7 +25,7 @@ MAIN:
   SETB EA       ;中断总开关
   MOV P1M1,#00H     ;配置为默认
 	MOV P1M0,#01H     ;配置蜂鸣器端口为推挽输出
-	CLR Beep      ;关闭蜂鸣器
+	CLR BEEP      ;关闭蜂鸣器
 	LJMP START1   ;长跳转到START1处
 
 START1:
@@ -92,7 +94,7 @@ INT0_ISR:
 ;中断服务函数主要内容
 	MOV R0,#6
 TWEET:	
-	CPL Beep                ;蜂鸣器取反
+	CPL BEEP                ;蜂鸣器取反
 	MOV DelayTimes_100MS,#5 ;延时500ms
 	LCALL Delay100MS        ;调用延时函数
   DJNZ R0,TWEET

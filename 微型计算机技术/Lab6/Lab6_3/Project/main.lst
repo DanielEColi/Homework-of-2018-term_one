@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  MAIN                                                                 10/31/2018 09:02:24 PAGE     1
+A51 MACRO ASSEMBLER  MAIN                                                                 11/02/2018 17:33:08 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -8,112 +8,117 @@ ASSEMBLER INVOKED BY: F:\Keil C51\C51\BIN\A51.EXE ..\Code\main.asm SET(SMALL) DE
 
 LOC  OBJ            LINE     SOURCE
 
-  00A4                 1     LED1 BIT P2.4
-  00A5                 2     LED2 BIT P2.5
-  00A6                 3     LED3 BIT P2.6
-  00A7                 4     LED4 BIT P2.7
+  00A4                 1     LED1 BIT P2.4   ;设置LED1的引脚为P2.4
+  00A5                 2     LED2 BIT P2.5   ;设置LED2的引脚为P2.5
+  00A6                 3     LED3 BIT P2.6   ;设置LED3的引脚为P2.6
+  00A7                 4     LED4 BIT P2.7   ;设置LED4的引脚为P2.7
                        5     
-  0090                 6     BEEP BIT P1.0
+  0090                 6     BEEP BIT P1.0   ;设置蜂鸣器的引脚为P1.0
                        7     
-  006F                 8     DelayTimes_100MS EQU 6FH
-                       9     
-                      10     ;*************************************
-                      11     ;--主程序开始--
-0000                  12     ORG 0000H
-0000 021000           13     LJMP MAIN
-0003                  14     ORG 0003H
-0003 022000           15     LJMP INT0_ISR
-                      16     
-1000                  17     ORG 1000H
-1000                  18     MAIN:
-1000 758170           19             MOV SP,#70H
-                      20             
-1003 021006           21             LJMP START1
-                      22     
-1006                  23     START1:
-1006 12101D           24             LCALL WATERLED
-1009 021006           25             LJMP  START1
-                      26     
-100C                  27     Delay100MS:
-100C AF6F             28             MOV R7, DelayTimes_100MS
-100E 7E0A             29             Delay100MS_1:  MOV R6,#10
-1010 7D96             30             Delay100MS_2:  MOV R5,#150
-1012 7CC8             31             Delay100MS_3:  MOV R4,#200
-1014 DCFE             32             Delay100MS_4:  DJNZ R4,Delay100MS_4
-1016 DDFA             33                                             DJNZ R5,Delay100MS_3
-1018 DEF6             34                                             DJNZ R6,Delay100MS_2
-101A DFF2             35                                             DJNZ R7,Delay100MS_1
-101C 22               36     RET
-                      37                                     
-101D                  38     WATERLED:
-101D C2A4             39             CLR  LED1
-101F D2A5             40             SETB LED2
-1021 D2A6             41             SETB LED3
-1023 D2A7             42             SETB LED4
-1025 756F0A           43             MOV DelayTimes_100MS,#10
-1028 12100C           44             LCALL Delay100MS
-                      45     
-102B D2A4             46             SETB  LED1
-102D C2A5             47             CLR LED2
-102F D2A6             48             SETB LED3
-1031 D2A7             49             SETB LED4
-1033 756F0A           50             MOV DelayTimes_100MS,#10
-1036 12100C           51             LCALL Delay100MS
-                      52     
-1039 D2A4             53             SETB  LED1
-103B D2A5             54             SETB LED2
-103D C2A6             55             CLR LED3
-103F D2A7             56             SETB LED4
-1041 756F0A           57             MOV DelayTimes_100MS,#10
-A51 MACRO ASSEMBLER  MAIN                                                                 10/31/2018 09:02:24 PAGE     2
+  006F                 8     DelayTimes_100MS EQU 6FH  ;设置延时计数器存放的寄存器
+  0092                 9     P1M0 EQU 092H             ;端口配置寄存器
+  0091                10     P1M1 EQU 091H             ;端口配置寄存器
+                      11     
+                      12     ;*************************************
+                      13     ;--主程序开始--
+0000                  14     ORG 0000H       ;程序入口0000H
+0000 021000           15     LJMP MAIN       ;长跳转到MAIN
+0003                  16     ORG 0003H       ;中断服务函数0在内存中的位置为0003H
+0003 022000           17     LJMP INT0_ISR   ;长跳转到中断服务函数0
+                      18     
+1000                  19     ORG 1000H       ;MAIN函数写在1000H的位置
+1000                  20     MAIN:
+1000 758170           21             MOV SP,#70H   ;修改SP指针的指向
+1003 D288             22       SETB IT0      ;设置为边沿触发
+1005 C2B8             23       CLR PX0       ;设置优先级
+1007 D2A8             24       SETB EX0      ;外部中断使能
+1009 D2AF             25       SETB EA       ;中断总开关
+100B 759100           26       MOV P1M1,#00H     ;配置为默认
+100E 759201           27             MOV P1M0,#01H     ;配置蜂鸣器端口为推挽输出
+1011 C290             28             CLR BEEP      ;关闭蜂鸣器
+1013 021016           29             LJMP START1   ;长跳转到START1处
+                      30     
+1016                  31     START1:
+1016 12102D           32             LCALL WATERLED  ;调用流水灯函数
+1019 021016           33             LJMP  START1    ;长跳转到START1
+                      34     
+                      35     ;**************************************
+                      36     ;延时100MS函数  
+                      37     
+101C                  38     Delay100MS:
+101C AF6F             39             MOV R7, DelayTimes_100MS
+101E 7E0A             40             Delay100MS_1:  MOV R6,#10
+1020 7D96             41             Delay100MS_2:  MOV R5,#150
+1022 7CC8             42             Delay100MS_3:  MOV R4,#200
+1024 DCFE             43             Delay100MS_4:  DJNZ R4,Delay100MS_4
+1026 DDFA             44                                             DJNZ R5,Delay100MS_3
+1028 DEF6             45                                             DJNZ R6,Delay100MS_2
+102A DFF2             46                                             DJNZ R7,Delay100MS_1
+102C 22               47     RET
+                      48     ;**************************************
+                      49                                     
+                      50     ;**************************************
+                      51     ;流水灯函数
+                      52             
+102D                  53     WATERLED:
+102D C2A4             54       CLR  LED1
+102F D2A5             55             SETB LED2
+1031 D2A6             56             SETB LED3
+1033 D2A7             57             SETB LED4
+A51 MACRO ASSEMBLER  MAIN                                                                 11/02/2018 17:33:08 PAGE     2
 
-1044 12100C           58             LCALL Delay100MS
-                      59     
-1047 D2A4             60             SETB  LED1
-1049 D2A5             61             SETB LED2
-104B D2A6             62             SETB LED3
-104D C2A7             63             CLR LED4
-104F 756F0A           64             MOV DelayTimes_100MS,#10
-1052 12100C           65             LCALL Delay100MS
-1055 22               66     RET
+1035 756F0A           58             MOV DelayTimes_100MS,#10
+1038 12101C           59             LCALL Delay100MS
+                      60     
+103B D2A4             61             SETB  LED1
+103D C2A5             62             CLR   LED2
+103F D2A6             63             SETB  LED3
+1041 D2A7             64             SETB  LED4
+1043 756F0A           65             MOV DelayTimes_100MS,#10
+1046 12101C           66             LCALL Delay100MS
                       67     
-2000                  68     ORG 2000H
-2000                  69     INT0_ISR:
-2000 C0D0             70             PUSH PSW
-2002 C0E0             71             PUSH ACC
-2004 C2D3             72             CLR  RS0
-2006 D2D4             73             SETB RS1
-                      74     ;*********************
-                      75     ;中断服务函数主要内容
-2008 D290             76             SETB Beep
-200A 756F05           77             MOV DelayTimes_100MS,#5
-200D 12100C           78             LCALL Delay100MS
-                      79             
-2010 C290             80             CLR Beep
-2012 756F05           81             MOV DelayTimes_100MS,#5
-2015 12100C           82             LCALL Delay100MS
-                      83             
-2018 D290             84             SETB Beep
-201A 756F05           85             MOV DelayTimes_100MS,#5
-201D 12100C           86             LCALL Delay100MS
-                      87             
-2020 C290             88             CLR Beep
-2022 756F05           89             MOV DelayTimes_100MS,#5
-2025 12100C           90             LCALL Delay100MS
-                      91             
-2028 D290             92             SETB Beep
-202A 756F05           93             MOV DelayTimes_100MS,#5
-202D 12100C           94             LCALL Delay100MS
-                      95             
-2030 C290             96             CLR Beep
-2032 756F05           97             MOV DelayTimes_100MS,#5
-2035 12100C           98             LCALL Delay100MS
-                      99     ;*********************
-2038 D0E0            100             POP ACC
-203A D0D0            101             POP PSW
-203C 32              102     RETI
-                     103     END     
-A51 MACRO ASSEMBLER  MAIN                                                                 10/31/2018 09:02:24 PAGE     3
+1049 D2A4             68             SETB  LED1
+104B D2A5             69             SETB  LED2
+104D C2A6             70             CLR   LED3
+104F D2A7             71             SETB  LED4
+1051 756F0A           72             MOV DelayTimes_100MS,#10
+1054 12101C           73             LCALL Delay100MS
+                      74     
+1057 D2A4             75             SETB  LED1
+1059 D2A5             76             SETB  LED2
+105B D2A6             77             SETB  LED3
+105D C2A7             78             CLR   LED4
+105F 756F0A           79             MOV DelayTimes_100MS,#10
+1062 12101C           80             LCALL Delay100MS
+1065 22               81     RET
+                      82     ;**************************************
+                      83     
+                      84     ;**************************************
+                      85     ;中断服务函数0
+                      86     
+2000                  87     ORG 2000H
+2000                  88     INT0_ISR:
+2000 C0D0             89             PUSH PSW    ;将PSW状态字压栈
+2002 C0E0             90             PUSH ACC    ;将ACC压栈
+2004 C2D3             91             CLR  RS0    ;修改工作寄存器组
+2006 D2D4             92             SETB RS1
+                      93     ;*********************
+                      94     ;中断服务函数主要内容
+2008 7806             95             MOV R0,#6
+200A                  96     TWEET:  
+200A B290             97             CPL BEEP                ;蜂鸣器取反
+200C 756F05           98             MOV DelayTimes_100MS,#5 ;延时500ms
+200F 12101C           99             LCALL Delay100MS        ;调用延时函数
+2012 D8F6            100       DJNZ R0,TWEET
+                     101     ;*********************
+2014 D0E0            102             POP ACC   ;将ACC出栈
+2016 D0D0            103             POP PSW   ;将PSW状态字出栈
+2018 32              104     RETI     ;中断服务函数结束
+                     105     ;**************************************
+                     106     
+                     107     
+                     108     END     
+A51 MACRO ASSEMBLER  MAIN                                                                 11/02/2018 17:33:08 PAGE     3
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -123,26 +128,33 @@ N A M E             T Y P E  V A L U E   ATTRIBUTES
 
 ACC. . . . . . . .  D ADDR   00E0H   A   
 BEEP . . . . . . .  B ADDR   0090H.0 A   
-DELAY100MS . . . .  C ADDR   100CH   A   
-DELAY100MS_1 . . .  C ADDR   100EH   A   
-DELAY100MS_2 . . .  C ADDR   1010H   A   
-DELAY100MS_3 . . .  C ADDR   1012H   A   
-DELAY100MS_4 . . .  C ADDR   1014H   A   
+DELAY100MS . . . .  C ADDR   101CH   A   
+DELAY100MS_1 . . .  C ADDR   101EH   A   
+DELAY100MS_2 . . .  C ADDR   1020H   A   
+DELAY100MS_3 . . .  C ADDR   1022H   A   
+DELAY100MS_4 . . .  C ADDR   1024H   A   
 DELAYTIMES_100MS .  N NUMB   006FH   A   
+EA . . . . . . . .  B ADDR   00A8H.7 A   
+EX0. . . . . . . .  B ADDR   00A8H.0 A   
 INT0_ISR . . . . .  C ADDR   2000H   A   
+IT0. . . . . . . .  B ADDR   0088H.0 A   
 LED1 . . . . . . .  B ADDR   00A0H.4 A   
 LED2 . . . . . . .  B ADDR   00A0H.5 A   
 LED3 . . . . . . .  B ADDR   00A0H.6 A   
 LED4 . . . . . . .  B ADDR   00A0H.7 A   
 MAIN . . . . . . .  C ADDR   1000H   A   
 P1 . . . . . . . .  D ADDR   0090H   A   
+P1M0 . . . . . . .  N NUMB   0092H   A   
+P1M1 . . . . . . .  N NUMB   0091H   A   
 P2 . . . . . . . .  D ADDR   00A0H   A   
 PSW. . . . . . . .  D ADDR   00D0H   A   
+PX0. . . . . . . .  B ADDR   00B8H.0 A   
 RS0. . . . . . . .  B ADDR   00D0H.3 A   
 RS1. . . . . . . .  B ADDR   00D0H.4 A   
 SP . . . . . . . .  D ADDR   0081H   A   
-START1 . . . . . .  C ADDR   1006H   A   
-WATERLED . . . . .  C ADDR   101DH   A   
+START1 . . . . . .  C ADDR   1016H   A   
+TWEET. . . . . . .  C ADDR   200AH   A   
+WATERLED . . . . .  C ADDR   102DH   A   
 
 
 REGISTER BANK(S) USED: 0 
