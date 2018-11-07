@@ -1,0 +1,94 @@
+C51 COMPILER V8.08   MAIN                                                                  11/06/2018 21:13:30 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\main.obj
+COMPILER INVOKED BY: E:\NewKeil\C51\BIN\C51.EXE ..\Code\main.c BROWSE INCDIR(..\Code) DEBUG OBJECTEXTEND PRINT(.\main.ls
+                    -t) OBJECT(.\main.obj)
+
+line level    source
+
+   1          #include "STC12C5A60S2.h"
+   2          sbit LED1 = P2^4; 
+   3          sbit LED2 =     P2^5;
+   4          sbit LED3 =     P2^6;
+   5          sbit LED4 =     P2^7;
+   6          
+   7          void INIT_TIMER()
+   8          {
+   9   1              TMOD = 0x01;
+  10   1      }
+  11          
+  12          void TIM_Delay10Ms(unsigned char cnt)
+  13          {
+  14   1              TH0 = 0xDC;
+  15   1              TL0 = 0x00;
+  16   1              TR0 = 1;
+  17   1                      
+  18   1              while(cnt != 0)
+  19   1              {
+  20   2                      if(TF0)
+  21   2                      {
+  22   3                              TF0 = 0;
+  23   3                              TH0 = 0xDC;
+  24   3                              TL0 = 0x00;
+  25   3                              TR0 = 1;
+  26   3                              cnt--;
+  27   3                      }                       
+  28   2              }
+  29   1      }
+  30          
+  31          void LED_RUN()
+  32          {
+  33   1              static unsigned char status = 0;
+  34   1      
+  35   1              switch(status)
+  36   1              {
+  37   2                      case 0:
+  38   2                              LED1 = ~LED1;
+  39   2                              break;
+  40   2                      case 1:
+  41   2                              LED2 = ~LED2;
+  42   2                              break;
+  43   2                      case 2:
+  44   2                              LED3 = ~LED3;
+  45   2                              break;
+  46   2                      case 3:
+  47   2                              LED4 = ~LED4;
+  48   2                              break;
+  49   2              }
+  50   1      
+  51   1              status++;
+  52   1              
+  53   1              if(status > 3)
+  54   1              {
+C51 COMPILER V8.08   MAIN                                                                  11/06/2018 21:13:30 PAGE 2   
+
+  55   2                      status = 0;
+  56   2              }
+  57   1      }
+  58          
+  59          void main()
+  60          {
+  61   1              INIT_TIMER();
+  62   1              
+  63   1              while(1)
+  64   1              {
+  65   2                      TIM_Delay10Ms(100);
+  66   2                      LED_RUN();
+  67   2              } 
+  68   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     87    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
