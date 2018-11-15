@@ -1,0 +1,6 @@
+AR clk_gen_50hz rtl D:/FPGALab/product/Lab5_debug/Code/clk_gen_50hz.vhd sub00/vhpl01 1541580877
+EN clr_jitter_with_reg NULL D:/FPGALab/product/Lab5_debug/Code/clr_jitter_with_reg.vhd sub00/vhpl02 1541580878
+EN clk_gen_50hz NULL D:/FPGALab/product/Lab5_debug/Code/clk_gen_50hz.vhd sub00/vhpl00 1541580876
+EN key1x1 NULL D:/FPGALab/product/Lab5_debug/Code/Key1x1.vhd sub00/vhpl04 1541580880
+AR clr_jitter_with_reg rtl D:/FPGALab/product/Lab5_debug/Code/clr_jitter_with_reg.vhd sub00/vhpl03 1541580879
+AR key1x1 rtl D:/FPGALab/product/Lab5_debug/Code/Key1x1.vhd sub00/vhpl05 1541580881

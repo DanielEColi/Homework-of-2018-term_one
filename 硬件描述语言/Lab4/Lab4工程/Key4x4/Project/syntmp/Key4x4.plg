@@ -1,0 +1,18 @@
+@P:  Worst Slack : -1.084
+@P:  Key4x4|clk_50mhz_i - Estimated Frequency : 143.4 MHz
+@P:  Key4x4|clk_50mhz_i - Requested Frequency : 169.8 MHz
+@P:  Key4x4|clk_50mhz_i - Estimated Period : 6.974
+@P:  Key4x4|clk_50mhz_i - Requested Period : 5.890
+@P:  Key4x4|clk_50mhz_i - Slack : -1.084
+@P:  Worst Slack(min analysis) : 1.785
+@P:  Key4x4|clk_50mhz_i - Estimated Frequency(min analysis) : 143.4 MHz
+@P:  Key4x4|clk_50mhz_i - Requested Frequency(min analysis) : 169.8 MHz
+@P:  Key4x4|clk_50mhz_i - Estimated Period(min analysis) : 6.974
+@P:  Key4x4|clk_50mhz_i - Requested Period(min analysis) : 5.890
+@P:  Key4x4|clk_50mhz_i - Slack(min analysis) : -1.084
+@P: Key4x4 Part : xc3s250etq144-4
+@P: Key4x4 I/O primitives : 14
+@P: Key4x4 I/O Register bits : 0
+@P: Key4x4 Register bits (Non I/O) : 187 (3%)
+@P: Key4x4 Total Luts : 375 (7%)
+@P:  CPU Time : 0h:00m:01s

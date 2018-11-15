@@ -1,0 +1,65 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab6\\Code\\clk_gen_50hz.vhd":1541578077
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab6\\Code\\row_scan.vhd":1541598005
+#CUR:"D:\\FPGALab\\product\\Lab6\\Code\\row_delay.vhd":1542183961
+#CUR:"D:\\FPGALab\\product\\Lab6\\Code\\decoder.vhd":1542248590
+#CUR:"D:\\FPGALab\\product\\Lab6\\Code\\combine.vhd":1541582785
+#CUR:"D:\\FPGALab\\product\\Lab6\\Code\\clr_jitter_with_reg.vhd":1542185470
+#CUR:"D:\\FPGALab\\product\\Lab6\\Code\\Key4x4.vhd":1542182983
+@E8lFkRDCicC$GDc
+HNLssI$RF
+s	HkMb0DRO	j_6l_ExH
+R4HkMb0#Rs0__MH
+R4HkMb0FRODR_Hck
+F00bkRIsF_cFR
+0FkbRk0D_C8F
+RcClM8FD8kCF
+l8CkDRsOD_0[H0_CsIEH0_osC
+LDHs$NsRsIF	M
+HbRk0O_D	6EjlxR_H4M
+HbRk0s_#0MR_H4M
+HbRk0L0k0FHM_RF4
+kk0b0kRL0M0F_4FR
+8CMlkF8DlC
+FD8kCFROlMLHCH
+DLssN$FRIsH	
+M0bkRIsF_cHR
+bHMkO0RFHD_RFc
+kk0b0FRsIF_ODR_FUM
+C88lFk
+DClkF8D8CRC8OFCDs
+HNLssI$RF
+s	HkMb0DRO	R_H4M
+HbRk0s_#0MR_H4M
+HbRk0s_FIO_FDH
+RUFbk0kD0RCF8_RCc
+MF8l8CkD
+8lFkRDCs_FI8NCD$H
+DLssN$FRIsH	
+M0bkR	OD_4HR
+bHMks0R#M0__4HR
+bHMks0RFHI_RFc
+kk0b0FRsIC_soR_FcM
+C88lFk
+DClkF8DsCRF#I_O
+NMDsHLNRs$I	Fs
+bHMkO0RDH	_RH4
+M0bkR0s#_HM_RF4
+kk0b0FRsIR_FcM
+C88lFk
+DClkF8DOCRDo	_C6M_j
+ExDsHLNRs$I	Fs
+sbNN0lCCBsRhva_qHXRMo0CCbs
+NlsNCs0CRaBh_p]qwMRH0CCosM
+HbRk0O_D	H4R-
+bHMks0R#M0__-HR4k
+F00bkR	OD_-FR4M
+C88lFk
+DC

@@ -1,0 +1,3 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe clr_jitter_with_reg.prj -tcl clr_jitter_with_reg_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe clr_jitter_with_reg.prj -tcl clr_jitter_with_reg_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab6/Project/clr_jitter_with_reg_open_file.tcl 

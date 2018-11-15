@@ -1,0 +1,34 @@
+---------------------------------------
+Resource Usage Report for Key4x4 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             173 uses
+FDCE            7 uses
+FDP             7 uses
+GND             15 uses
+MUXCY_L         126 uses
+VCC             14 uses
+XORCY           133 uses
+LUT1            133 uses
+LUT2            29 uses
+LUT3            103 uses
+LUT4            110 uses
+
+I/O ports: 14
+I/O primitives: 14
+IBUF           5 uses
+IBUFG          1 use
+OBUF           8 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   187 (3%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+
+Mapping Summary:
+Total  LUTs: 375 (7%)
+

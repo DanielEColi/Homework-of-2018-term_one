@@ -1,0 +1,18 @@
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+           i_clr_jitter_with_reg.y_ret_1:C              Not Done
+               i_clr_jitter_with_reg.x_0:C              Done
+               i_clr_jitter_with_reg.y_0:C              Done
+                                s_cnt[1]:C              Done
+                                s_cnt[0]:C              Done
+                                s_cnt[3]:C              Done
+                                s_cnt[2]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+

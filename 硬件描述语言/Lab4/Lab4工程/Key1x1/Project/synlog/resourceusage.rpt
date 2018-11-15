@@ -1,0 +1,32 @@
+---------------------------------------
+Resource Usage Report for Key1x1 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             36 uses
+GND             3 uses
+MUXCY_L         18 uses
+VCC             2 uses
+XORCY           19 uses
+LUT1            19 uses
+LUT2            2 uses
+LUT3            9 uses
+LUT4            33 uses
+
+I/O ports: 7
+I/O primitives: 7
+IBUF           2 uses
+IBUFG          1 use
+OBUF           4 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   36 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+
+Mapping Summary:
+Total  LUTs: 63 (1%)
+

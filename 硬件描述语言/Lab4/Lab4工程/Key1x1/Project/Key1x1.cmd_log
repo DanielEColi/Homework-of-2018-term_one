@@ -1,0 +1,20 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe Key1x1.prj -tcl Key1x1_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab5_debug/Project/Key1x1_open_file.tcl 
+xst -intstyle ise -ifn "D:/FPGALab/product/Lab5_debug/Project/Key1x1.xst" -ofn "D:/FPGALab/product/Lab5_debug/Project/Key1x1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-tq144-4 Key1x1.ngc Key1x1.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Key1x1_map.ncd Key1x1.ngd Key1x1.pcf 
+par -w -intstyle ise -ol high -t 1 Key1x1_map.ncd Key1x1.ncd Key1x1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Key1x1.twx Key1x1.ncd -o Key1x1.twr Key1x1.pcf 
+bitgen -intstyle ise -f Key1x1.ut Key1x1.ncd 
+xst -intstyle ise -ifn "D:/FPGALab/product/Lab5_debug/Project/Key1x1.xst" -ofn "D:/FPGALab/product/Lab5_debug/Project/Key1x1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab5_debug/Code/Key1x1.ucf -p xc3s250e-tq144-4 Key1x1.ngc Key1x1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab5_debug/Code/Key1x1.ucf -p xc3s250e-tq144-4 Key1x1.ngc Key1x1.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Key1x1_map.ncd Key1x1.ngd Key1x1.pcf 
+par -w -intstyle ise -ol high -t 1 Key1x1_map.ncd Key1x1.ncd Key1x1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Key1x1.twx Key1x1.ncd -o Key1x1.twr Key1x1.pcf 
+bitgen -intstyle ise -f Key1x1.ut Key1x1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab5_debug/Code/Key1x1.ucf -p xc3s250e-tq144-4 Key1x1.ngc Key1x1.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o Key1x1_map.ncd Key1x1.ngd Key1x1.pcf 
+par -w -intstyle ise -ol high -t 1 Key1x1_map.ncd Key1x1.ncd Key1x1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Key1x1.twx Key1x1.ncd -o Key1x1.twr Key1x1.pcf 
+bitgen -intstyle ise -f Key1x1.ut Key1x1.ncd 

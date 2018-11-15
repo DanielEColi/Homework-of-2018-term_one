@@ -1,0 +1,3 @@
+vhdl isim_temp "../Code/clk_gen_50hz.vhd"
+vhdl isim_temp "../Code/row_scan.vhd"
+vhdl isim_temp "../Code/row_scan_tb.vhd"

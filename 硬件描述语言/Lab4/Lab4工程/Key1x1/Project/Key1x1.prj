@@ -1,0 +1,3 @@
+vhdl work "../Code/clk_gen_50hz.vhd"
+vhdl work "../Code/clr_jitter_with_reg.vhd"
+vhdl work "../Code/Key1x1.vhd"

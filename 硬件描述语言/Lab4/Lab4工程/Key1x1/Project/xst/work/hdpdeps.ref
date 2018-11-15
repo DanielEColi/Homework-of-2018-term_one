@@ -1,0 +1,22 @@
+V3 11
+FL D:/FPGALab/product/Lab5_debug/Code/clk_gen_50hz.vhd 2018/11/07.16:07:57 P.40xd
+EN work/clk_gen_50hz 1541580876 \
+      FL D:/FPGALab/product/Lab5_debug/Code/clk_gen_50hz.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/clk_gen_50hz/rtl 1541580877 \
+      FL D:/FPGALab/product/Lab5_debug/Code/clk_gen_50hz.vhd EN work/clk_gen_50hz 1541580876
+FL D:/FPGALab/product/Lab5_debug/Code/clr_jitter_with_reg.vhd 2018/11/07.16:19:04 P.40xd
+EN work/clr_jitter_with_reg 1541580878 \
+      FL D:/FPGALab/product/Lab5_debug/Code/clr_jitter_with_reg.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/clr_jitter_with_reg/rtl 1541580879 \
+      FL D:/FPGALab/product/Lab5_debug/Code/clr_jitter_with_reg.vhd \
+      EN work/clr_jitter_with_reg 1541580878 CP clk_gen_50hz
+FL D:/FPGALab/product/Lab5_debug/Code/Key1x1.vhd 2018/11/07.16:30:25 P.40xd
+EN work/Key1x1 1541580880 FL D:/FPGALab/product/Lab5_debug/Code/Key1x1.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/Key1x1/rtl 1541580881 \
+      FL D:/FPGALab/product/Lab5_debug/Code/Key1x1.vhd EN work/Key1x1 1541580880 \
+      CP clr_jitter_with_reg

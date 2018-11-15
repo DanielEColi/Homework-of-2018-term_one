@@ -1,0 +1,2 @@
+#define_clock -internal  {6} [get_nets {i_clr_jitter_with_reg.i_clk_gen_50hz.clk_o}] -name  {clk_gen_50hz_work_key1x1_rtl_0layer0|clk_o_inferred_clock} -ref_rise  {0.0} -ref_fall  {0.500000} -uncertainty  {0.000000} -period  {1.000000} -clockgroup  {Autoconstr_clkgroup_0} -rise  {0.0} -fall  {0.500000} 
+#define_clock -internal  {6} [get_ports {clk_50mhz_i}] -name  {Key1x1|clk_50mhz_i} -ref_rise  {0.0} -ref_fall  {3.310950} -uncertainty  {0.000000} -period  {6.621900} -clockgroup  {Autoconstr_clkgroup_1} -rise  {0.0} -fall  {3.310950} 

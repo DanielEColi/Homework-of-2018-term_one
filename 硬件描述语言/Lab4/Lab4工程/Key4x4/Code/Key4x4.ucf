@@ -1,0 +1,22 @@
+Net "clk_50mhz_i"  LOC=P129;
+Net "rst_n_i"      LOC=P85;
+
+Net "col_i<3>"     LOC=P74;
+Net "col_i<2>"     LOC=P75;
+Net "col_i<1>"     LOC=P77;
+Net "col_i<0>"     LOC=P82;
+
+Net "row_o<0>"     LOC=P76;
+Net "row_o<1>"     LOC=P81;
+Net "row_o<2>"     LOC=P83;
+Net "row_o<3>"     LOC=P86;
+
+Net "led_o<3>"     LOC=P104;
+Net "led_o<2>"     LOC=P105;
+Net "led_o<1>"     LOC=P98;
+Net "led_o<0>"     LOC=P103;
+
+Net "col_i<3>"     PULLUP;
+Net "col_i<2>"     PULLUP;
+Net "col_i<1>"     PULLUP;
+Net "col_i<0>"     PULLUP;

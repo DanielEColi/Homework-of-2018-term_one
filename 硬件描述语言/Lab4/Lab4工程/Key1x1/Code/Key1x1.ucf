@@ -1,0 +1,9 @@
+Net "clk_50mhz_i" LOC=P129;
+Net "rst_n_i"      LOC=P85;
+
+Net "button_i"     LOC=P92;
+
+Net "led_o<3>"     LOC=P103;
+Net "led_o<2>"     LOC=P98;
+Net "led_o<1>"     LOC=P105;
+Net "led_o<0>"     LOC=P104;

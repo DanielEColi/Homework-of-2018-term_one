@@ -1,0 +1,37 @@
+Note: This data is for viewing only
+
+ROM work.decoder(rtl)-s_decode[3:0]
+address width: 8
+data width: 4
+inputs:
+ 0: row_col_i[0]
+ 1: row_col_i[1]
+ 2: row_col_i[2]
+ 3: row_col_i[3]
+ 4: row_col_i[4]
+ 5: row_col_i[5]
+ 6: row_col_i[6]
+ 7: row_col_i[7]
+outputs:
+ 0: s_decode[0]
+ 1: s_decode[1]
+ 2: s_decode[2]
+ 3: s_decode[3]
+data:
+01110111 -> 0000
+01111011 -> 0001
+01111101 -> 0010
+01111110 -> 0011
+10110111 -> 0100
+10111011 -> 0101
+10111101 -> 0110
+10111110 -> 0111
+11010111 -> 1000
+11011011 -> 1001
+11011101 -> 1010
+11011110 -> 1011
+11100111 -> 1100
+11101011 -> 1101
+11101101 -> 1110
+11101110 -> 1111
+default -> 0000

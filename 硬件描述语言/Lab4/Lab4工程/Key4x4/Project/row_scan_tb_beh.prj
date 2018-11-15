@@ -1,0 +1,3 @@
+vhdl work "../Code/clk_gen_50hz.vhd"
+vhdl work "../Code/row_scan.vhd"
+vhdl work "../Code/row_scan_tb.vhd"

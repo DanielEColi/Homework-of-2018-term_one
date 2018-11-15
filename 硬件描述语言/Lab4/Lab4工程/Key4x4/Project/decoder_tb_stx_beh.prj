@@ -1,0 +1,3 @@
+vhdl isim_temp "../Code/clk_gen_50hz.vhd"
+vhdl isim_temp "../Code/decoder.vhd"
+vhdl isim_temp "../Code/decoder_tb.vhd"

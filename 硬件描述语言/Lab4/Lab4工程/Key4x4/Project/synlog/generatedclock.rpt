@@ -1,0 +1,31 @@
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                      i_decoder.s_led[3]:C              Done
+                      i_decoder.s_led[2]:C              Done
+                      i_decoder.s_led[1]:C              Done
+                      i_decoder.s_led[0]:C              Done
+                i_clr_jitter_with_reg3.y:C              Done
+                i_clr_jitter_with_reg3.x:C              Done
+                i_clr_jitter_with_reg2.y:C              Done
+                i_clr_jitter_with_reg2.x:C              Done
+                i_clr_jitter_with_reg1.y:C              Done
+                i_clr_jitter_with_reg1.x:C              Done
+                i_clr_jitter_with_reg0.y:C              Done
+                i_clr_jitter_with_reg0.x:C              Done
+                i_row_delay.row_reg_o[3]:C              Done
+                i_row_delay.row_reg_o[2]:C              Done
+                i_row_delay.row_reg_o[1]:C              Done
+                i_row_delay.row_reg_o[0]:C              Done
+                     i_row_scan.s_row[3]:C              Done
+                     i_row_scan.s_row[2]:C              Done
+                     i_row_scan.s_row[1]:C              Done
+                     i_row_scan.s_row[0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+

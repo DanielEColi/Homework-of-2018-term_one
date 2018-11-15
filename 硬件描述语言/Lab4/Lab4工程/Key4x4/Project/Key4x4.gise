@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Key4x4.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name=".recordref"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="AutoConstraint_Key4x4.sdc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_EDIF" xil_pn:name="Key4x4.edn"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="Key4x4.fse"/>
+    <file xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Key4x4.map"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="Key4x4.ncf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Key4x4.prj"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="Key4x4.sap"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="Key4x4.sdc" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="Key4x4.srd"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_SRM" xil_pn:name="Key4x4.srm"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_REPORT" xil_pn:name="Key4x4.srr"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_SRS" xil_pn:name="Key4x4.srs"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="Key4x4.szr"/>
+    <file xil_pn:fileType="FILE_TCL" xil_pn:name="Key4x4_compile.tcl"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Key4x4_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_TCL" xil_pn:name="Key4x4_map.tcl"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="backup"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="clr_jitter_with_reg.sdc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="combine_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="combine_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="coreip"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="decoder_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decoder_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="layer0.tlg"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="row_delay_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="row_delay_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="row_scan_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="row_scan_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="row_scan_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="row_scan_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="rpt_Key4x4.areasrr"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="rpt_Key4x4_areasrr.htm"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="run_options.txt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="stdout.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UCF" xil_pn:name="synplicity.ucf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="syntmp"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="verif"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1542250628" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1542250628">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542250628" xil_pn:in_ck="-6553997806021425567" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1542250628">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../Code/Key4x4.vhd"/>
+      <outfile xil_pn:name="../Code/clk_gen_50hz.vhd"/>
+      <outfile xil_pn:name="../Code/clr_jitter_with_reg.vhd"/>
+      <outfile xil_pn:name="../Code/combine.vhd"/>
+      <outfile xil_pn:name="../Code/combine_tb.vhd"/>
+      <outfile xil_pn:name="../Code/decoder.vhd"/>
+      <outfile xil_pn:name="../Code/decoder_tb.vhd"/>
+      <outfile xil_pn:name="../Code/row_delay.vhd"/>
+      <outfile xil_pn:name="../Code/row_delay_tb.vhd"/>
+      <outfile xil_pn:name="../Code/row_scan.vhd"/>
+      <outfile xil_pn:name="../Code/row_scan_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1542250855" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9211091587812892969" xil_pn:start_ts="1542250855">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542250855" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2849775188749485351" xil_pn:start_ts="1542250855">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542250631" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-9192120320804668601" xil_pn:start_ts="1542250631">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542250632" xil_pn:in_ck="-6553997806021425567" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1542250631">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../Code/Key4x4.vhd"/>
+      <outfile xil_pn:name="../Code/clk_gen_50hz.vhd"/>
+      <outfile xil_pn:name="../Code/clr_jitter_with_reg.vhd"/>
+      <outfile xil_pn:name="../Code/combine.vhd"/>
+      <outfile xil_pn:name="../Code/combine_tb.vhd"/>
+      <outfile xil_pn:name="../Code/decoder.vhd"/>
+      <outfile xil_pn:name="../Code/decoder_tb.vhd"/>
+      <outfile xil_pn:name="../Code/row_delay.vhd"/>
+      <outfile xil_pn:name="../Code/row_delay_tb.vhd"/>
+      <outfile xil_pn:name="../Code/row_scan.vhd"/>
+      <outfile xil_pn:name="../Code/row_scan_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1542250857" xil_pn:in_ck="-6553997806021425567" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1622302292603611616" xil_pn:start_ts="1542250855">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="row_scan_tb_beh.prj"/>
+      <outfile xil_pn:name="row_scan_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1542250858" xil_pn:in_ck="1165973697837651205" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1024024457431630291" xil_pn:start_ts="1542250857">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="row_scan_tb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248909" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248909" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7214355863950517619" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248909" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-9192120320804668601" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248909" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248909" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="111949456195682993" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248909" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="5199527252417716204" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248909" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7032376794078933359" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542248916" xil_pn:in_ck="-3649869705325335324" xil_pn:name="TRANEXT_synprosynthesize_virtex" xil_pn:prop_ck="7199856038138982001" xil_pn:start_ts="1542248909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name=".recordref"/>
+      <outfile xil_pn:name="AutoConstraint_Key4x4.sdc"/>
+      <outfile xil_pn:name="Key4x4.edn"/>
+      <outfile xil_pn:name="Key4x4.fse"/>
+      <outfile xil_pn:name="Key4x4.map"/>
+      <outfile xil_pn:name="Key4x4.ncf"/>
+      <outfile xil_pn:name="Key4x4.prj"/>
+      <outfile xil_pn:name="Key4x4.sap"/>
+      <outfile xil_pn:name="Key4x4.sdc"/>
+      <outfile xil_pn:name="Key4x4.srd"/>
+      <outfile xil_pn:name="Key4x4.srm"/>
+      <outfile xil_pn:name="Key4x4.srr"/>
+      <outfile xil_pn:name="Key4x4.srs"/>
+      <outfile xil_pn:name="Key4x4.szr"/>
+      <outfile xil_pn:name="Key4x4_compile.tcl"/>
+      <outfile xil_pn:name="Key4x4_map.tcl"/>
+      <outfile xil_pn:name="backup"/>
+      <outfile xil_pn:name="coreip"/>
+      <outfile xil_pn:name="layer0.tlg"/>
+      <outfile xil_pn:name="rpt_Key4x4.areasrr"/>
+      <outfile xil_pn:name="rpt_Key4x4_areasrr.htm"/>
+      <outfile xil_pn:name="run_options.txt"/>
+      <outfile xil_pn:name="stdout.log"/>
+      <outfile xil_pn:name="synplicity.ucf"/>
+      <outfile xil_pn:name="syntmp"/>
+      <outfile xil_pn:name="verif"/>
+    </transform>
+  </transforms>
+
+</generated_project>

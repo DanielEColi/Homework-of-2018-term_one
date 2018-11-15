@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\FPGALab\product\Lab6\Project\Key4x4.ncd
+OUTFILE=D:\FPGALab\product\Lab6\Project\Key4x4.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4tq144
+WORKINGDIR=D:\FPGALab\product\Lab6\Project
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,2 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe Key4x4.prj -tcl Key4x4_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab6/Project/Key4x4_open_file.tcl 

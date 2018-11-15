@@ -1,0 +1,18 @@
+Synopsys Xilinx Technology Pre-mapping, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+Reading constraint file: D:\FPGALab\product\Lab6\Project\Key4x4.sdc
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+Finished Pre Mapping Phase. (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
+
+@N: BN225 |Writing default property annotation file D:\FPGALab\product\Lab6\Project\Key4x4.sap.
+Pre Mapping successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 15 10:28:32 2018
+
+###########################################################]

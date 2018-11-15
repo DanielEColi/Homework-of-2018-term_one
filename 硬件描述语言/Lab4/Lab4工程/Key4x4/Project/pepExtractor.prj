@@ -1,0 +1,2 @@
+work	"../Code/clk_gen_50hz.vhd"
+work	"../Code/decoder.vhd"

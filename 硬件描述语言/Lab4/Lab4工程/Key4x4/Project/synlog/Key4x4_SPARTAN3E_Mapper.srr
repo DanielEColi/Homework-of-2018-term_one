@@ -1,0 +1,273 @@
+Synopsys Xilinx Technology Mapper, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Autoconstrain Mode is ON
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
+
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                      i_decoder.s_led[3]:C              Done
+                      i_decoder.s_led[2]:C              Done
+                      i_decoder.s_led[1]:C              Done
+                      i_decoder.s_led[0]:C              Done
+                i_clr_jitter_with_reg3.y:C              Done
+                i_clr_jitter_with_reg3.x:C              Done
+                i_clr_jitter_with_reg2.y:C              Done
+                i_clr_jitter_with_reg2.x:C              Done
+                i_clr_jitter_with_reg1.y:C              Done
+                i_clr_jitter_with_reg1.x:C              Done
+                i_clr_jitter_with_reg0.y:C              Done
+                i_clr_jitter_with_reg0.x:C              Done
+                i_row_delay.row_reg_o[3]:C              Done
+                i_row_delay.row_reg_o[2]:C              Done
+                i_row_delay.row_reg_o[1]:C              Done
+                i_row_delay.row_reg_o[0]:C              Done
+                     i_row_scan.s_row[3]:C              Done
+                     i_row_scan.s_row[2]:C              Done
+                     i_row_scan.s_row[1]:C              Done
+                     i_row_scan.s_row[0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 123MB)
+
+
+Clock Buffers:
+  Inserting Clock buffer for port clk_50mhz_i,
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+@A: BN291 :"d:\fpgalab\product\lab6\code\decoder.vhd":35:2:35:3|Boundary register i_decoder.s_led[3] has been packed into a complex cell. To disable this register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"d:\fpgalab\product\lab6\code\decoder.vhd":35:2:35:3|Boundary register i_decoder.s_led[2] has been packed into a complex cell. To disable this register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"d:\fpgalab\product\lab6\code\decoder.vhd":35:2:35:3|Boundary register i_decoder.s_led[1] has been packed into a complex cell. To disable this register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"d:\fpgalab\product\lab6\code\decoder.vhd":35:2:35:3|Boundary register i_decoder.s_led[0] has been packed into a complex cell. To disable this register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: MO106 :"d:\fpgalab\product\lab6\code\decoder.vhd":38:3:38:6|Found ROM, 'i_decoder.s_led_17_0[3:0]', 16 words by 4 bits 
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 123MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.16ns		 366 /       167
+   2		0h:00m:00s		    -2.16ns		 358 /       167
+------------------------------------------------------------
+
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_delay.i_clk_gen_50hz.s_cnt[15]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_delay.i_clk_gen_50hz.s_cnt[0]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg3.i_clk_gen_50hz.s_cnt[15]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg0.i_clk_gen_50hz.s_cnt[15]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg1.i_clk_gen_50hz.s_cnt[15]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg2.i_clk_gen_50hz.s_cnt[15]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg2.i_clk_gen_50hz.s_cnt[0]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg1.i_clk_gen_50hz.s_cnt[0]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg3.i_clk_gen_50hz.s_cnt[0]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_clr_jitter_with_reg0.i_clk_gen_50hz.s_cnt[0]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[0]" with 5 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[2]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_delay.i_clk_gen_50hz.s_cnt[13]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[3]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[13]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[15]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 16 Registers via timing driven replication
+Added 6 LUTs via timing driven replication
+
+
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[6]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[9]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 2 Registers via timing driven replication
+Added 2 LUTs via timing driven replication
+
+
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[1]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab6\code\clk_gen_50hz.vhd":23:2:23:3|Instance "i_row_scan.i_clk_gen_50hz.s_cnt[4]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 2 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -2.12ns		 376 /       187
+
+   2		0h:00m:01s		    -2.12ns		 376 /       187
+   3		0h:00m:01s		    -2.12ns		 376 /       187
+   4		0h:00m:01s		    -2.12ns		 376 /       187
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -2.12ns		 376 /       187
+
+   2		0h:00m:01s		    -2.12ns		 376 /       187
+   3		0h:00m:01s		    -2.12ns		 376 /       187
+   4		0h:00m:01s		    -2.12ns		 376 /       187
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 124MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: MT453 |clock period is too big for clock Key4x4|clk_50mhz_i, changing period from 10000000.0 to 1000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000000.0 ns to 500.0 ns. 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 124MB)
+
+Writing Analyst data base D:\FPGALab\product\Lab6\Project\Key4x4.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 124MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 125MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 125MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 125MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 125MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 125MB)
+
+@W: MT420 |Found inferred clock Key4x4|clk_50mhz_i with period 5.89ns. A user-defined clock should be declared on object "p:clk_50mhz_i"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Nov 15 10:28:33 2018
+#
+
+
+Top view:               Key4x4
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\Lab6\Project\Key4x4.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.084
+
+                       Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock         Frequency     Frequency     Period        Period        Slack      Type         Group                
+----------------------------------------------------------------------------------------------------------------------------
+Key4x4|clk_50mhz_i     169.8 MHz     143.4 MHz     5.890         6.974         -1.084     inferred     Autoconstr_clkgroup_1
+============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------
+Starting            Ending              |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------
+Key4x4|clk_50mhz_i  Key4x4|clk_50mhz_i  |  5.890       -1.084  |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for Key4x4 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             173 uses
+FDCE            7 uses
+FDP             7 uses
+GND             15 uses
+MUXCY_L         126 uses
+VCC             14 uses
+XORCY           133 uses
+LUT1            133 uses
+LUT2            29 uses
+LUT3            103 uses
+LUT4            110 uses
+
+I/O ports: 14
+I/O primitives: 14
+IBUF           5 uses
+IBUFG          1 use
+OBUF           8 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   187 (3%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+Total load per clock:
+   Key4x4|clk_50mhz_i: 168
+
+Mapping Summary:
+Total  LUTs: 375 (7%)
+
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 15 10:28:33 2018
+
+###########################################################]

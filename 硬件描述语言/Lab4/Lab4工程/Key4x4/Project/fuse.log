@@ -1,0 +1,22 @@
+Running: C:\Xilinx\14.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/FPGALab/product/Lab6/Project/row_scan_tb_isim_beh.exe -prj D:/FPGALab/product/Lab6/Project/row_scan_tb_beh.prj work.row_scan_tb 
+ISim P.40xd (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/FPGALab/product/Lab6/Project/../Code/clk_gen_50hz.vhd" into library work
+Parsing VHDL file "D:/FPGALab/product/Lab6/Project/../Code/row_scan.vhd" into library work
+Parsing VHDL file "D:/FPGALab/product/Lab6/Project/../Code/row_scan_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture rtl of entity clk_gen_50hz [\clk_gen_50hz(1000000,500000)\]
+Compiling architecture rtl of entity row_scan [row_scan_default]
+Compiling architecture behavior of entity row_scan_tb
+Time Resolution for simulation is 1ps.
+Compiled 9 VHDL Units
+Built simulation executable D:/FPGALab/product/Lab6/Project/row_scan_tb_isim_beh.exe
+Fuse Memory Usage: 34428 KB
+Fuse CPU Usage: 311 ms

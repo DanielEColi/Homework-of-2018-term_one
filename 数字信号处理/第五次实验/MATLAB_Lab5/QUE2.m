@@ -9,7 +9,7 @@ plot(t*100,xa);
 title('$x(n)=2sin4{\pi}t+5cos8{\pi}t$','Interpreter','latex');
 xlabel('t/(ms)');
 
-N = 60;
+N = 99;
 n = 0:N-1;
 Xa = fft(xa, N);
 Mag_Xa = abs(Xa);
@@ -25,6 +25,12 @@ elseif N == 50
     gtext('N=50');
 elseif N == 60
     gtext('N=60');
+elseif N == 90
+    gtext('N=90');
+elseif N == 95
+    gtext('N=95');
+elseif N == 99
+    gtext('N=99');
 end
 hold off;
 real_Xa = real(Xa);

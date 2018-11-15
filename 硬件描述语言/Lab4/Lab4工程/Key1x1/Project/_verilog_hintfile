@@ -1,0 +1,35 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab5_debug\\Code\\clk_gen_50hz.vhd":1541578077
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab5_debug\\Code\\clr_jitter_with_reg.vhd":1541578744
+#CUR:"D:\\FPGALab\\product\\Lab5_debug\\Code\\Key1x1.vhd":1541579425
+@E8lFkRDCi4C$GD4
+HNLssI$RF
+s	HkMb0DRO	j_6l_ExH
+R4HkMb0#Rs0__MH
+R4HkMb0kRL0M0F_4HR
+0FkbRk0D_C8F
+RcClM8FD8kCF
+l8CkDRsOD_0[H0_CsIEH0_osC
+LDHs$NsRsIF	M
+HbRk0O_D	6EjlxR_H4M
+HbRk0s_#0MR_H4M
+HbRk0L0k0FHM_RF4
+kk0b0kRL0M0F_4FR
+8CMlkF8DlC
+FD8kCDRO	C_oMj_6EDx
+HNLssI$RF
+s	bNNslCC0shRBaq_vXMRH0CCosN
+bsCNl0RCsB_ha]wqpR0HMCsoC
+bHMkO0RDH	_R
+-4HkMb0#Rs0__MH4R-
+0FkbRk0O_D	F4R-
+8CMlkF8D
+C
+

@@ -1,0 +1,16 @@
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe  -prodtype synplify_premier -encrypt  -pro  -part xc3s250etq144-4   -maxfan 100  -m1  -pipe   -fixgatedclocks 3 -fixgeneratedclocks 3         -fast_synthesis 0  -do_enhanced_opt    -reporting_ctd 0 -top_level_module  Key4x4  -ta_num_paths 0  -ta_num_points 0  -oedif  D:\FPGALab\product\Lab6\Project\Key4x4.edn  -conchk_prepass  D:\FPGALab\product\Lab6\Project\Key4x4_cck_prepass.rpt  -autoconstraint  -freq 1.000  -tcl  D:\FPGALab\product\Lab6\Project\Key4x4.sdc  D:\FPGALab\product\Lab6\Project\Key4x4.srs  -flow prepass  -gcc_prepass  -osrd  D:\FPGALab\product\Lab6\Project\synwork\Key4x4_premapping.srd  -qsap  D:\FPGALab\product\Lab6\Project\Key4x4.sap  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v  -ena_vif  D:\FPGALab\product\Lab6\Project\verif\Key4x4.vif  -ologparam  D:\FPGALab\product\Lab6\Project\syntmp\Key4x4.plg  -osyn  D:\FPGALab\product\Lab6\Project\synwork\Key4x4_premapping.srd  -prjdir D:\FPGALab\product\Lab6\Project\  -log  D:\FPGALab\product\Lab6\Project\synlog\Key4x4_premapping.srr 
+rc:0 success:1
+D:\FPGALab\product\Lab6\Project\Key4x4.edn|o|0|0
+D:\FPGALab\product\Lab6\Project\Key4x4_cck_prepass.rpt|o|0|0
+D:\FPGALab\product\Lab6\Project\Key4x4.sdc|i|1541596846|0
+D:\FPGALab\product\Lab6\Project\Key4x4.srs|i|1542248910|19480
+D:\FPGALab\product\Lab6\Project\synwork\Key4x4_premapping.srd|o|1542248912|26552
+D:\FPGALab\product\Lab6\Project\Key4x4.sap|o|1542248912|11824
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v|i|1304943026|948675
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v|i|1310477882|1053112
+D:\FPGALab\product\Lab6\Project\verif\Key4x4.vif|o|1542248912|1285
+D:\FPGALab\product\Lab6\Project\syntmp\Key4x4.plg|o|1542248911|0
+D:\FPGALab\product\Lab6\Project\synwork\Key4x4_premapping.srd|o|1542248912|26552
+D:\FPGALab\product\Lab6\Project\synlog\Key4x4_premapping.srr|o|1542248912|1244
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe|i|1306154528|23379968
+C:\Synopsys\fpga_E201103SP2\bin\m_xilinx.exe|i|1306154386|18460672
