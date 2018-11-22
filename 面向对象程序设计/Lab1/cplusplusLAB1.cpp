@@ -65,13 +65,14 @@ ostream& operator << (ostream &out, MyArray &obj) //重载流插入运算符
 istream& operator >> (istream &in, MyArray &obj)  //重载流提取运算符
 {
 	in >> obj.seq[obj.len]; //将新元素加入对象数组中
+  
   while(cin.fail())          //输入引发cin异常
   {
     cout << "Error. Please input again: ";  //输出错误信息
     cin.clear();                            //先清除异常状态
     cin.ignore(999, '\n');                  //再清理缓冲区，清理999个字符或者碰到'\n'
 
-	  in >> obj.seq[obj.len];                 //再次接受新元素
+	  cin >> obj.seq[obj.len];                 //再次接受新元素
   }
   cin.ignore(999, '\n');                  //再清理缓冲区，清理999个字符或者碰到'\n'
 

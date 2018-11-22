@@ -1,0 +1,139 @@
+C51 COMPILER V8.08   MAIN                                                                  11/20/2018 20:44:07 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\main.obj
+COMPILER INVOKED BY: E:\NewKeil\C51\BIN\C51.EXE ..\Code\main.c BROWSE INCDIR(..\Code) DEBUG OBJECTEXTEND PRINT(.\main.ls
+                    -t) OBJECT(.\main.obj)
+
+line level    source
+
+   1          #include "STC12C5A60S2.h"
+   2          
+   3          sbit LED1 = P2^4;         //定义LED1的引脚P2.4
+   4          sbit LED2 =     P2^5;     //定义LED2的引脚P2.5
+   5          sbit LED3 =     P2^6;     //定义LED3的引脚P2.6
+   6          sbit LED4 =     P2^7;     //定义LED4的引脚P2.7
+   7          sbit Beep = P1^0;
+   8          
+   9          void PERIPHERAL_Init()
+  10          {
+  11   1              P1M0 = 0x01;
+  12   1              LED1 = 1;
+  13   1              LED2 = 1;
+  14   1              LED3 = 1;
+  15   1              LED4 = 1;
+  16   1              Beep = 0;
+  17   1      }
+  18          
+  19          void ISR_Init()
+  20          {
+  21   1              IT0 = 0;
+  22   1              PX0 = 0;  //外部中断优先级设置
+  23   1              PX0 = 0;
+  24   1              EX0 = 1;
+  25   1              EA =  1;
+  26   1      }
+  27          
+  28          void TIMER_Init()         //初始化定时器
+  29          { 
+  30   1      
+  31   1                      
+  32   1              EA = 1;                 //打开中断允许总控制    
+  33   1              ET0 = 1;            //打开定时器0中断
+  34   1              PT0 = 0;                //定时器中断优先级设置
+  35   1              TMOD = 0x01;    //设置定时器模式为16位定时器
+  36   1              TF0 = 0;                //清楚标志
+  37   1              TH0 = 0xDC;             //定时器0的高八位
+  38   1              TL0 = 0x00;         //定时器0的低八位
+  39   1              TR0 = 1;            //开始计时
+  40   1      }
+  41          
+  42          void LED_RUN()
+  43          {
+  44   1              static unsigned char status = 0;        //函数内部静态变量用来存放状态
+  45   1      
+  46   1              switch(status)
+  47   1              {
+  48   2                      case 0:
+  49   2                              LED1 = ~LED1;    //LED1取反
+  50   2                              break;
+  51   2                      case 1:
+  52   2                              LED2 = ~LED2;    //LED2取反
+  53   2                              break;
+  54   2                      case 2:                      
+C51 COMPILER V8.08   MAIN                                                                  11/20/2018 20:44:07 PAGE 2   
+
+  55   2                              LED3 = ~LED3;    //LED3取反
+  56   2                              break;
+  57   2                      case 3:
+  58   2                              LED4 = ~LED4;    //LED4取反
+  59   2                              break;
+  60   2              }
+  61   1      
+  62   1              status++;               //状态加1
+  63   1              
+  64   1              if(status > 3)  //如果状态溢出
+  65   1              {
+  66   2                      status = 0; //重置状态
+  67   2              }
+  68   1      }
+  69          
+  70          void INT0_ISR()interrupt 0
+  71          {
+  72   1              unsigned long int i;
+  73   1      
+  74   1              Beep = 0;
+  75   1              for(i = 0; i < 50000; i++);
+  76   1              Beep = 1;       
+  77   1              for(i = 0; i < 50000; i++);
+  78   1              Beep = 0;
+  79   1              for(i = 0; i < 50000; i++);
+  80   1              Beep = 1;
+  81   1              for(i = 0; i < 50000; i++);
+  82   1              Beep = 0;
+  83   1      }
+  84          
+  85          void INT1_TIMER0() interrupt 1                          //定时器0中断
+  86          {
+  87   1              static unsigned char counter = 0;   //静态变量counter
+  88   1      
+  89   1              TF0 = 0;                                                    //清楚标志
+  90   1              TH0 = 0xDC;                                                     //定时器0的高八位
+  91   1              TL0 = 0x00;                                                 //定时器0的低八位
+  92   1              TR0 = 1;                                                        //开始计时
+  93   1      
+  94   1              counter++;                                                  //计时器加1
+  95   1              if(counter >= 100)                                  //计数器加到100
+  96   1              {
+  97   2                      LED_RUN();
+  98   2                      counter = 0;                            //计数器counter清零
+  99   2              }
+ 100   1      }
+ 101          
+ 102          void main()
+ 103          {
+ 104   1              PERIPHERAL_Init();
+ 105   1              ISR_Init();
+ 106   1              TIMER_Init();  //初始化定时器
+ 107   1              
+ 108   1              while(1)           //死循环
+ 109   1              {
+ 110   2              } 
+ 111   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    422    ----
+   CONSTANT SIZE    =   ----    ----
+C51 COMPILER V8.08   MAIN                                                                  11/20/2018 20:44:07 PAGE 3   
+
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2       4
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
