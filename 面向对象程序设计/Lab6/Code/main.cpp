@@ -1,18 +1,15 @@
 #include <iostream>
+#include "circle.h"
 using namespace std;
 
 int main()
 {
-  short choice;
+	CCircle a, b(2.5,0,0,"circle1"), c(1, 1, 0, "circle2");
+	CCircle d(c);
+	b.printCircle();
+	c.printCircle();
+	cout << "�ص����:" << b.getOverlapArea(c) << endl;
+	cout << "ƽ�����: " << CCircle::getAverageArea() << endl;
 
-  cout << "本餐厅提供：" << endl;
-  cout << "1、米饭 2.5/两" << endl;
-  cout << "2、芋头 3.0/个" << endl;
-  cout << "3、已吃饱，退出" << endl;
-  cout << "请选择——";
-  cin >> choice;
-  cout << choice << endl;
-
-  system("pause");
-  return 0;
+	return 0;
 }
