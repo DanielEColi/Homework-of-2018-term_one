@@ -1,0 +1,104 @@
+fsm_options -device {pr_state[0:7]}
+
+define_state s_rst 00000001 {d:\fpgalab\product\lab7\code\statemachine.vhd} 36 2 36 14
+state_output s_rst {pr_state[7]} 1
+
+define_state s_38h 00000010 {d:\fpgalab\product\lab7\code\statemachine.vhd} 47 2 47 14
+state_output s_38h {pr_state[6]} 1
+
+define_state s_08h 00000100 {d:\fpgalab\product\lab7\code\statemachine.vhd} 58 2 58 14
+state_output s_08h {pr_state[5]} 1
+
+define_state s_01h 00001000 {d:\fpgalab\product\lab7\code\statemachine.vhd} 69 2 69 14
+state_output s_01h {pr_state[4]} 1
+
+define_state s_06h 00010000 {d:\fpgalab\product\lab7\code\statemachine.vhd} 80 2 80 14
+state_output s_06h {pr_state[3]} 1
+
+define_state s_0ch 00100000 {d:\fpgalab\product\lab7\code\statemachine.vhd} 91 2 91 14
+state_output s_0ch {pr_state[2]} 1
+
+define_state s_addr 01000000 {d:\fpgalab\product\lab7\code\statemachine.vhd} 102 2 102 15
+state_output s_addr {pr_state[1]} 1
+
+define_state s_write 10000000 {d:\fpgalab\product\lab7\code\statemachine.vhd} 113 2 113 16
+state_output s_write {pr_state[0]} 1
+
+fsm_options -resetState s_rst
+
+define_transition s_write s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --000000000-}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----------1-}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --1---------}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---------1--}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ------1-----}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----1------}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----1-------}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---1--------}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --------1---}
+define_transition s_addr s_write {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -------1----}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----------1-}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --1---------}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---------1--}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ------1-----}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----1------}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----1-------}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---1--------}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --------1---}
+define_transition s_write s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -------1----}
+define_transition s_addr s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --000000000-}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----------1-}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --1---------}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---------1--}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ------1-----}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----1------}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----1-------}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---1--------}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --------1---}
+define_transition s_0ch s_addr {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -------1----}
+define_transition s_0ch s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --000000000-}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----------1-}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --1---------}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---------1--}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ------1-----}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----1------}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----1-------}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---1--------}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --------1---}
+define_transition s_06h s_0ch {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -------1----}
+define_transition s_06h s_06h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --000000000-}
+define_transition s_01h s_06h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --------111-}
+define_transition s_01h s_06h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -------1-11-}
+define_transition s_01h s_06h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----111--11-}
+define_transition s_01h s_06h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---1-11--11-}
+define_transition s_01h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---------0--}
+define_transition s_01h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----------0-}
+define_transition s_01h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----0-00---}
+define_transition s_01h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ------000---}
+define_transition s_01h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---00--00---}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----------1-}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --1---------}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---------1--}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ------1-----}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----1------}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----1-------}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---1--------}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --------1---}
+define_transition s_08h s_01h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -------1----}
+define_transition s_08h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --000000000-}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----------1-}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --1---------}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---------1--}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ------1-----}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----1------}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ----1-------}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = ---1--------}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --------1---}
+define_transition s_38h s_08h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -------1----}
+define_transition s_38h s_38h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = --000000000-}
+define_transition s_rst s_38h {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----------0}
+define_transition s_rst s_rst {s_cnt[0],s_cnt[1],s_cnt[2],s_cnt[3],s_cnt[4],s_cnt[5],s_cnt[6],s_cnt[7],s_cnt[8],s_cnt[9],s_cnt[10],un13_s_cnt = -----------1}
+fsm_options -SRSPath {D:\FPGALab\product\Lab7\Project\StateMachine.srs}
+fsm_options -SRSTime 1542851287
+fsm_options -FSMPath {pr_state[0:7]}
+fsm_options -view {ScratchLib.cell2.netlist|i:pr_state[0:7]}
+fsm_options -ID {1262261}

@@ -1,0 +1,159 @@
+%%% protect protected_file
+@E
+@ 
+# Created by Synplify VHDL Compiler version comp550rcp1, Build 072R from Synplicity, Inc.
+# Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+# Synthesis Netlist written on Thu Nov 22 09:48:07 2018
+#
+#
+#OPTIONS:"|-mixedhdl|-top|StateMachine|-layerid|0|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab7\\Code\\StateMachine.vhd":1542851284
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd"; # file 0
+af .is_vhdl 1;
+f "D:\FPGALab\product\Lab7\Code\StateMachine.vhd"; # file 1
+af .is_vhdl 1;
+f "C:\Synopsys\fpga_E201103SP2\lib\vhd\std1164.vhd"; # file 2
+af .is_vhdl 1;
+@E
+@ 
+ftell;
+@E@MR@c4::c(::R4UI	FsRN100NCvOMEHC0RsDN;
+PHR3#8PED;R4
+RNP3_H#PDE8R
+4;N3PR#_$MVblNRF"Is\	R"\7:\twuqLpN\s\bFO8k0p\\N\L(\8BFC1\\0CN0vENOH3MCP\E8";
+"
+RNP3HFsolhNC1R"0CN0vENOH"MC;
+
+
+
+@HR@g4::g.::OnRDH	_R	OD_
+H;N3HRs_0DFosHMCNlRD"O	"_H;
+
+
+
+@HR@44:j::.4Uj:R0s#_HM_R0s#_HM_;H
+NR03sDs_FHNoMl"CRs_#0M"_H;
+
+
+
+@FR@44:c::.44c:4ORD8N_80FN_rj(:9ORD8N_80FN__d4r9O,D8N_80FN__d4r9O,D8N_80FN__d4r9O,D8N_80FN__d4r9O,D8N_80FN__d4r:;j9
+RNH3Ds0_HFsolMNCDR"O88_N_0NF
+";b@R@4n:.:..:nR:dHRMPk_M4s_#0MR_Hk_M4s_#0MR_Hs_#0M;_H
+@bR@d4:6::.d66:RPHMR4kM__bs#00NCMRk4s_b_N#00bCRs0_#Nr0C(
+9;b@R@j::44::4.sR0k0CRsRkC0Csk;R
+b@:@j4::44R:.V#NDCNRVDR#CV#NDCb;
+R4@@::d6.6:d:b6RlRkGD_O88NN0_.F_rj.:9ORD8N_80FN__..r:Rj9V#NDCN,VD,#CV#NDCs,b_N#00(Cr9R
+RRNRVD,#CV#NDCs,0kbC,s0_#Nr0CnV9RNCD#,k0sCN,VD,#Cb#s_0CN0rR69V#NDCs,0k0C,s,kCb#s_0CN0r
+c9RRRR0Csk,DVN#VC,NCD#,_bs#00NC9rdRk0sCN,VD,#C0Csk,_bs#00NC9r.Rk0sCs,0kVC,NCD#,_bs#00NC9r4
+RRRRk0sCs,0k0C,s,kCb#s_0CN0r;j9
+@bR@64:4::n644:c0RDR.kMU__#ORM0kUM._O#_M#0R_0OMr:4jjV9RNCD#,DVN#VC,NCD#,DVN#VC,NCD#,DVN#VC,NCD#,DVN#0C,s,kCV#NDCN,VD;#C
+@bR@(4:d::n(4d:(0RDR6kM(__#ORM0k(M6_O#_M#0R_0OMr:4jj09Rs,kC0Csk,DVN#VC,NCD#,k0sCs,0kVC,NCD#,k0sCN,VD,#CV#NDCN,VD;#C
+@bR@d4:Ud:4::dU.N4R8k8RM#.__0OMr:..dR.9k_M.#M_O0.r.:9d.RO#_M40rj9:jRk0sCb;
+R4@@::6cgc:6:R4UNPM8RO#_Mj0__l#JkRGN#M_O0__j#kJlGkNRMb4_s0_#NR0CkUM._O#_M
+0;b@R@4n:(:(g:n4:.R8NMP_R#O_M0jJ_#lNkG_#4R_0OM_#j_JGlkNR_4k(M6_O#_Mb0Rs0_#Nr0Cc
+9;b@R@46:d:d.:6R:6FRsPk_M4#M_O0__j#kJlGkNRM#4__0OM_#j_JGlkN_R#O_M0jJ_#lNkG_R.
+R#RR_0OM_#j_JGlkN_R#O_M0jJ_#lNkG_
+4;b@R@46:d:d.:6R:6DRN0D_O88NN0_4F_rjd:9ORD8N_80FN__d4r:Rj9V#NDCO,D8N_80FN__..r:
+j9RRRRk_M4#M_O0__j#kJlG
+N;N3HRFosH_8IH0UER;H
+NR03sDs_FHNoMl"CRD_O88NN0_;F"
+@bR@d4:6::.d66:RGlkRO#_M40rj9:jRO#_M40rj9:jRDVN#VC,NCD#,DVN#VC,NCD#,DVN#VC,NCD#,DVN#VC,NCD#,DVN#VC,NCD#,DVN#RC
+RkRRM#.__0OMr:..dR.9k_M4#M_O0__j#kJlG
+N;b@R@4j:c:cn:j(:4RRD0kdM4_O#_Mk0RM_4d#M_O0_R#OrM04jj:9sR0kVC,NCD#,k0sCs,0k0C,s,kCV#NDCs,0k0C,s,kC0Csk,DVN#VC,NCD#;R
+#@:@4..n:::.ndsRb_N#00jCr:R(9y0R#NR0ClENOH
+MC3N#00RC#jjjjj4jjRjjjj4jjjjRjj4jjjjjRj4jjjRjjj4jjjjjjR4jjjjjjj4Rjjjjjj4jRjjjjj
+jj3N#00HC_MRVF@:@4d.n:::dn4jcRjjjjjRj4##_s0#
+30CN0_VHMF@R@4(:c:c.:(c:4Rjjjj4jjj_R#d
+UE3N#00HC_MRVF@:@46.U:::6U4jcRjjjj4Rjj#U_jE#
+30CN0_VHMF@R@4g:n:n.:gc:4Rjjjjj4jj_R#j
+4E3N#00HC_MRVF@:@4U.j:::Uj4jcRjjj4jRjj#n_jE#
+30CN0_VHMF@R@44:g:g.:4c:4R4jjjjjjj_R#j
+OE3N#00HC_MRVF@:@44:j..j:4.6:4Rjj4jjjjj_R#Ns88
+03#N_0CHFMVR4@@:d44:4.:44d:njR4jjjjj#jR_HIs03C
+HkMb0lMNC##R_0OMrRj9#M_O09r4RO#_M.0r9_R#OrM0d#9R_0OMrRc9#M_O09r6RO#_Mn0r9_R#OrM0(39
+HkMb0lMNC##R_0OMrRU9#M_O09rgRO#_M40rjk9RM_4d#M_O0O
+3D	FOR	OD_sHRHM#Ho8_Co3C
+NM#$OC_s#RC0k_M4s_#0MR_HsHH#MjoRjjjjj
+j4-j-jjjjjj-jjRj4jjjjjjjR4jjjjj
+jR-----------4Rjj4jjjjjjR4jjjjj
+jR---4--------Rjj4jjjjjjR4jjjjj
+jR----------4-Rjj4jjjjjjR4jjjjj
+jR-------4----Rjj4jjjjjjR4jjjjj
+jR------4-----Rjj4jjjjjjR4jjjjj
+jR----4-------Rjj4jjjjjjR4jjjjj
+jR-4----------Rjj4jjjjjjR4jjjjj
+jR--------4---Rjj4jjjjjjR4jjjjj
+jR-----4------Rjj4jjjjjjR4jjjjj
+jR-----------4Rj4jjjjjj4Rjjjjjj
+jR---4--------Rj4jjjjjj4Rjjjjjj
+jR----------4-Rj4jjjjjj4Rjjjjjj
+jR-------4----Rj4jjjjjj4Rjjjjjj
+jR------4-----Rj4jjjjjj4Rjjjjjj
+jR----4-------Rj4jjjjjj4Rjjjjjj
+jR-4----------Rj4jjjjjj4Rjjjjjj
+jR--------4---Rj4jjjjjj4Rjjjjjj
+jR-----4------Rj4jjjjjj4Rjjjjjj
+jR-j-jjjjjj-jjRjj4jjjjj4Rjjjjjj
+jR-----------4R4jjjjjjj4Rjjjjjj
+jR---4--------R4jjjjjjj4Rjjjjjj
+jR----------4-R4jjjjjjj4Rjjjjjj
+jR-------4----R4jjjjjjj4Rjjjjjj
+jR------4-----R4jjjjjjj4Rjjjjjj
+jR----4-------R4jjjjjjj4Rjjjjjj
+jR-4----------R4jjjjjjj4Rjjjjjj
+jR--------4---R4jjjjjjj4Rjjjjjj
+jR-----4------R4jjjjjjj4Rjjjjjj
+jR-j-jjjjjj-jjR4jjjjjjjjRj4jjjj
+jR-----------4Rjjj4jjjjjRj4jjjj
+jR---4--------Rjjj4jjjjjRj4jjjj
+jR----------4-Rjjj4jjjjjRj4jjjj
+jR-------4----Rjjj4jjjjjRj4jjjj
+jR------4-----Rjjj4jjjjjRj4jjjj
+jR----4-------Rjjj4jjjjjRj4jjjj
+jR-4----------Rjjj4jjjjjRj4jjjj
+jR--------4---Rjjj4jjjjjRj4jjjj
+jR-----4------Rjjj4jjjjjRj4jjjj
+jR-j-jjjjjj-jjRjjj4jjjjjRjjj4jj
+jR--------4-44Rjjjjj4jjjRjjj4jj
+jR-----4----44Rjjjjj4jjjRjjj4jj
+jR----4-44--44Rjjjjj4jjjRjjj4jj
+jR-4----44--44Rjjjjj4jjjRjjj4jj
+jR----------j-Rjjjjj4jjjRjjjj4j
+jR-----------jRjjjjj4jjjRjjjj4j
+jR-----jj-j---Rjjjjj4jjjRjjjj4j
+jR-----j-jj---Rjjjjj4jjjRjjjj4j
+jR-j--jj--j---Rjjjjj4jjjRjjjj4j
+jR-----------4Rjjjjjj4jjRjjjj4j
+jR---4--------Rjjjjjj4jjRjjjj4j
+jR----------4-Rjjjjjj4jjRjjjj4j
+jR-------4----Rjjjjjj4jjRjjjj4j
+jR------4-----Rjjjjjj4jjRjjjj4j
+jR----4-------Rjjjjjj4jjRjjjj4j
+jR-4----------Rjjjjjj4jjRjjjj4j
+jR--------4---Rjjjjjj4jjRjjjj4j
+jR-----4------Rjjjjjj4jjRjjjj4j
+jR-j-jjjjjj-jjRjjjjjj4jjRjj4jjj
+jR-----------4Rjjjj4jjjjRjj4jjj
+jR---4--------Rjjjj4jjjjRjj4jjj
+jR----------4-Rjjjj4jjjjRjj4jjj
+jR-------4----Rjjjj4jjjjRjj4jjj
+jR------4-----Rjjjj4jjjjRjj4jjj
+jR----4-------Rjjjj4jjjjRjj4jjj
+jR-4----------Rjjjj4jjjjRjj4jjj
+jR--------4---Rjjjj4jjjjRjj4jjj
+jR-----4------Rjjjj4jjjjRjj4jjj
+jR-j-jjjjjj-jjRjjjj4jjjjRjjjjj4
+jR---------j--Rjjjjjjj4jRjjjjj4
+jR---------4--Rjjjjjjj4jRjjjjjj
+4R;RRyCRM8F#VR0CN0ROlNECHM
+RNH3Ds0CF_0R
+4;N#HR$VM_#Hl_84R"..n.n;4"
+RNH3Ds0_HFsolMNCbR"s0_#N"0C;R
+b@:@4cgd:::cd.N4RMR8P#M_O0__j#kJlG.N_RO#_Mj0__l#Jk_GN.MRk4#d__0OMR_bs#00NC9r(;
+
+
+

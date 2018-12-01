@@ -1,0 +1,628 @@
+Synopsys Xilinx Technology Mapper, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+Warning: Found 13 combinational loops!
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":54:9:54:18|Found combinational loop during mapping at net s_cnt_0_sqmuxa
+1) instance work.StateMachine(rtl)-s_cnt_0_sqmuxa, output net "s_cnt_0_sqmuxa" in work.StateMachine(rtl)
+    net        s_cnt_0_sqmuxa
+    input  pin un1_s_cnt_0_sqmuxa/I[0]
+    instance   un1_s_cnt_0_sqmuxa (cell or)
+    output pin un1_s_cnt_0_sqmuxa/OUT
+    net        N_28
+    input  pin s_cnt[10:0]/SEL
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[0]
+    net        s_cnt[0]
+    input  pin un28_s_cnt/A[0]
+    instance   un28_s_cnt (cell lt)
+    output pin un28_s_cnt/OUT
+    net        N_14
+    input  pin s_cnt_0_sqmuxa/I[1]
+    instance   s_cnt_0_sqmuxa (cell and)
+    output pin s_cnt_0_sqmuxa/OUT
+    net        s_cnt_0_sqmuxa
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[0]
+2) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[0]" in work.StateMachine(rtl)
+    net        s_cnt[0]
+    input  pin un57_s_cnt/A[0]
+    instance   un57_s_cnt (cell lt)
+    output pin un57_s_cnt/OUT
+    net        N_39
+    input  pin s_cnt_0_sqmuxa_1/I[1]
+    instance   s_cnt_0_sqmuxa_1 (cell and)
+    output pin s_cnt_0_sqmuxa_1/OUT
+    net        s_cnt_0_sqmuxa_1
+    input  pin un1_s_cnt_0_sqmuxa/I[1]
+    instance   un1_s_cnt_0_sqmuxa (cell or)
+    output pin un1_s_cnt_0_sqmuxa/OUT
+    net        N_28
+    input  pin s_cnt[10:0]/SEL
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[0]
+    net        s_cnt[0]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net N_28
+3) instance work.StateMachine(rtl)-un1_s_cnt_0_sqmuxa, output net "N_28" in work.StateMachine(rtl)
+    net        N_28
+    input  pin s_cnt[10:0]/SEL
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[1]
+    net        s_cnt[1]
+    input  pin un57_s_cnt/A[1]
+    instance   un57_s_cnt (cell lt)
+    output pin un57_s_cnt/OUT
+    net        N_39
+    input  pin s_cnt_0_sqmuxa_1/I[1]
+    instance   s_cnt_0_sqmuxa_1 (cell and)
+    output pin s_cnt_0_sqmuxa_1/OUT
+    net        s_cnt_0_sqmuxa_1
+    input  pin un1_s_cnt_0_sqmuxa/I[1]
+    instance   un1_s_cnt_0_sqmuxa (cell or)
+    output pin un1_s_cnt_0_sqmuxa/OUT
+    net        N_28
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[1]
+4) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[1]" in work.StateMachine(rtl)
+    net        s_cnt[1]
+    input  pin un2_s_cnt_1.SUM1/I[1]
+    instance   un2_s_cnt_1.SUM1 (cell xor)
+    output pin un2_s_cnt_1.SUM1/OUT
+    net        N_4
+    input  pin s_cnt[10:0]/B[1]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[1]
+    net        s_cnt[1]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[2]
+5) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[2]" in work.StateMachine(rtl)
+    net        s_cnt[2]
+    input  pin un2_s_cnt_1.SUM2/I[1]
+    instance   un2_s_cnt_1.SUM2 (cell xor)
+    output pin un2_s_cnt_1.SUM2/OUT
+    net        N_5
+    input  pin s_cnt[10:0]/B[2]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[2]
+    net        s_cnt[2]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[3]
+6) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[3]" in work.StateMachine(rtl)
+    net        s_cnt[3]
+    input  pin un2_s_cnt_1.SUM3/I[1]
+    instance   un2_s_cnt_1.SUM3 (cell xor)
+    output pin un2_s_cnt_1.SUM3/OUT
+    net        N_6
+    input  pin s_cnt[10:0]/B[3]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[3]
+    net        s_cnt[3]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[4]
+7) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[4]" in work.StateMachine(rtl)
+    net        s_cnt[4]
+    input  pin un2_s_cnt_1.SUM4/I[1]
+    instance   un2_s_cnt_1.SUM4 (cell xor)
+    output pin un2_s_cnt_1.SUM4/OUT
+    net        N_7
+    input  pin s_cnt[10:0]/B[4]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[4]
+    net        s_cnt[4]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[5]
+8) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[5]" in work.StateMachine(rtl)
+    net        s_cnt[5]
+    input  pin un2_s_cnt_1.SUM5/I[1]
+    instance   un2_s_cnt_1.SUM5 (cell xor)
+    output pin un2_s_cnt_1.SUM5/OUT
+    net        N_8
+    input  pin s_cnt[10:0]/B[5]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[5]
+    net        s_cnt[5]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[6]
+9) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[6]" in work.StateMachine(rtl)
+    net        s_cnt[6]
+    input  pin un2_s_cnt_1.SUM6/I[1]
+    instance   un2_s_cnt_1.SUM6 (cell xor)
+    output pin un2_s_cnt_1.SUM6/OUT
+    net        N_9
+    input  pin s_cnt[10:0]/B[6]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[6]
+    net        s_cnt[6]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[7]
+10) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[7]" in work.StateMachine(rtl)
+    net        s_cnt[7]
+    input  pin un2_s_cnt_1.SUM7/I[1]
+    instance   un2_s_cnt_1.SUM7 (cell xor)
+    output pin un2_s_cnt_1.SUM7/OUT
+    net        N_10
+    input  pin s_cnt[10:0]/B[7]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[7]
+    net        s_cnt[7]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[8]
+11) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[8]" in work.StateMachine(rtl)
+    net        s_cnt[8]
+    input  pin un2_s_cnt_1.SUM8/I[1]
+    instance   un2_s_cnt_1.SUM8 (cell xor)
+    output pin un2_s_cnt_1.SUM8/OUT
+    net        N_11
+    input  pin s_cnt[10:0]/B[8]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[8]
+    net        s_cnt[8]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[9]
+12) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[9]" in work.StateMachine(rtl)
+    net        s_cnt[9]
+    input  pin un2_s_cnt_1.SUM9/I[1]
+    instance   un2_s_cnt_1.SUM9 (cell xor)
+    output pin un2_s_cnt_1.SUM9/OUT
+    net        N_12
+    input  pin s_cnt[10:0]/B[9]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[9]
+    net        s_cnt[9]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[10]
+13) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[10]" in work.StateMachine(rtl)
+    net        s_cnt[10]
+    input  pin un2_s_cnt_1.SUM10/I[1]
+    instance   un2_s_cnt_1.SUM10 (cell xor)
+    output pin un2_s_cnt_1.SUM10/OUT
+    net        N_13
+    input  pin s_cnt[10:0]/B[10]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[10]
+    net        s_cnt[10]
+End of loops
+@N: MT206 |Autoconstrain Mode is ON
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+Encoding state machine work.StateMachine(rtl)-pr_state[0:7]
+original code -> new code
+   00000001 -> 00000001
+   00000010 -> 00000010
+   00000100 -> 00000100
+   00001000 -> 00001000
+   00010000 -> 00010000
+   00100000 -> 00100000
+   01000000 -> 01000000
+   10000000 -> 10000000
+@W: MO129 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Sequential instance lcd_data_o_1[3] has been reduced to a combinational gate by constant propagation
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Clock Buffers:
+  Inserting Clock buffer for port clk_i,
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -1.22ns		  45 /         8
+   2		0h:00m:00s		    -1.22ns		  45 /         8
+------------------------------------------------------------
+
+@N: FX271 :"d:\fpgalab\product\lab7\code\statemachine.vhd":113:2:113:16|Instance "pr_state[0]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7\code\statemachine.vhd":102:2:102:15|Instance "pr_state[1]" with 5 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 2 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+
+@N: FX271 :"d:\fpgalab\product\lab7\code\statemachine.vhd":91:2:91:14|Instance "pr_state[2]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+@N: FX271 :"d:\fpgalab\product\lab7\code\statemachine.vhd":80:2:80:14|Instance "pr_state[3]" with 4 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -1.09ns		  47 /        12
+
+   2		0h:00m:00s		    -1.09ns		  47 /        12
+   3		0h:00m:00s		    -1.09ns		  47 /        12
+   4		0h:00m:00s		    -1.09ns		  47 /        12
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -1.09ns		  47 /        12
+
+   2		0h:00m:00s		    -1.09ns		  47 /        12
+   3		0h:00m:00s		    -1.09ns		  47 /        12
+   4		0h:00m:00s		    -1.09ns		  47 /        12
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 121MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 121MB)
+
+Writing Analyst data base D:\FPGALab\product\Lab7\Project\StateMachine.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 122MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 122MB)
+
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst            Instance Port     Clock         Reason for not converting                        
+-----------------------------------------------------------------------------------------------------
+lcd_data_o_1[2]     G                 N_477_clk     Found Combination Loop involving the Gating Logic
+lcd_data_o_1[1]     G                 N_477_clk     Found Combination Loop involving the Gating Logic
+lcd_data_o_1[0]     G                 N_477_clk     Found Combination Loop involving the Gating Logic
+=====================================================================================================
+
+================= End gated clock report =================
+
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 122MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 122MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 122MB)
+
+Warning: Found 18 combinational loops!
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":113:2:113:16|Found combinational loop during mapping at net s_cnt_i_o2_0_RNI2VFG[6]
+1) instance work.StateMachine(rtl)-s_cnt_i_o2_0_RNI2VFG[6], output net "s_cnt_i_o2_0_RNI2VFG[6]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2_0_RNI2VFG[6]
+    input  pin un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM/I0
+    instance   un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM (cell LUT4)
+    output pin un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM/O
+    net        un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM
+    input  pin s_cnt_i[9]/I0
+    instance   s_cnt_i[9] (cell LUT4)
+    output pin s_cnt_i[9]/O
+    net        s_cnt_i[9]
+    input  pin s_cnt_0_a2_RNI[10]/I0
+    instance   s_cnt_0_a2_RNI[10] (cell LUT2)
+    output pin s_cnt_0_a2_RNI[10]/O
+    net        N_277_0_i_i_o2_1
+    input  pin s_cnt_i_o2_0_RNI2VFG[6]/I0
+    instance   s_cnt_i_o2_0_RNI2VFG[6] (cell LUT4)
+    output pin s_cnt_i_o2_0_RNI2VFG[6]/O
+    net        s_cnt_i_o2_0_RNI2VFG[6]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i[9]
+2) instance work.StateMachine(rtl)-s_cnt_i[9], output net "s_cnt_i[9]" in work.StateMachine(rtl)
+    net        s_cnt_i[9]
+    input  pin pr_state_ns_i_o2_2[4]/I0
+    instance   pr_state_ns_i_o2_2[4] (cell LUT2)
+    output pin pr_state_ns_i_o2_2[4]/O
+    net        N_54
+    input  pin un1_s_cnt_0_sqmuxa_i_a2/I0
+    instance   un1_s_cnt_0_sqmuxa_i_a2 (cell LUT4)
+    output pin un1_s_cnt_0_sqmuxa_i_a2/O
+    net        N_66
+    input  pin un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM/I1
+    instance   un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM (cell LUT4)
+    output pin un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM/O
+    net        un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM
+    input  pin s_cnt_i[9]/I0
+    instance   s_cnt_i[9] (cell LUT4)
+    output pin s_cnt_i[9]/O
+    net        s_cnt_i[9]
+@W: BN137 :|Found combinational loop during mapping at net un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM
+3) instance work.StateMachine(rtl)-un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM, output net "un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM" in work.StateMachine(rtl)
+    net        un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM
+    input  pin s_cnt_0_a2[10]/I0
+    instance   s_cnt_0_a2[10] (cell LUT3)
+    output pin s_cnt_0_a2[10]/O
+    net        s_cnt_0_a2[10]
+    input  pin pr_state_ns_i_o2_2[4]/I1
+    instance   pr_state_ns_i_o2_2[4] (cell LUT2)
+    output pin pr_state_ns_i_o2_2[4]/O
+    net        N_54
+    input  pin un1_s_cnt_0_sqmuxa_i_a2/I0
+    instance   un1_s_cnt_0_sqmuxa_i_a2 (cell LUT4)
+    output pin un1_s_cnt_0_sqmuxa_i_a2/O
+    net        N_66
+    input  pin un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM/I1
+    instance   un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM (cell LUT4)
+    output pin un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM/O
+    net        un1_s_cnt_0_sqmuxa_i_a2_RNIQ3KM
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_0_a2[0]
+4) instance work.StateMachine(rtl)-s_cnt_0_a2[0], output net "s_cnt_0_a2[0]" in work.StateMachine(rtl)
+    net        s_cnt_0_a2[0]
+    input  pin s_cnt_0_a2[0]/I0
+    instance   s_cnt_0_a2[0] (cell LUT2)
+    output pin s_cnt_0_a2[0]/O
+    net        s_cnt_0_a2[0]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_0_a2_RNI[0]
+5) instance work.StateMachine(rtl)-s_cnt_0_a2_RNI[0], output net "s_cnt_0_a2_RNI[0]" in work.StateMachine(rtl)
+    net        s_cnt_0_a2_RNI[0]
+    input  pin s_cnt_0_a2_RNI[0]/I2
+    instance   s_cnt_0_a2_RNI[0] (cell LUT3)
+    output pin s_cnt_0_a2_RNI[0]/O
+    net        s_cnt_0_a2_RNI[0]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2[2]
+6) instance work.StateMachine(rtl)-s_cnt_i_o2[2], output net "s_cnt_i_o2[2]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2[2]
+    input  pin s_cnt_i_o2_RNI_0[2]/I1
+    instance   s_cnt_i_o2_RNI_0[2] (cell LUT4)
+    output pin s_cnt_i_o2_RNI_0[2]/O
+    net        N_20_i
+    input  pin s_cnt_i_o2_RNI_2[2]/I
+    instance   s_cnt_i_o2_RNI_2[2] (cell INV)
+    output pin s_cnt_i_o2_RNI_2[2]/O
+    net        s_cnt_i_o2_RNI_3[2]
+    input  pin s_cnt_i_o2[2]/I0
+    instance   s_cnt_i_o2[2] (cell LUT3)
+    output pin s_cnt_i_o2[2]/O
+    net        s_cnt_i_o2[2]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2_RNI_3[2]
+7) instance work.StateMachine(rtl)-s_cnt_i_o2_RNI_2[2], output net "s_cnt_i_o2_RNI_3[2]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2_RNI_3[2]
+    input  pin s_cnt_i_o2_RNI_0[2]/I2
+    instance   s_cnt_i_o2_RNI_0[2] (cell LUT4)
+    output pin s_cnt_i_o2_RNI_0[2]/O
+    net        N_20_i
+    input  pin s_cnt_i_o2_RNI_2[2]/I
+    instance   s_cnt_i_o2_RNI_2[2] (cell INV)
+    output pin s_cnt_i_o2_RNI_2[2]/O
+    net        s_cnt_i_o2_RNI_3[2]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2[3]
+8) instance work.StateMachine(rtl)-s_cnt_i_o2[3], output net "s_cnt_i_o2[3]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2[3]
+    input  pin s_cnt_i_o2_RNI[2]/I2
+    instance   s_cnt_i_o2_RNI[2] (cell LUT4)
+    output pin s_cnt_i_o2_RNI[2]/O
+    net        s_cnt_i_o2_RNI[2]
+    input  pin s_cnt_i_o2[3]/I1
+    instance   s_cnt_i_o2[3] (cell LUT2)
+    output pin s_cnt_i_o2[3]/O
+    net        s_cnt_i_o2[3]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2_RNI[2]
+9) instance work.StateMachine(rtl)-s_cnt_i_o2_RNI[2], output net "s_cnt_i_o2_RNI[2]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2_RNI[2]
+    input  pin s_cnt_i_o2_RNI[2]/I3
+    instance   s_cnt_i_o2_RNI[2] (cell LUT4)
+    output pin s_cnt_i_o2_RNI[2]/O
+    net        s_cnt_i_o2_RNI[2]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2[4]
+10) instance work.StateMachine(rtl)-s_cnt_i_o2[4], output net "s_cnt_i_o2[4]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2[4]
+    input  pin s_cnt_i_o2_RNI[3]/I1
+    instance   s_cnt_i_o2_RNI[3] (cell LUT4)
+    output pin s_cnt_i_o2_RNI[3]/O
+    net        s_cnt_i_o2_RNI[3]
+    input  pin s_cnt_i_o2[4]/I1
+    instance   s_cnt_i_o2[4] (cell LUT2)
+    output pin s_cnt_i_o2[4]/O
+    net        s_cnt_i_o2[4]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2_RNI[3]
+11) instance work.StateMachine(rtl)-s_cnt_i_o2_RNI[3], output net "s_cnt_i_o2_RNI[3]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2_RNI[3]
+    input  pin s_cnt_i_o2_RNI[3]/I3
+    instance   s_cnt_i_o2_RNI[3] (cell LUT4)
+    output pin s_cnt_i_o2_RNI[3]/O
+    net        s_cnt_i_o2_RNI[3]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2_RNI[4]
+12) instance work.StateMachine(rtl)-s_cnt_i_o2_RNI[4], output net "s_cnt_i_o2_RNI[4]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2_RNI[4]
+    input  pin s_cnt_i_o2_RNI[4]/I1
+    instance   s_cnt_i_o2_RNI[4] (cell LUT3)
+    output pin s_cnt_i_o2_RNI[4]/O
+    net        s_cnt_i_o2_RNI[4]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_a2_RNIJ2VG[6]
+13) instance work.StateMachine(rtl)-s_cnt_i_a2_RNIJ2VG[6], output net "s_cnt_i_a2_RNIJ2VG[6]" in work.StateMachine(rtl)
+    net        s_cnt_i_a2_RNIJ2VG[6]
+    input  pin s_cnt_i_a2[6]/I1
+    instance   s_cnt_i_a2[6] (cell LUT2)
+    output pin s_cnt_i_a2[6]/O
+    net        N_81
+    input  pin s_cnt_i_a2_RNIJ2VG[6]/I0
+    instance   s_cnt_i_a2_RNIJ2VG[6] (cell LUT4)
+    output pin s_cnt_i_a2_RNIJ2VG[6]/O
+    net        s_cnt_i_a2_RNIJ2VG[6]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2[6]
+14) instance work.StateMachine(rtl)-s_cnt_i_o2[6], output net "s_cnt_i_o2[6]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2[6]
+    input  pin s_cnt_i_a2_RNIJ2VG[6]/I1
+    instance   s_cnt_i_a2_RNIJ2VG[6] (cell LUT4)
+    output pin s_cnt_i_a2_RNIJ2VG[6]/O
+    net        s_cnt_i_a2_RNIJ2VG[6]
+    input  pin pr_state_ns_i_o2_1[4]/I1
+    instance   pr_state_ns_i_o2_1[4] (cell LUT2)
+    output pin pr_state_ns_i_o2_1[4]/O
+    net        N_41
+    input  pin s_cnt_i_o2[6]/I1
+    instance   s_cnt_i_o2[6] (cell LUT2)
+    output pin s_cnt_i_o2[6]/O
+    net        s_cnt_i_o2[6]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2_RNI[6]
+15) instance work.StateMachine(rtl)-s_cnt_i_o2_RNI[6], output net "s_cnt_i_o2_RNI[6]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2_RNI[6]
+    input  pin s_cnt_i_o2_RNI[6]/I1
+    instance   s_cnt_i_o2_RNI[6] (cell LUT3)
+    output pin s_cnt_i_o2_RNI[6]/O
+    net        s_cnt_i_o2_RNI[6]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i[8]
+16) instance work.StateMachine(rtl)-s_cnt_i[8], output net "s_cnt_i[8]" in work.StateMachine(rtl)
+    net        s_cnt_i[8]
+    input  pin s_cnt_i_a2[8]/I1
+    instance   s_cnt_i_a2[8] (cell LUT2)
+    output pin s_cnt_i_a2[8]/O
+    net        N_82
+    input  pin s_cnt_i[8]/I0
+    instance   s_cnt_i[8] (cell LUT4)
+    output pin s_cnt_i[8]/O
+    net        s_cnt_i[8]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_i_o2[8]
+17) instance work.StateMachine(rtl)-s_cnt_i_o2[8], output net "s_cnt_i_o2[8]" in work.StateMachine(rtl)
+    net        s_cnt_i_o2[8]
+    input  pin s_cnt_i[8]/I2
+    instance   s_cnt_i[8] (cell LUT4)
+    output pin s_cnt_i[8]/O
+    net        s_cnt_i[8]
+    input  pin s_cnt_i_o2[8]/I2
+    instance   s_cnt_i_o2[8] (cell LUT3)
+    output pin s_cnt_i_o2[8]/O
+    net        s_cnt_i_o2[8]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt_0_a2[10]
+18) instance work.StateMachine(rtl)-s_cnt_0_a2[10], output net "s_cnt_0_a2[10]" in work.StateMachine(rtl)
+    net        s_cnt_0_a2[10]
+    input  pin s_cnt_0_a2[10]/I2
+    instance   s_cnt_0_a2[10] (cell LUT3)
+    output pin s_cnt_0_a2[10]/O
+    net        s_cnt_0_a2[10]
+End of loops
+@W: MT420 |Found inferred clock StateMachine|clk_i with period 9.70ns. A user-defined clock should be declared on object "p:clk_i"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Nov 22 09:48:09 2018
+#
+
+
+Top view:               StateMachine
+Requested Frequency:    103.1 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\Lab7\Project\StateMachine.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.435
+
+                       Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock         Frequency     Frequency     Period        Period        Slack      Type         Group                
+----------------------------------------------------------------------------------------------------------------------------
+StateMachine|clk_i     103.1 MHz     89.8 MHz      9.701         11.136        -1.435     inferred     Autoconstr_clkgroup_0
+System                 1.0 MHz       NA            1000.000      NA            NA         system       system_clkgroup      
+============================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------
+Starting            Ending              |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------
+StateMachine|clk_i  System              |  No paths    -       |  No paths    -      |  9.702       6.262  |  No paths    -    
+StateMachine|clk_i  StateMachine|clk_i  |  9.702       -1.435  |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for StateMachine 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             6 uses
+FDCE            5 uses
+FDPE            1 use
+GND             1 use
+LD              3 uses
+LUT2            15 uses
+LUT3            9 uses
+LUT4            21 uses
+
+I/O ports: 10
+I/O primitives: 10
+IBUF           1 use
+IBUFG          1 use
+OBUF           8 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   12 (0%)
+Latch bits not including I/Os:      3 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+Total load per clock:
+   StateMachine|clk_i: 12
+
+Mapping Summary:
+Total  LUTs: 45 (0%)
+
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 22 09:48:09 2018
+
+###########################################################]

@@ -1,0 +1,187 @@
+Synopsys Xilinx Technology Pre-mapping, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+Reading constraint file: D:\FPGALab\product\Lab7\Project\StateMachine.sdc
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+Warning: Found 13 combinational loops!
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":51:6:51:14|Found combinational loop during mapping at net un28_s_cnt
+1) instance work.StateMachine(rtl)-un28_s_cnt, output net "un28_s_cnt" in work.StateMachine(rtl)
+    net        un28_s_cnt
+    input  pin s_cnt_0_sqmuxa/I[1]
+    instance   s_cnt_0_sqmuxa (cell and)
+    output pin s_cnt_0_sqmuxa/OUT
+    net        s_cnt_0_sqmuxa
+    input  pin un1_s_cnt_0_sqmuxa/I[0]
+    instance   un1_s_cnt_0_sqmuxa (cell or)
+    output pin un1_s_cnt_0_sqmuxa/OUT
+    net        un1_s_cnt_0_sqmuxa
+    input  pin s_cnt[10:0]/SEL
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[0]
+    net        s_cnt[0]
+    input  pin un28_s_cnt/A[0]
+    instance   un28_s_cnt (cell lt)
+    output pin un28_s_cnt/OUT
+    net        un28_s_cnt
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[0]
+2) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[0]" in work.StateMachine(rtl)
+    net        s_cnt[0]
+    input  pin un57_s_cnt/A[0]
+    instance   un57_s_cnt (cell lt)
+    output pin un57_s_cnt/OUT
+    net        un57_s_cnt
+    input  pin s_cnt_0_sqmuxa_1/I[1]
+    instance   s_cnt_0_sqmuxa_1 (cell and)
+    output pin s_cnt_0_sqmuxa_1/OUT
+    net        s_cnt_0_sqmuxa_1
+    input  pin un1_s_cnt_0_sqmuxa/I[1]
+    instance   un1_s_cnt_0_sqmuxa (cell or)
+    output pin un1_s_cnt_0_sqmuxa/OUT
+    net        un1_s_cnt_0_sqmuxa
+    input  pin s_cnt[10:0]/SEL
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[0]
+    net        s_cnt[0]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net un1_s_cnt_0_sqmuxa
+3) instance work.StateMachine(rtl)-un1_s_cnt_0_sqmuxa, output net "un1_s_cnt_0_sqmuxa" in work.StateMachine(rtl)
+    net        un1_s_cnt_0_sqmuxa
+    input  pin s_cnt[10:0]/SEL
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[1]
+    net        s_cnt[1]
+    input  pin un57_s_cnt/A[1]
+    instance   un57_s_cnt (cell lt)
+    output pin un57_s_cnt/OUT
+    net        un57_s_cnt
+    input  pin s_cnt_0_sqmuxa_1/I[1]
+    instance   s_cnt_0_sqmuxa_1 (cell and)
+    output pin s_cnt_0_sqmuxa_1/OUT
+    net        s_cnt_0_sqmuxa_1
+    input  pin un1_s_cnt_0_sqmuxa/I[1]
+    instance   un1_s_cnt_0_sqmuxa (cell or)
+    output pin un1_s_cnt_0_sqmuxa/OUT
+    net        un1_s_cnt_0_sqmuxa
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[1]
+4) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[1]" in work.StateMachine(rtl)
+    net        s_cnt[1]
+    input  pin un2_s_cnt[22:32]/D0[1]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[1]
+    net        un2_s_cnt[31]
+    input  pin s_cnt[10:0]/B[1]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[1]
+    net        s_cnt[1]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[2]
+5) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[2]" in work.StateMachine(rtl)
+    net        s_cnt[2]
+    input  pin un2_s_cnt[22:32]/D0[2]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[2]
+    net        un2_s_cnt[30]
+    input  pin s_cnt[10:0]/B[2]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[2]
+    net        s_cnt[2]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[3]
+6) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[3]" in work.StateMachine(rtl)
+    net        s_cnt[3]
+    input  pin un2_s_cnt[22:32]/D0[3]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[3]
+    net        un2_s_cnt[29]
+    input  pin s_cnt[10:0]/B[3]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[3]
+    net        s_cnt[3]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[4]
+7) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[4]" in work.StateMachine(rtl)
+    net        s_cnt[4]
+    input  pin un2_s_cnt[22:32]/D0[4]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[4]
+    net        un2_s_cnt[28]
+    input  pin s_cnt[10:0]/B[4]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[4]
+    net        s_cnt[4]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[5]
+8) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[5]" in work.StateMachine(rtl)
+    net        s_cnt[5]
+    input  pin un2_s_cnt[22:32]/D0[5]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[5]
+    net        un2_s_cnt[27]
+    input  pin s_cnt[10:0]/B[5]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[5]
+    net        s_cnt[5]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[6]
+9) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[6]" in work.StateMachine(rtl)
+    net        s_cnt[6]
+    input  pin un2_s_cnt[22:32]/D0[6]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[6]
+    net        un2_s_cnt[26]
+    input  pin s_cnt[10:0]/B[6]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[6]
+    net        s_cnt[6]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[7]
+10) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[7]" in work.StateMachine(rtl)
+    net        s_cnt[7]
+    input  pin un2_s_cnt[22:32]/D0[7]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[7]
+    net        un2_s_cnt[25]
+    input  pin s_cnt[10:0]/B[7]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[7]
+    net        s_cnt[7]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[8]
+11) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[8]" in work.StateMachine(rtl)
+    net        s_cnt[8]
+    input  pin un2_s_cnt[22:32]/D0[8]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[8]
+    net        un2_s_cnt[24]
+    input  pin s_cnt[10:0]/B[8]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[8]
+    net        s_cnt[8]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[9]
+12) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[9]" in work.StateMachine(rtl)
+    net        s_cnt[9]
+    input  pin un2_s_cnt[22:32]/D0[9]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[9]
+    net        un2_s_cnt[23]
+    input  pin s_cnt[10:0]/B[9]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[9]
+    net        s_cnt[9]
+@W: BN137 :"d:\fpgalab\product\lab7\code\statemachine.vhd":35:2:35:5|Found combinational loop during mapping at net s_cnt[10]
+13) instance work.StateMachine(rtl)-s_cnt[10:0], output net "s_cnt[10]" in work.StateMachine(rtl)
+    net        s_cnt[10]
+    input  pin un2_s_cnt[22:32]/D0[10]
+    instance   un2_s_cnt[22:32] (cell add)
+    output pin un2_s_cnt[22:32]/OUT[10]
+    net        un2_s_cnt[22]
+    input  pin s_cnt[10:0]/B[10]
+    instance   s_cnt[10:0] (cell mux)
+    output pin s_cnt[10:0]/OUT[10]
+    net        s_cnt[10]
+End of loops
+
+Finished Pre Mapping Phase. (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
+
+@N: BN225 |Writing default property annotation file D:\FPGALab\product\Lab7\Project\StateMachine.sap.
+Pre Mapping successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 22 09:48:08 2018
+
+###########################################################]

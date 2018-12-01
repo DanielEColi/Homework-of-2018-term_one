@@ -1,0 +1,6 @@
+V3 3
+FL D:/FPGALab/product/Lab7/Code/StateMachine.vhd 2018/11/22.09:54:03 P.40xd
+EN work/StateMachine 1542851658 FL D:/FPGALab/product/Lab7/Code/StateMachine.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/StateMachine/rtl 1542851659 \
+      FL D:/FPGALab/product/Lab7/Code/StateMachine.vhd EN work/StateMachine 1542851658

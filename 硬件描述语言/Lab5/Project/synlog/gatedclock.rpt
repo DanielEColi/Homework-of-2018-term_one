@@ -1,0 +1,14 @@
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst            Instance Port     Clock         Reason for not converting                        
+-----------------------------------------------------------------------------------------------------
+lcd_data_o_1[2]     G                 N_477_clk     Found Combination Loop involving the Gating Logic
+lcd_data_o_1[1]     G                 N_477_clk     Found Combination Loop involving the Gating Logic
+lcd_data_o_1[0]     G                 N_477_clk     Found Combination Loop involving the Gating Logic
+=====================================================================================================
+
+================= End gated clock report =================
+
