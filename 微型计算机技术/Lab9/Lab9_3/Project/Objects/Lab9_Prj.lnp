@@ -1,0 +1,4 @@
+".\Objects\main.obj",
+".\Objects\Uart.obj" 
+TO ".\Objects\Lab9_Prj" 
+PRINT(".\Listings\Lab9_Prj.m51") RAMSIZE(256) 
