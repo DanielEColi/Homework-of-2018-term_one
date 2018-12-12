@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.40xd
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.40xd
+DATE            12/05/2018 - 16:59
+SOURCE          D:\FPGALab\product\Lab7_clock\Clock\Project\clock.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x056BAE9D
+START_ADDRESS   0x00000000 END_ADDRESS 0x000294FF DIRECTION_UP   "D:/FPGALab/product/Lab7_clock/Clock/Project/clock.bit" 3s250etq144

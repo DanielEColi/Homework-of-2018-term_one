@@ -1,0 +1,259 @@
+Synopsys Xilinx Technology Mapper, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Autoconstrain Mode is ON
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 122MB)
+
+Encoding state machine work.LCD1602_Disp(rtl)-pr_state[0:7]
+original code -> new code
+   00000001 -> 00000001
+   00000010 -> 00000010
+   00000100 -> 00000100
+   00001000 -> 00001000
+   00010000 -> 00010000
+   00100000 -> 00100000
+   01000000 -> 01000000
+   10000000 -> 10000000
+@N:"d:\fpgalab\product\lab7_debug\code\lcd1602_disp.vhd":369:4:369:5|Found counter in view:work.LCD1602_Disp(rtl) inst s_addr_cnt[4:0]
+@N:"d:\fpgalab\product\lab7_debug\code\lcd1602_disp.vhd":354:4:354:5|Found counter in view:work.LCD1602_Disp(rtl) inst s_cnt[13:0]
+@N: MF179 :"d:\fpgalab\product\lab7_debug\code\lcd1602_disp.vhd":208:14:208:30|Found 14 bit by 14 bit '==' comparator, 'un34_s_cnt'
+@N: MF179 :"d:\fpgalab\product\lab7_debug\code\lcd1602_disp.vhd":194:14:194:34|Found 15 bit by 15 bit '==' comparator, 'un10_s_cnt'
+@N: MF179 :"d:\fpgalab\product\lab7_debug\code\lcd1602_disp.vhd":198:14:198:34|Found 15 bit by 15 bit '==' comparator, 'un19_s_cnt'
+@N: MF179 :"d:\fpgalab\product\lab7_debug\code\lcd1602_disp.vhd":203:14:203:34|Found 15 bit by 15 bit '==' comparator, 'un28_s_cnt'
+
+Finished factoring (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 122MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                             pr_state[7]:C              Done
+                             pr_state[0]:C              Done
+                             pr_state[1]:C              Done
+                             pr_state[2]:C              Done
+                             pr_state[3]:C              Done
+                             pr_state[4]:C              Done
+                             pr_state[5]:C              Done
+                             pr_state[6]:C              Done
+                             s_cnt[13:0]:C              Done
+                         s_addr_cnt[4:0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 122MB)
+
+
+Clock Buffers:
+  Inserting Clock buffer for port clk_50mhz_i,
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 122MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 122MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 122MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 122MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 122MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 128MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -3.21ns		 157 /        34
+   2		0h:00m:01s		    -3.21ns		 157 /        34
+------------------------------------------------------------
+
+@N: FX271 :"d:\fpgalab\product\lab7_debug\code\lcd1602_disp.vhd":190:6:190:23|Instance "pr_state[6]" with 19 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_debug\code\clk_gen_1mhz.vhd":23:4:23:5|Instance "U_Clk_gen_1MHz.s_cnt[1]" with 10 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_debug\code\clk_gen_1mhz.vhd":23:4:23:5|Instance "U_Clk_gen_1MHz.s_cnt[4]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_debug\code\clk_gen_1mhz.vhd":23:4:23:5|Instance "U_Clk_gen_1MHz.s_cnt[5]" with 6 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_debug\code\clk_gen_1mhz.vhd":23:4:23:5|Instance "U_Clk_gen_1MHz.s_cnt[3]" with 7 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 6 Registers via timing driven replication
+Added 6 LUTs via timing driven replication
+
+
+@N: FX271 :"d:\fpgalab\product\lab7_debug\code\clk_gen_1mhz.vhd":23:4:23:5|Instance "U_Clk_gen_1MHz.s_cnt[0]" with 10 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -2.24ns		 199 /        41
+
+   2		0h:00m:01s		    -2.24ns		 199 /        41
+   3		0h:00m:01s		    -2.24ns		 199 /        41
+   4		0h:00m:01s		    -2.24ns		 199 /        41
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -2.24ns		 199 /        41
+
+   2		0h:00m:01s		    -2.24ns		 199 /        41
+   3		0h:00m:02s		    -2.24ns		 199 /        41
+   4		0h:00m:02s		    -2.24ns		 199 /        41
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:02s; Memory used current: 127MB peak: 128MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: MT453 |clock period is too big for clock LCD1602_Disp|clk_50mhz_i, changing period from 254193.0 to 1000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 127096.5 ns to 500.0 ns. 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:02s; Memory used current: 127MB peak: 128MB)
+
+Writing Analyst data base D:\FPGALab\product\Lab7_debug\Project\LCD1602_Disp.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:02s; Memory used current: 127MB peak: 129MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:02s; Memory used current: 128MB peak: 130MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:02s; Memory used current: 128MB peak: 130MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:02s; Memory used current: 128MB peak: 130MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:02s; Memory used current: 128MB peak: 130MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:02s; Memory used current: 128MB peak: 130MB)
+
+@W: MT420 |Found inferred clock LCD1602_Disp|clk_50mhz_i with period 6.32ns. A user-defined clock should be declared on object "p:clk_50mhz_i"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Dec 05 15:30:22 2018
+#
+
+
+Top view:               LCD1602_Disp
+Requested Frequency:    39.3 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\Lab7_debug\Project\LCD1602_Disp.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.116
+
+                             Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock               Frequency     Frequency     Period        Period        Slack      Type         Group                
+----------------------------------------------------------------------------------------------------------------------------------
+LCD1602_Disp|clk_50mhz_i     158.2 MHz     134.4 MHz     6.323         7.439         -1.116     inferred     Autoconstr_clkgroup_1
+==================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                              |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------
+Starting                  Ending                    |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------
+LCD1602_Disp|clk_50mhz_i  LCD1602_Disp|clk_50mhz_i  |  6.323       -1.116  |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for LCD1602_Disp 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             11 uses
+FDCE            29 uses
+FDPE            1 use
+GND             2 uses
+MUXCY           7 uses
+MUXCY_L         57 uses
+MUXF5           4 uses
+VCC             2 uses
+XORCY           18 uses
+LUT1            32 uses
+LUT2            28 uses
+LUT3            56 uses
+LUT4            82 uses
+
+I/O ports: 13
+I/O primitives: 13
+IBUF           1 use
+IBUFG          1 use
+OBUF           11 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   41 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+Total load per clock:
+   LCD1602_Disp|clk_50mhz_i: 13
+
+Mapping Summary:
+Total  LUTs: 198 (4%)
+
+Mapper successful!
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Wed Dec 05 15:30:22 2018
+
+###########################################################]

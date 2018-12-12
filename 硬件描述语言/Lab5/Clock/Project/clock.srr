@@ -1,0 +1,489 @@
+#Build: Synplify Premier E-201103-SP2, Build 053R, May 19 2011
+#install: C:\Synopsys\fpga_E201103SP2
+#OS:  6.1
+#Hostname: SZedu006
+
+#Implementation: Project
+
+#Wed Dec 05 17:11:50 2018
+
+$ Start of Compile
+#Wed Dec 05 17:11:50 2018
+
+Synopsys HDL Compiler, version comp550rcp1, Build 072R, built May 25 2011
+@N|Running in 64-bit mode
+Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+Synopsys VHDL Compiler, version comp550rcp1, Build 072R, built May 25 2011
+@N|Running in 64-bit mode
+Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@N: CD720 :"C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1MHz.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\sec_counter.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\min_couter.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\hour_counter.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1hz.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\clock.vhd"
+VHDL syntax check successful!
+File D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd changed - recompiling
+# Wed Dec 05 17:11:50 2018
+
+###########################################################]
+Synopsys Verilog Compiler, version comp550rcp1, Build 072R, built May 25 2011
+@N|Running in 64-bit mode
+Copyright (C) 1994-2011 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v"
+@I::"C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v"
+@I::"C:\Synopsys\fpga_E201103SP2\lib\vlog\hypermods.v"
+@I::"C:\Synopsys\fpga_E201103SP2\bin\..\lib\xilinx\unisim.v"
+Verilog syntax check successful!
+# Wed Dec 05 17:11:51 2018
+
+###########################################################]
+@N: CD720 :"C:\Synopsys\fpga_E201103SP2\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1MHz.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\sec_counter.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\min_couter.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\hour_counter.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1hz.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd"
+@I:: "D:\FPGALab\product\Lab7_clock\Clock\Code\clock.vhd"
+VHDL syntax check successful!
+File D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd changed - recompiling
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clock.vhd":4:7:4:11|Synthesizing work.clock.rtl 
+@W: CD638 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clock.vhd":82:9:82:13|Signal s_1hz is undriven 
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":6:7:6:18|Synthesizing work.lcd1602_disp.rtl 
+@N: CD231 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":145:13:145:14|Using onehot encoding for type state (s_rst="10000000")
+@W: CD434 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":183:27:183:36|Signal s_clk_1mhz in the sensitivity list is not used in the process
+@W: CG296 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":183:2:183:8|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":336:24:336:39|Referenced variable s_lcd_ddram_data is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":314:24:314:39|Referenced variable s_lcd_ddram_addr is not in sensitivity list
+@W: CD604 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":446:6:446:19|OTHERS clause is not synthesized 
+@W: CG296 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":410:2:410:8|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":441:37:441:43|Referenced variable s_sec_l is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":440:37:440:43|Referenced variable s_sec_h is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":438:37:438:43|Referenced variable s_min_l is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":437:37:437:43|Referenced variable s_min_h is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":435:37:435:44|Referenced variable s_hour_l is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":434:37:434:44|Referenced variable s_hour_h is not in sensitivity list
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1MHz.vhd":4:7:4:18|Synthesizing work.clk_gen_1mhz.rtl 
+Post processing for work.clk_gen_1mhz.rtl
+Post processing for work.lcd1602_disp.rtl
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal lcd_data_o(7 downto 0), probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal nx_state(0 to 7), probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":149:50:149:50|Latch generated from process for signal s_start_addr_cnt, probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal lcd_rs_o, probably caused by a missing assignment in an if or case stmt
+@A: CL109 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Too many clocks (> 8) for set/reset analysis of lcd_en_o, try moving enabling expressions outside process
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal lcd_en_o, probably caused by a missing assignment in an if or case stmt
+@W: CL113 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":378:4:378:5|Feedback mux created for signal s_addr_cnt[4:0].
+@W: CL111 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|All reachable assignments to lcd_wr_o assign '0', register removed by optimization
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":6:7:6:14|Synthesizing work.calc_rem.rtl 
+@W: CD434 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":20:9:20:14|Signal data_i in the sensitivity list is not used in the process
+@W: CG296 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":20:1:20:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":22:27:22:32|Referenced variable s_data is not in sensitivity list
+Post processing for work.calc_rem.rtl
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":22:2:22:3|Latch generated from process for signal s_rem(3 downto 0), probably caused by a missing assignment in an if or case stmt
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd":6:7:6:14|Synthesizing work.calc_mod.rtl 
+Post processing for work.calc_mod.rtl
+@W: CL111 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd":22:2:22:3|All reachable assignments to s_mod(3) assign '0', register removed by optimization
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd":22:2:22:3|Latch generated from process for signal s_mod(3 downto 0), probably caused by a missing assignment in an if or case stmt
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\hour_counter.vhd":6:7:6:18|Synthesizing work.hour_counter.rtl 
+Post processing for work.hour_counter.rtl
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\min_couter.vhd":6:7:6:17|Synthesizing work.min_counter.rtl 
+Post processing for work.min_counter.rtl
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\sec_counter.vhd":6:7:6:17|Synthesizing work.sec_counter.rtl 
+Post processing for work.sec_counter.rtl
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1hz.vhd":6:7:6:17|Synthesizing work.clk_gen_1hz.rtl 
+Post processing for work.clk_gen_1hz.rtl
+Post processing for work.clock.rtl
+# Wed Dec 05 17:11:51 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp550rcp1, Build 061R, built May 17 2011
+@N|Running in 64-bit mode
+File layer0.srs changed - recompiling
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Dec 05 17:11:51 2018
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Dec 05 17:11:51 2018
+
+###########################################################]
+Pre-mapping Report (contents appended below)
+@N:"D:\FPGALab\product\Lab7_clock\Clock\Project\synlog\clock_premapping.srr"
+Synopsys Xilinx Technology Pre-mapping, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+Reading constraint file: D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sdc
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+@W: FX474 |User specified initial value found in some of the sequential elements in the design. Applying an initial value to a register may not deliver the best synthesis results. For example, registers with initial values may be preserved and retiming/pipelining may not be performed. To improve synthesis results you may want to remove the register initialization from the RTL code 
+
+Finished Pre Mapping Phase. (Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 122MB)
+
+@N: BN225 |Writing default property annotation file D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sap.
+Pre Mapping successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Dec 05 17:11:52 2018
+
+###########################################################]
+Mapping Report (contents appended below)
+@N:"D:\FPGALab\product\Lab7_clock\Clock\Project\synlog\clock_SPARTAN3E_Mapper.srr"
+Synopsys Xilinx Technology Mapper, Version maprc, Build 517R, Built May 23 2011 20:28:51
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-201103-SP2
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading chip information from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\plandata\xc3s250etq144> 
+Reading Xilinx I/O pad type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <C:\Synopsys\fpga_E201103SP2\lib\xilinx\gttype.txt> 
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Autoconstrain Mode is ON
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
+
+@N:"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":363:4:363:5|Found counter in view:work.LCD1602_Disp_work_clock_rtl_2layer0(rtl) inst s_cnt[13:0]
+@N:"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":378:4:378:5|Found counter in view:work.LCD1602_Disp_work_clock_rtl_2layer0(rtl) inst s_addr_cnt[4:0]
+@W: MO129 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":188:4:188:7|Sequential instance i_LCD1602_Disp.nx_state[7] has been reduced to a combinational gate by constant propagation
+@N: MF179 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":216:14:216:30|Found 14 bit by 14 bit '==' comparator, 'un34_s_cnt'
+@N: MF179 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":202:14:202:34|Found 15 bit by 15 bit '==' comparator, 'un10_s_cnt'
+@N: MF179 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":206:14:206:34|Found 15 bit by 15 bit '==' comparator, 'un19_s_cnt'
+@N: MF179 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":211:14:211:34|Found 15 bit by 15 bit '==' comparator, 'un28_s_cnt'
+
+Finished factoring (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 124MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                   i_min_counter.s_carry:C              Done
+                   i_sec_counter.s_carry:C              Done
+                i_hour_counter.s_hour[5]:C              Done
+                i_hour_counter.s_hour[4]:C              Done
+                i_hour_counter.s_hour[3]:C              Done
+                i_hour_counter.s_hour[2]:C              Done
+                i_hour_counter.s_hour[1]:C              Done
+                i_hour_counter.s_hour[0]:C              Done
+                  i_min_counter.s_min[5]:C              Done
+                  i_min_counter.s_min[4]:C              Done
+                  i_min_counter.s_min[3]:C              Done
+                  i_min_counter.s_min[2]:C              Done
+                  i_min_counter.s_min[1]:C              Done
+                  i_min_counter.s_min[0]:C              Done
+                  i_sec_counter.s_sec[5]:C              Done
+                  i_sec_counter.s_sec[4]:C              Done
+                  i_sec_counter.s_sec[3]:C              Done
+                  i_sec_counter.s_sec[2]:C              Done
+                  i_sec_counter.s_sec[1]:C              Done
+                  i_sec_counter.s_sec[0]:C              Done
+              i_LCD1602_Disp.pr_state[0]:C              Done
+              i_LCD1602_Disp.pr_state[1]:C              Done
+              i_LCD1602_Disp.pr_state[2]:C              Done
+              i_LCD1602_Disp.pr_state[3]:C              Done
+              i_LCD1602_Disp.pr_state[4]:C              Done
+              i_LCD1602_Disp.pr_state[5]:C              Done
+              i_LCD1602_Disp.pr_state[6]:C              Done
+              i_LCD1602_Disp.pr_state[7]:C              Done
+          i_LCD1602_Disp.s_addr_cnt[4:0]:C              Done
+              i_LCD1602_Disp.s_cnt[13:0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 124MB)
+
+
+Clock Buffers:
+  Inserting Clock buffer for port clk_50mhz_i,  Inserting Clock buffer on net s_1mingen, 
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 124MB)
+
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 124MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 125MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 125MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:01s; Memory used current: 124MB peak: 125MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 135MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -7.61ns		 357 /        81
+   2		0h:00m:01s		    -7.53ns		 357 /        81
+   3		0h:00m:01s		    -6.48ns		 358 /        81
+   4		0h:00m:01s		    -6.32ns		 358 /        81
+   5		0h:00m:01s		    -6.32ns		 358 /        81
+------------------------------------------------------------
+
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[3]" with 21 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[0]" with 17 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[1]" with 16 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[2]" with 5 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[5]" with 4 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[4]" with 6 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":378:4:378:5|Instance "i_LCD1602_Disp.s_addr_cnt[3]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":378:4:378:5|Instance "i_LCD1602_Disp.s_addr_cnt[4]" with 18 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[6]" with 26 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\lcd1602_disp.vhd":176:4:176:5|Instance "i_LCD1602_Disp.pr_state[7]" with 28 loads has been replicated 2 time(s) to improve timing 
+Timing driven replication report
+Added 14 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\sec_counter.vhd":22:2:22:3|Instance "i_sec_counter.s_sec[3]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\min_couter.vhd":22:2:22:3|Instance "i_min_counter.s_min[3]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\sec_counter.vhd":22:2:22:3|Instance "i_sec_counter.s_sec[2]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\min_couter.vhd":22:2:22:3|Instance "i_min_counter.s_min[2]" with 11 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\sec_counter.vhd":22:2:22:3|Instance "i_sec_counter.s_sec[5]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\min_couter.vhd":22:2:22:3|Instance "i_min_counter.s_min[5]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\sec_counter.vhd":22:2:22:3|Instance "i_sec_counter.s_sec[4]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\min_couter.vhd":22:2:22:3|Instance "i_min_counter.s_min[4]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\sec_counter.vhd":22:2:22:3|Instance "i_sec_counter.s_sec[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"d:\fpgalab\product\lab7_clock\clock\code\min_couter.vhd":22:2:22:3|Instance "i_min_counter.s_min[1]" with 7 loads has been replicated 1 time(s) to improve timing 
+Timing driven replication report
+Added 10 Registers via timing driven replication
+Added 10 LUTs via timing driven replication
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -4.83ns		 373 /       105
+
+   2		0h:00m:02s		    -4.83ns		 373 /       105
+   3		0h:00m:02s		    -4.83ns		 373 /       105
+   4		0h:00m:02s		    -4.83ns		 373 /       105
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:02s		    -5.02ns		 373 /       105
+   2		0h:00m:02s		    -4.83ns		 373 /       105
+
+   3		0h:00m:02s		    -4.83ns		 373 /       105
+   4		0h:00m:02s		    -4.83ns		 373 /       105
+   5		0h:00m:02s		    -4.83ns		 373 /       105
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 135MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: FX739 :|Removed BUFG instance i_sec_counter.s_carry_inferred_clockgen_cb because it is cascaded to another clock buffer clk_50mhz_i_ibuf.
+@W: MT453 |clock period is too big for clock clock|clk_50mhz_i, changing period from 101838.0 to 1000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 50919.0 ns to 500.0 ns. 
+
+Finished restoring hierarchy (Time elapsed 0h:00m:02s; Memory used current: 134MB peak: 135MB)
+
+Writing Analyst data base D:\FPGALab\product\Lab7_clock\Clock\Project\clock.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 135MB)
+
+Writing EDIF Netlist and constraint files
+E-201103-SP2
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:02s; Memory used current: 134MB peak: 136MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:03s; Memory used current: 133MB peak: 136MB)
+
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst                            Instance Port     Clock                                    Reason for not converting                                                         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+i_sec_mod.s_mod[2]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_mod.s_mod[1]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_mod.s_mod[0]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_mod.s_mod[2]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_mod.s_mod[1]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_mod.s_mod[0]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_mod.s_mod[2]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_mod.s_mod[1]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_mod.s_mod[0]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[3]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[2]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[1]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[0]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[2]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[1]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[0]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[3]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[3]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[2]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[1]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[0]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[6]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[5]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[4]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[3]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[2]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[1]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[0]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.s_start_addr_cnt     G                 i_LCD1602_Disp.nx_state_4_sqmuxa_clk     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_en_o             G                 i_LCD1602_Disp.lcd_en_o_0_sqmuxa_i       Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_rs_o             G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[0]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[1]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[2]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[3]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[4]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[5]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[6]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[7]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+=================================================================================================================================================================================
+
+================= End gated clock report =================
+
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:03s; Memory used current: 133MB peak: 136MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:03s; Memory used current: 133MB peak: 136MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:03s; Memory used current: 133MB peak: 136MB)
+
+@W: MT420 |Found inferred clock clock|clk_50mhz_i with period 8.02ns. A user-defined clock should be declared on object "p:clk_50mhz_i"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Dec 05 17:11:56 2018
+#
+
+
+Top view:               clock
+Requested Frequency:    98.2 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -3.326
+
+                      Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock        Frequency     Frequency     Period        Period        Slack      Type         Group                
+---------------------------------------------------------------------------------------------------------------------------
+clock|clk_50mhz_i     124.6 MHz     109.1 MHz     8.024         9.163         -1.139     inferred     Autoconstr_clkgroup_1
+System                174.8 MHz     148.6 MHz     5.722         6.731         -1.010     system       system_clkgroup      
+===========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                |    rise  to  rise    |    fall  to  fall    |    rise  to  fall    |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------
+Starting           Ending             |  constraint  slack   |  constraint  slack   |  constraint  slack   |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------
+System             System             |  No paths    -       |  5.722       -1.010  |  No paths    -       |  No paths    -    
+System             clock|clk_50mhz_i  |  No paths    -       |  No paths    -       |  No paths    -       |  8.024       3.213
+clock|clk_50mhz_i  System             |  No paths    -       |  No paths    -       |  8.024       -3.326  |  No paths    -    
+clock|clk_50mhz_i  clock|clk_50mhz_i  |  8.024       -1.139  |  No paths    -       |  No paths    -       |  No paths    -    
+===============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for clock 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             32 uses
+FDCE            70 uses
+FDPE            3 uses
+GND             13 uses
+LD              29 uses
+LDC             1 use
+LDP             9 uses
+MUXCY           12 uses
+MUXCY_L         110 uses
+MUXF5           3 uses
+VCC             13 uses
+XORCY           43 uses
+LUT1            58 uses
+LUT2            105 uses
+LUT3            49 uses
+LUT4            163 uses
+
+I/O ports: 13
+I/O primitives: 13
+IBUF           1 use
+IBUFG          1 use
+OBUF           11 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   105 (2%)
+Latch bits not including I/Os:      39 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+Total load per clock:
+   clock|clk_50mhz_i: 35
+
+Mapping Summary:
+Total  LUTs: 375 (7%)
+
+Mapper successful!
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Wed Dec 05 17:11:56 2018
+
+###########################################################]

@@ -1,0 +1,50 @@
+
+================= Gated clock report =================
+
+
+The following instances have NOT been converted
+Seq Inst                            Instance Port     Clock                                    Reason for not converting                                                         
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+i_sec_mod.s_mod[2]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_mod.s_mod[1]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_mod.s_mod[0]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_mod.s_mod[2]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_mod.s_mod[1]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_mod.s_mod[0]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_mod.s_mod[2]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_mod.s_mod[1]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_mod.s_mod[0]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[3]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[2]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[1]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_sec_rem.s_rem[0]                  G                 i_sec_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[2]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[1]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[0]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_min_rem.s_rem[3]                  G                 i_min_mod.un13_i                         Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[3]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[2]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[1]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_hour_rem.s_rem[0]                 G                 i_hour_mod.un13_i                        Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[6]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[5]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[4]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[3]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[2]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[1]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[0]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.s_start_addr_cnt     G                 i_LCD1602_Disp.nx_state_4_sqmuxa_clk     Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_en_o             G                 i_LCD1602_Disp.lcd_en_o_0_sqmuxa_i       Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_rs_o             G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[0]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[1]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[2]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[3]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[4]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[5]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.nx_state[6]          G                 i_LCD1602_Disp.un1_nx_state4_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+i_LCD1602_Disp.lcd_data_o[7]        G                 i_LCD1602_Disp.un1_s_cnt_2_0_i           Gated clock does not have declared clock, add/enable clock constraint in SDC file.
+=================================================================================================================================================================================
+
+================= End gated clock report =================
+

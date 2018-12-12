@@ -1,0 +1,2 @@
+vhdl work "../Code/clk_gen_1MHz.vhd"
+vhdl work "../Code/LCD1602_Disp.vhd"

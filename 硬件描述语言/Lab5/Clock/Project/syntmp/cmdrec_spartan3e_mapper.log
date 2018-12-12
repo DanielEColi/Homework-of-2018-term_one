@@ -1,0 +1,18 @@
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe  -prodtype synplify_premier -encrypt  -pro  -part xc3s250etq144-4   -maxfan 100  -m1  -pipe   -fixgatedclocks 3 -fixgeneratedclocks 3         -fast_synthesis 0  -do_enhanced_opt    -reporting_ctd 0 -top_level_module  clock  -flow mapping  -mp 1 -prjfile  D:\FPGALab\product\Lab7_clock\Clock\Project\scratchproject.prs  -implementation Project -licensetype  synplifypremier  -ta_num_paths 0  -ta_num_points 0  -oedif  D:\FPGALab\product\Lab7_clock\Clock\Project\clock.edn  -autoconstraint  -freq 1.000  -tcl  D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sdc  D:\FPGALab\product\Lab7_clock\Clock\Project\synwork\clock_premapping.srd  -sap  D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sap  -otap  D:\FPGALab\product\Lab7_clock\Clock\Project\clock.tap  -omap  D:\FPGALab\product\Lab7_clock\Clock\Project\clock.map  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v  -devicelib  C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v  -ena_vif  D:\FPGALab\product\Lab7_clock\Clock\Project\verif\clock.vif  -sap  D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sap  -ologparam  D:\FPGALab\product\Lab7_clock\Clock\Project\syntmp\clock.plg  -osyn  D:\FPGALab\product\Lab7_clock\Clock\Project\clock.srm  -prjdir D:\FPGALab\product\Lab7_clock\Clock\Project\  -log  D:\FPGALab\product\Lab7_clock\Clock\Project\synlog\clock_SPARTAN3E_Mapper.srr 
+rc:1 success:1
+D:\FPGALab\product\Lab7_clock\Clock\Project\scratchproject.prs|o|1543999412|2506
+D:\FPGALab\product\Lab7_clock\Clock\Project\clock.edn|o|1544001116|351063
+D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sdc|i|1543999412|0
+D:\FPGALab\product\Lab7_clock\Clock\Project\synwork\clock_premapping.srd|i|1544001112|21372
+D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sap|o|1544001112|6582
+D:\FPGALab\product\Lab7_clock\Clock\Project\clock.tap|o|0|0
+D:\FPGALab\product\Lab7_clock\Clock\Project\clock.map|o|1544001116|28
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim_m10i.v|i|1304943026|948675
+C:\Synopsys\fpga_E201103SP2\lib\xilinx\unisim.v|i|1310477882|1053112
+D:\FPGALab\product\Lab7_clock\Clock\Project\verif\clock.vif|o|1544001115|4355
+D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sap|o|1544001112|6582
+D:\FPGALab\product\Lab7_clock\Clock\Project\syntmp\clock.plg|o|1544001116|1338
+D:\FPGALab\product\Lab7_clock\Clock\Project\clock.srm|o|1544001116|325216
+D:\FPGALab\product\Lab7_clock\Clock\Project\synlog\clock_SPARTAN3E_Mapper.srr|o|1544001116|23988
+C:\Synopsys\fpga_E201103SP2\bin64\m_xilinx.exe|i|1306154528|23379968
+C:\Synopsys\fpga_E201103SP2\bin\m_xilinx.exe|i|1306154386|18460672

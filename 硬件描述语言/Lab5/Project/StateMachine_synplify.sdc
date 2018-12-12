@@ -1,1 +1,0 @@
-#define_clock -internal  {6} [get_ports {clk_i}] -name  {StateMachine|clk_i} -ref_rise  {0.0} -ref_fall  {4.850750} -uncertainty  {0.000000} -period  {9.701500} -clockgroup  {Autoconstr_clkgroup_0} -rise  {0.0} -fall  {4.850750} 

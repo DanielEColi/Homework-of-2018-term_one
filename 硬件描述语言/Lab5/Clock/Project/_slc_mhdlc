@@ -1,0 +1,6 @@
+|work.sec_counter|work.sec_counter.rtl|
+|work.min_counter|work.min_counter.rtl|
+|work.hour_counter|work.hour_counter.rtl|
+|work.calc_mod|work.calc_mod.rtl|
+|work.calc_rem|work.calc_rem.rtl|
+|work.clock|work.clock.rtl|

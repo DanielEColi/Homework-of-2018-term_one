@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="calculator">
+		<CBX_INST_ENTRY INSTANCE_NAME="|calculator|lpm_divide0:inst3|lpm_divide:lpm_divide_component" CBX_FILE_NAME="lpm_divide_edp.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|calculator|lpm_mult0:inst2|lpm_mult:lpm_mult_component" CBX_FILE_NAME="mult_g7o.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

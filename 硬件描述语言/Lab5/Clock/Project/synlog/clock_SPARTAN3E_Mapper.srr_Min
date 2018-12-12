@@ -1,0 +1,59 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Dec 05 17:11:56 2018
+#
+
+
+Top view:               clock
+Requested Frequency:    98.2 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    D:\FPGALab\product\Lab7_clock\Clock\Project\clock.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.722
+
+                      Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock        Frequency     Frequency     Period        Period        Slack      Type         Group                
+---------------------------------------------------------------------------------------------------------------------------
+clock|clk_50mhz_i     124.6 MHz     109.1 MHz     8.024         9.163         -1.139     inferred     Autoconstr_clkgroup_1
+System                174.8 MHz     148.6 MHz     5.722         6.731         -1.010     system       system_clkgroup      
+===========================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------
+Starting           Ending             |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------
+System             System             |  No paths    -      |  0.000       1.563  |  No paths    -      |  No paths    -    
+System             clock|clk_50mhz_i  |  No paths    -      |  No paths    -      |  No paths    -      |  0.000       0.722
+clock|clk_50mhz_i  System             |  No paths    -      |  No paths    -      |  0.000       0.778  |  No paths    -    
+clock|clk_50mhz_i  clock|clk_50mhz_i  |  0.000       1.740  |  No paths    -      |  No paths    -      |  No paths    -    
+============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+

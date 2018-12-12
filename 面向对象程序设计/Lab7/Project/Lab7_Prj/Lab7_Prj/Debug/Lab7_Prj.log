@@ -1,0 +1,17 @@
+﻿  book.cpp
+e:\homework-of-2018-term_one\面向对象程序设计\lab7\code\book.cpp(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  f:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+e:\homework-of-2018-term_one\面向对象程序设计\lab7\code\book.cpp(29): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  f:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  comic.cpp
+e:\homework-of-2018-term_one\面向对象程序设计\lab7\code\comic.cpp(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  f:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  English.cpp
+e:\homework-of-2018-term_one\面向对象程序设计\lab7\code\english.cpp(15): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  f:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  main.cpp
+  poem.cpp
+e:\homework-of-2018-term_one\面向对象程序设计\lab7\code\poem.cpp(20): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  f:\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+  正在生成代码...
+  Lab7_Prj.vcxproj -> E:\Homework-of-2018-term_one\面向对象程序设计\Lab7\Project\Lab7_Prj\Debug\Lab7_Prj.exe

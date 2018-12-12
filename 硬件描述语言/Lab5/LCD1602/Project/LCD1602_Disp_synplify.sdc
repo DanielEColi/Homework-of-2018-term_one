@@ -1,0 +1,2 @@
+#define_clock -internal  {6} [get_nets {U_Clk_gen_1MHz.clk_o}] -name  {clk_gen_1MHz_work_lcd1602_disp_rtl_0layer0|clk_o_inferred_clock} -ref_rise  {0.0} -ref_fall  {12.709650} -uncertainty  {0.000000} -period  {25.419300} -clockgroup  {Autoconstr_clkgroup_0} -rise  {0.0} -fall  {12.709650} 
+#define_clock -internal  {6} [get_ports {clk_50mhz_i}] -name  {LCD1602_Disp|clk_50mhz_i} -ref_rise  {0.0} -ref_fall  {3.161350} -uncertainty  {0.000000} -period  {6.322700} -clockgroup  {Autoconstr_clkgroup_1} -rise  {0.0} -fall  {3.161350} 

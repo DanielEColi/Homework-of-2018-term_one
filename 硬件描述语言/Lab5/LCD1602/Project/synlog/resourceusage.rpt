@@ -1,0 +1,36 @@
+---------------------------------------
+Resource Usage Report for LCD1602_Disp 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             11 uses
+FDCE            29 uses
+FDPE            1 use
+GND             2 uses
+MUXCY           7 uses
+MUXCY_L         57 uses
+MUXF5           4 uses
+VCC             2 uses
+XORCY           18 uses
+LUT1            32 uses
+LUT2            28 uses
+LUT3            56 uses
+LUT4            82 uses
+
+I/O ports: 13
+I/O primitives: 13
+IBUF           1 use
+IBUFG          1 use
+OBUF           11 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   41 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+
+Mapping Summary:
+Total  LUTs: 198 (4%)
+

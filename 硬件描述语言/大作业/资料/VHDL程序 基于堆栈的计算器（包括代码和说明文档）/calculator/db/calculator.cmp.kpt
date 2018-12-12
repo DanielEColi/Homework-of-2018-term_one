@@ -1,0 +1,216 @@
+<kpt_db name="calculator.fit">
+<key_points_set type="reference">
+    <key_point id="0" type="register">
+    <name>inst1/dout2[0]</name>
+  </key_point>
+    <key_point id="2" type="register">
+    <name>inst1/dout2[2]</name>
+  </key_point>
+    <key_point id="4" type="register">
+    <name>inst1/dout2[4]</name>
+  </key_point>
+    <key_point id="6" type="register">
+    <name>inst1/dout2[6]</name>
+  </key_point>
+    <key_point id="1" type="register">
+    <name>inst1/dout2[1]</name>
+  </key_point>
+    <key_point id="3" type="register">
+    <name>inst1/dout2[3]</name>
+  </key_point>
+    <key_point id="5" type="register">
+    <name>inst1/dout2[5]</name>
+  </key_point>
+    <key_point id="7" type="register">
+    <name>inst1/dout2[7]</name>
+  </key_point>
+</key_points_set>
+  <key_points_set type="transformed">
+        <key_point id="0" type="register">
+      <name>inst1/dout2[0]</name>
+      </key_point>
+        <key_point id="1" type="register">
+      <name>inst1/dout2[0]~_Duplicate_1</name>
+      </key_point>
+        <key_point id="8" type="register">
+      <name>inst1/dout2[4]</name>
+      </key_point>
+        <key_point id="9" type="register">
+      <name>inst1/dout2[4]~_Duplicate_1</name>
+      </key_point>
+        <key_point id="2" type="register">
+      <name>inst1/dout2[1]</name>
+      </key_point>
+        <key_point id="3" type="register">
+      <name>inst1/dout2[1]~_Duplicate_1</name>
+      </key_point>
+        <key_point id="10" type="register">
+      <name>inst1/dout2[5]</name>
+      </key_point>
+        <key_point id="11" type="register">
+      <name>inst1/dout2[5]~_Duplicate_1</name>
+      </key_point>
+        <key_point id="4" type="register">
+      <name>inst1/dout2[2]</name>
+      </key_point>
+        <key_point id="5" type="register">
+      <name>inst1/dout2[2]~_Duplicate_1</name>
+      </key_point>
+        <key_point id="12" type="register">
+      <name>inst1/dout2[6]</name>
+      </key_point>
+        <key_point id="13" type="register">
+      <name>inst1/dout2[6]~_Duplicate_1</name>
+      </key_point>
+        <key_point id="6" type="register">
+      <name>inst1/dout2[3]</name>
+      </key_point>
+        <key_point id="7" type="register">
+      <name>inst1/dout2[3]~_Duplicate_1</name>
+      </key_point>
+        <key_point id="14" type="register">
+      <name>inst1/dout2[7]</name>
+      </key_point>
+        <key_point id="15" type="register">
+      <name>inst1/dout2[7]~_Duplicate_1</name>
+      </key_point>
+  </key_points_set>
+    <transformations_set>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="0">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="0">     </kp>
+            <kp id="1">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="1">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="2">     </kp>
+            <kp id="3">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="2">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="4">     </kp>
+            <kp id="5">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="3">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="6">     </kp>
+            <kp id="7">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="4">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="8">     </kp>
+            <kp id="9">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="5">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="10">     </kp>
+            <kp id="11">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="6">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="12">     </kp>
+            <kp id="13">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+        <transformation elim_type="not_eliminated">
+        <kp_set type="reference">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="7">     </kp>
+        </noninverts>
+</kp_state>
+  </kp_set>
+        <kp_set type="transformed">
+        <kp_state index="0">
+        <noninverts>
+            <kp id="14">     </kp>
+            <kp id="15">     </kp>
+        </noninverts>
+  </kp_state>
+  </kp_set>
+  </transformation>
+  </transformations_set>
+</kpt_db>

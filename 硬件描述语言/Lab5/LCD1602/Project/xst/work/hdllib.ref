@@ -1,0 +1,4 @@
+AR lcd1602_disp rtl D:/FPGALab/product/Lab7_debug/Code/LCD1602_Disp.vhd sub00/vhpl03 1543996105
+AR clk_gen_1mhz rtl D:/FPGALab/product/Lab7_debug/Code/clk_gen_1MHz.vhd sub00/vhpl01 1543996103
+EN lcd1602_disp NULL D:/FPGALab/product/Lab7_debug/Code/LCD1602_Disp.vhd sub00/vhpl02 1543996104
+EN clk_gen_1mhz NULL D:/FPGALab/product/Lab7_debug/Code/clk_gen_1MHz.vhd sub00/vhpl00 1543996102

@@ -1,5 +1,0 @@
-set -tmpdir "D:/FPGALab/product/Lab7/Project/xst/projnav.tmp"
-set -xsthdpdir "D:/FPGALab/product/Lab7/Project/xst"
-elaborate
--ifn StateMachine.prj
--ifmt mixed

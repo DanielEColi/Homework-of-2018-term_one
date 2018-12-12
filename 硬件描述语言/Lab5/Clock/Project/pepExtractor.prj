@@ -1,0 +1,2 @@
+work	"../Code/LCD1602_Disp.vhd"
+work	"../Code/clk_gen_1MHz.vhd"

@@ -1,0 +1,15 @@
+V3 7
+FL D:/FPGALab/product/Lab7_debug/Code/clk_gen_1MHz.vhd 2018/12/02.17:24:45 P.40xd
+EN work/clk_gen_1MHz 1543996102 \
+      FL D:/FPGALab/product/Lab7_debug/Code/clk_gen_1MHz.vhd \
+      PB ieee/std_logic_1164 1350103243
+AR work/clk_gen_1MHz/rtl 1543996103 \
+      FL D:/FPGALab/product/Lab7_debug/Code/clk_gen_1MHz.vhd EN work/clk_gen_1MHz 1543996102
+FL D:/FPGALab/product/Lab7_debug/Code/LCD1602_Disp.vhd 2018/12/05.15:48:18 P.40xd
+EN work/LCD1602_Disp 1543996104 \
+      FL D:/FPGALab/product/Lab7_debug/Code/LCD1602_Disp.vhd \
+      PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
+      PB ieee/STD_LOGIC_UNSIGNED 1350103247
+AR work/LCD1602_Disp/rtl 1543996105 \
+      FL D:/FPGALab/product/Lab7_debug/Code/LCD1602_Disp.vhd EN work/LCD1602_Disp 1543996104 \
+      CP clk_gen_1MHz

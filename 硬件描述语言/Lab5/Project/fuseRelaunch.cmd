@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "D:/FPGALab/product/Lab7/Project/StateMachine_tb_isim_beh.exe" -prj "D:/FPGALab/product/Lab7/Project/StateMachine_tb_beh.prj" "work.StateMachine_tb" 

@@ -1,0 +1,20 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe LCD1602_Disp.prj -tcl LCD1602_Disp_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp_open_file.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe LCD1602_Disp.prj -tcl LCD1602_Disp_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp_open_file.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp_open_file.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe LCD1602_Disp.prj -tcl LCD1602_Disp_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp_open_file.tcl 
+xst -intstyle ise -ifn "D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp.xst" -ofn "D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp.syr" 
+xst -intstyle ise -ifn "D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp.xst" -ofn "D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab7_debug/Code/LCD1602_Disp.ucf -p xc3s250e-tq144-4 LCD1602_Disp.ngc LCD1602_Disp.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o LCD1602_Disp_map.ncd LCD1602_Disp.ngd LCD1602_Disp.pcf 
+par -w -intstyle ise -ol high -t 1 LCD1602_Disp_map.ncd LCD1602_Disp.ncd LCD1602_Disp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCD1602_Disp.twx LCD1602_Disp.ncd -o LCD1602_Disp.twr LCD1602_Disp.pcf 
+bitgen -intstyle ise -f LCD1602_Disp.ut LCD1602_Disp.ncd 
+xst -intstyle ise -ifn "D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp.xst" -ofn "D:/FPGALab/product/Lab7_debug/Project/LCD1602_Disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/FPGALab/product/Lab7_debug/Code/LCD1602_Disp.ucf -p xc3s250e-tq144-4 LCD1602_Disp.ngc LCD1602_Disp.ngd  
+map -intstyle ise -p xc3s250e-tq144-4 -cm area -ir off -pr off -c 100 -o LCD1602_Disp_map.ncd LCD1602_Disp.ngd LCD1602_Disp.pcf 
+par -w -intstyle ise -ol high -t 1 LCD1602_Disp_map.ncd LCD1602_Disp.ncd LCD1602_Disp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCD1602_Disp.twx LCD1602_Disp.ncd -o LCD1602_Disp.twr LCD1602_Disp.pcf 
+bitgen -intstyle ise -f LCD1602_Disp.ut LCD1602_Disp.ncd 

@@ -1,0 +1,33 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-dw|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-fast_synthesis|0|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-proto|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|work|-lib|work"
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\bin64\\c_vhdl.exe":1306290816
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\location.map":1305866958
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab7_debug\\Code\\clk_gen_1MHz.vhd":1543742685
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\std1164.vhd":1304933748
+#CUR:"D:\\FPGALab\\product\\Lab7_debug\\Code\\LCD1602_Disp.vhd":1543995014
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\arith.vhd":1304933748
+#CUR:"C:\\Synopsys\\fpga_E201103SP2\\lib\\vhd\\unsigned.vhd":1304933748
+@E8lFkRDCp4B7n_j.7bH#
+LDHs$NsRsIF	N
+bsCNl0RCsp_B7BRmv#_08DHFoON
+bsCNl0RCsp_B77qqaR8#0_oDFHbO
+NlsNCs0CR7pB_q) 70R#8F_Do
+HObNNslCC0sBRp7)_WQRa #_08DHFoON
+bsCNl0RCsp_B7pRmW#_08DHFoON
+bsCNl0RCsp_B7]]QtR8#0_oDFHHO
+M0bkR	OD_l6jEHx_R
+-4HkMb0#Rs0__MH4R-
+0FkbRk0D_O8sF#_R
+-4Fbk0kD0ROI8_sR_F-F4
+kk0b0ORD8M_C_-FR4k
+F00bkR8DO_08NNR_F-C4
+MF8l8CkD
+8lFkRDCO_D	o_CM4xv]
+LDHs$NsRsIF	N
+bsCNl0RCsB_havRqXHCM0o
+CsbNNslCC0shRBaq_]pHwRMo0CCHs
+M0bkR0s#_HM_R
+-4HkMb0DRO	R_H-F4
+kk0b0DRO	R_F-C4
+MF8l8CkD

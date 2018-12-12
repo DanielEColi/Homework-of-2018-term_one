@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/FPGALab/product/Lab7_clock/Clock/Project/LCD1602_Disp_tb_isim_beh.exe" -prj "D:/FPGALab/product/Lab7_clock/Clock/Project/LCD1602_Disp_tb_beh.prj" "work.LCD1602_Disp_tb" 

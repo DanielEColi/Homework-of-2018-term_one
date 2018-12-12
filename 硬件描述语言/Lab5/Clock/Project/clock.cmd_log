@@ -1,0 +1,2 @@
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe clock.prj -tcl clock_map.tcl 
+C:/Synopsys/fpga_E201103SP2/bin/synplify_premier.exe -tcl D:/FPGALab/product/Lab7_clock/Clock/Project/clock_open_file.tcl 

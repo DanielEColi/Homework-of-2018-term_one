@@ -1,0 +1,41 @@
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+                   i_min_counter.s_carry:C              Done
+                   i_sec_counter.s_carry:C              Done
+                i_hour_counter.s_hour[5]:C              Done
+                i_hour_counter.s_hour[4]:C              Done
+                i_hour_counter.s_hour[3]:C              Done
+                i_hour_counter.s_hour[2]:C              Done
+                i_hour_counter.s_hour[1]:C              Done
+                i_hour_counter.s_hour[0]:C              Done
+                  i_min_counter.s_min[5]:C              Done
+                  i_min_counter.s_min[4]:C              Done
+                  i_min_counter.s_min[3]:C              Done
+                  i_min_counter.s_min[2]:C              Done
+                  i_min_counter.s_min[1]:C              Done
+                  i_min_counter.s_min[0]:C              Done
+                  i_sec_counter.s_sec[5]:C              Done
+                  i_sec_counter.s_sec[4]:C              Done
+                  i_sec_counter.s_sec[3]:C              Done
+                  i_sec_counter.s_sec[2]:C              Done
+                  i_sec_counter.s_sec[1]:C              Done
+                  i_sec_counter.s_sec[0]:C              Done
+              i_LCD1602_Disp.pr_state[0]:C              Done
+              i_LCD1602_Disp.pr_state[1]:C              Done
+              i_LCD1602_Disp.pr_state[2]:C              Done
+              i_LCD1602_Disp.pr_state[3]:C              Done
+              i_LCD1602_Disp.pr_state[4]:C              Done
+              i_LCD1602_Disp.pr_state[5]:C              Done
+              i_LCD1602_Disp.pr_state[6]:C              Done
+              i_LCD1602_Disp.pr_state[7]:C              Done
+          i_LCD1602_Disp.s_addr_cnt[4:0]:C              Done
+              i_LCD1602_Disp.s_cnt[13:0]:C              Done
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+

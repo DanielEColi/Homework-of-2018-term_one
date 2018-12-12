@@ -1,0 +1,34 @@
+Release 14.3 - ngc2edif P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design LCD1602_Disp.ngc ...
+WARNING:NetListWriters:298 - No output is written to LCD1602_Disp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Mcompar_pr_state_cmp_lt0000_lut<14 : 1>
+   on block LCD1602_Disp is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_pr_state_sub0003_cy<12 : 0> on
+   block LCD1602_Disp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_pr_state_sub0003_lut<12 : 1> on
+   block LCD1602_Disp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Msub_pr_state_sub0005_lut<12 : 3> on
+   block LCD1602_Disp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus pr_state_sub0003<14 : 3> on block
+   LCD1602_Disp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus pr_state_sub0005<14 : 3> on block
+   LCD1602_Disp is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus s_cnt_max<13 : 5> on block LCD1602_Disp
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus s_lcd_ddram_addr<6 : 0> on block
+   LCD1602_Disp is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file LCD1602_Disp.edif ...
+ngc2edif: Total memory usage is 83180 kilobytes
+

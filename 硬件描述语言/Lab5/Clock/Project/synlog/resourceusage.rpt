@@ -1,0 +1,40 @@
+---------------------------------------
+Resource Usage Report for clock 
+
+Mapping to part: xc3s250etq144-4
+Cell usage:
+FDC             32 uses
+FDCE            70 uses
+FDPE            3 uses
+GND             13 uses
+LD              29 uses
+LDC             1 use
+LDP             9 uses
+MUXCY           12 uses
+MUXCY_L         110 uses
+MUXF5           3 uses
+VCC             13 uses
+XORCY           43 uses
+LUT1            58 uses
+LUT2            105 uses
+LUT3            49 uses
+LUT4            163 uses
+
+I/O ports: 13
+I/O primitives: 13
+IBUF           1 use
+IBUFG          1 use
+OBUF           11 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   105 (2%)
+Latch bits not including I/Os:      39 (0%)
+
+Global Clock Buffers: 1 of 24 (4%)
+
+
+Mapping Summary:
+Total  LUTs: 375 (7%)
+

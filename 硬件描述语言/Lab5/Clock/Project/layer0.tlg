@@ -1,0 +1,46 @@
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clock.vhd":4:7:4:11|Synthesizing work.clock.rtl 
+@W: CD638 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clock.vhd":82:9:82:13|Signal s_1hz is undriven 
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":6:7:6:18|Synthesizing work.lcd1602_disp.rtl 
+@N: CD231 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":145:13:145:14|Using onehot encoding for type state (s_rst="10000000")
+@W: CD434 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":183:27:183:36|Signal s_clk_1mhz in the sensitivity list is not used in the process
+@W: CG296 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":183:2:183:8|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":336:24:336:39|Referenced variable s_lcd_ddram_data is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":314:24:314:39|Referenced variable s_lcd_ddram_addr is not in sensitivity list
+@W: CD604 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":446:6:446:19|OTHERS clause is not synthesized 
+@W: CG296 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":410:2:410:8|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":441:37:441:43|Referenced variable s_sec_l is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":440:37:440:43|Referenced variable s_sec_h is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":438:37:438:43|Referenced variable s_min_l is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":437:37:437:43|Referenced variable s_min_h is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":435:37:435:44|Referenced variable s_hour_l is not in sensitivity list
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":434:37:434:44|Referenced variable s_hour_h is not in sensitivity list
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1MHz.vhd":4:7:4:18|Synthesizing work.clk_gen_1mhz.rtl 
+Post processing for work.clk_gen_1mhz.rtl
+Post processing for work.lcd1602_disp.rtl
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal lcd_data_o(7 downto 0), probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal nx_state(0 to 7), probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":149:50:149:50|Latch generated from process for signal s_start_addr_cnt, probably caused by a missing assignment in an if or case stmt
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal lcd_rs_o, probably caused by a missing assignment in an if or case stmt
+@A: CL109 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Too many clocks (> 8) for set/reset analysis of lcd_en_o, try moving enabling expressions outside process
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|Latch generated from process for signal lcd_en_o, probably caused by a missing assignment in an if or case stmt
+@W: CL113 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":378:4:378:5|Feedback mux created for signal s_addr_cnt[4:0].
+@W: CL111 :"D:\FPGALab\product\Lab7_clock\Clock\Code\LCD1602_Disp.vhd":188:4:188:7|All reachable assignments to lcd_wr_o assign '0', register removed by optimization
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":6:7:6:14|Synthesizing work.calc_rem.rtl 
+@W: CD434 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":20:9:20:14|Signal data_i in the sensitivity list is not used in the process
+@W: CG296 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":20:1:20:7|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":22:27:22:32|Referenced variable s_data is not in sensitivity list
+Post processing for work.calc_rem.rtl
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_rem.vhd":22:2:22:3|Latch generated from process for signal s_rem(3 downto 0), probably caused by a missing assignment in an if or case stmt
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd":6:7:6:14|Synthesizing work.calc_mod.rtl 
+Post processing for work.calc_mod.rtl
+@W: CL111 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd":22:2:22:3|All reachable assignments to s_mod(3) assign '0', register removed by optimization
+@W: CL117 :"D:\FPGALab\product\Lab7_clock\Clock\Code\calc_mod.vhd":22:2:22:3|Latch generated from process for signal s_mod(3 downto 0), probably caused by a missing assignment in an if or case stmt
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\hour_counter.vhd":6:7:6:18|Synthesizing work.hour_counter.rtl 
+Post processing for work.hour_counter.rtl
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\min_couter.vhd":6:7:6:17|Synthesizing work.min_counter.rtl 
+Post processing for work.min_counter.rtl
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\sec_counter.vhd":6:7:6:17|Synthesizing work.sec_counter.rtl 
+Post processing for work.sec_counter.rtl
+@N: CD630 :"D:\FPGALab\product\Lab7_clock\Clock\Code\clk_gen_1hz.vhd":6:7:6:17|Synthesizing work.clk_gen_1hz.rtl 
+Post processing for work.clk_gen_1hz.rtl
+Post processing for work.clock.rtl

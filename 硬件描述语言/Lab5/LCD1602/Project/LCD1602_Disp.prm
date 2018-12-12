@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\FPGALab\product\Lab7_debug\Project//LCD1602_Disp -x xcf04s -u 00000000 D:/FPGALab/product/Lab7_debug/Project/lcd1602_disp.bit 
+
+PROM D:\FPGALab\product\Lab7_debug\Project\LCD1602_Disp.prm map: Wed Dec 05 15:50:09 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 056872e3
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0002:94ff     Dec 05 15:48:45 2018 D:/FPGALab/product/Lab7_debug/Project/lcd1602_disp.bit

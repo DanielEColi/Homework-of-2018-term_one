@@ -1,0 +1,619 @@
+Analysis & Synthesis report for calculator
+Wed Jan 19 19:36:19 2011
+Version 6.0 Build 178 04/27/2006 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis DSP Block Usage Summary
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Source assignments for mystack:inst1
+ 13. Parameter Settings for User Entity Instance: adder8:inst10|74283:inst1
+ 14. Parameter Settings for User Entity Instance: adder8:inst10|74283:inst
+ 15. Parameter Settings for User Entity Instance: adder8:inst|74283:inst1
+ 16. Parameter Settings for User Entity Instance: adder8:inst|74283:inst
+ 17. Parameter Settings for User Entity Instance: lpm_mult0:inst2|lpm_mult:lpm_mult_component
+ 18. Parameter Settings for User Entity Instance: lpm_divide0:inst3|lpm_divide:lpm_divide_component
+ 19. lpm_mult Parameter Settings by Entity Instance
+ 20. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++------------------------------------+-----------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jan 19 19:36:19 2011   ;
+; Quartus II Version                 ; 6.0 Build 178 04/27/2006 SJ Web Edition ;
+; Revision Name                      ; calculator                              ;
+; Top-level Entity Name              ; calculator                              ;
+; Family                             ; Cyclone II                              ;
+; Total logic elements               ; 823                                     ;
+; Total registers                    ; 65                                      ;
+; Total pins                         ; 30                                      ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 0                                       ;
+; Embedded Multiplier 9-bit elements ; 1                                       ;
+; Total PLLs                         ; 0                                       ;
++------------------------------------+-----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++--------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                             ; Setting            ; Default Value      ;
++--------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                             ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                              ; calculator         ; calculator         ;
+; Family name                                                        ; Cyclone II         ; Stratix            ;
+; Use smart compilation                                              ; Off                ; Off                ;
+; Restructure Multiplexers                                           ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                ; Off                ; Off                ;
+; Preserve fewer node names                                          ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                          ; Off                ; Off                ;
+; Verilog Version                                                    ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                       ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                           ; Auto               ; Auto               ;
+; Extract Verilog State Machines                                     ; On                 ; On                 ;
+; Extract VHDL State Machines                                        ; On                 ; On                 ;
+; Add Pass-Through Logic to Inferred RAMs                            ; On                 ; On                 ;
+; DSP Block Balancing                                                ; Auto               ; Auto               ;
+; Maximum DSP Block Usage                                            ; Unlimited          ; Unlimited          ;
+; NOT Gate Push-Back                                                 ; On                 ; On                 ;
+; Power-Up Don't Care                                                ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                       ; Off                ; Off                ;
+; Remove Duplicate Registers                                         ; On                 ; On                 ;
+; Ignore CARRY Buffers                                               ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                             ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                              ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore LCELL Buffers                                               ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                     ; Off                ; Off                ;
+; Optimization Technique -- Cyclone II                               ; Balanced           ; Balanced           ;
+; Carry Chain Length -- Stratix/Stratix GX/Cyclone/MAX II/Cyclone II ; 70                 ; 70                 ;
+; Auto Carry Chains                                                  ; On                 ; On                 ;
+; Auto Open-Drain Pins                                               ; On                 ; On                 ;
+; Remove Duplicate Logic                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                              ; Off                ; Off                ;
+; Perform gate-level register retiming                               ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax             ; On                 ; On                 ;
+; Auto ROM Replacement                                               ; On                 ; On                 ;
+; Auto RAM Replacement                                               ; On                 ; On                 ;
+; Auto Shift Register Replacement                                    ; On                 ; On                 ;
+; Auto Clock Enable Replacement                                      ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                  ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                             ; Off                ; Off                ;
+; Auto Resource Sharing                                              ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                 ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                 ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                      ; Off                ; Off                ;
+; Maximum Number of M4K Memory Blocks                                ; Unlimited          ; Unlimited          ;
+; Ignore translate_off and translate_on Synthesis Directives         ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                 ; Off                ; Off                ;
+; Retiming Meta-Stability Register Sequence Length                   ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                       ; Normal compilation ; Normal compilation ;
+; HDL message level                                                  ; Level2             ; Level2             ;
++--------------------------------------------------------------------+--------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                    ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+
+; adder8.bdf                       ; yes             ; User Block Diagram/Schematic File  ; F:/calculator/adder8.bdf                                        ;
+; buma.vhd                         ; yes             ; User VHDL File                     ; F:/calculator/buma.vhd                                          ;
+; mystack.vhd                      ; yes             ; User VHDL File                     ; F:/calculator/mystack.vhd                                       ;
+; calculator.bdf                   ; yes             ; User Block Diagram/Schematic File  ; F:/calculator/calculator.bdf                                    ;
+; mux_module.vhd                   ; yes             ; User VHDL File                     ; F:/calculator/mux_module.vhd                                    ;
+; pro_process.vhd                  ; yes             ; User VHDL File                     ; F:/calculator/pro_process.vhd                                   ;
+; divide_process.vhd               ; yes             ; User VHDL File                     ; F:/calculator/divide_process.vhd                                ;
+; 74283.tdf                        ; yes             ; Megafunction                       ; e:/altera/quartus60/libraries/others/maxplus2/74283.tdf         ;
+; aglobal.inc                      ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/aglobal.inc         ;
+; f74283.bdf                       ; yes             ; Megafunction                       ; e:/altera/quartus60/libraries/others/maxplus2/f74283.bdf        ;
+; lpm_mult0.vhd                    ; yes             ; Other                              ; F:/calculator/lpm_mult0.vhd                                     ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                       ; e:/altera/quartus60/libraries/megafunctions/lpm_mult.tdf        ;
+; aglobal60.inc                    ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/aglobal60.inc       ;
+; lpm_add_sub.inc                  ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/lpm_add_sub.inc     ;
+; multcore.inc                     ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/multcore.inc        ;
+; bypassff.inc                     ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/bypassff.inc        ;
+; altshift.inc                     ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/altshift.inc        ;
+; db/mult_g7o.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/calculator/db/mult_g7o.tdf                                   ;
+; lpm_divide0.vhd                  ; yes             ; Other                              ; F:/calculator/lpm_divide0.vhd                                   ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; e:/altera/quartus60/libraries/megafunctions/lpm_divide.tdf      ;
+; abs_divider.inc                  ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/abs_divider.inc     ;
+; sign_div_unsign.inc              ; yes             ; Other                              ; e:/altera/quartus60/libraries/megafunctions/sign_div_unsign.inc ;
+; db/lpm_divide_edp.tdf            ; yes             ; Auto-Generated Megafunction        ; F:/calculator/db/lpm_divide_edp.tdf                             ;
+; db/sign_div_unsign_96h.tdf       ; yes             ; Auto-Generated Megafunction        ; F:/calculator/db/sign_div_unsign_96h.tdf                        ;
+; db/alt_u_div_00f.tdf             ; yes             ; Auto-Generated Megafunction        ; F:/calculator/db/alt_u_div_00f.tdf                              ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction        ; F:/calculator/db/add_sub_lkc.tdf                                ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction        ; F:/calculator/db/add_sub_mkc.tdf                                ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                        ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Estimated Total logic elements              ; 823                  ;
+; Total combinational functions               ; 823                  ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 543                  ;
+;     -- 3 input functions                    ; 220                  ;
+;     -- <=2 input functions                  ; 60                   ;
+;         -- Combinational cells for routing  ; 0                    ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 757                  ;
+;     -- arithmetic mode                      ; 66                   ;
+; Total registers                             ; 65                   ;
+; I/O pins                                    ; 30                   ;
+; Embedded Multiplier 9-bit elements          ; 1                    ;
+; Maximum fan-out node                        ; mystack:inst1|cnt[1] ;
+; Maximum fan-out                             ; 283                  ;
+; Total fan-out                               ; 3209                 ;
+; Average fan-out                             ; 3.49                 ;
++---------------------------------------------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                          ;
++-------------------------------------------+-------------------+--------------+-------------+------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                           ;
++-------------------------------------------+-------------------+--------------+-------------+------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; |calculator                               ; 823 (0)           ; 65 (0)       ; 0           ; 0    ; 1            ; 1       ; 0         ; 30   ; 0            ; |calculator                                                                                                                                   ;
+;    |adder8:inst10|                        ; 7 (0)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst10                                                                                                                     ;
+;       |74283:inst1|                       ; 3 (0)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst10|74283:inst1                                                                                                         ;
+;          |f74283:sub|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst10|74283:inst1|f74283:sub                                                                                              ;
+;       |74283:inst|                        ; 4 (0)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst10|74283:inst                                                                                                          ;
+;          |f74283:sub|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst10|74283:inst|f74283:sub                                                                                               ;
+;    |adder8:inst|                          ; 7 (0)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst                                                                                                                       ;
+;       |74283:inst1|                       ; 3 (0)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst|74283:inst1                                                                                                           ;
+;          |f74283:sub|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst|74283:inst1|f74283:sub                                                                                                ;
+;       |74283:inst|                        ; 4 (0)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst|74283:inst                                                                                                            ;
+;          |f74283:sub|                     ; 4 (4)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|adder8:inst|74283:inst|f74283:sub                                                                                                 ;
+;    |buma:inst8|                           ; 8 (8)             ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|buma:inst8                                                                                                                        ;
+;    |lpm_divide0:inst3|                    ; 116 (0)           ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|lpm_divide0:inst3                                                                                                                 ;
+;       |lpm_divide:lpm_divide_component|   ; 116 (0)           ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|lpm_divide0:inst3|lpm_divide:lpm_divide_component                                                                                 ;
+;          |lpm_divide_edp:auto_generated|  ; 116 (0)           ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated                                                   ;
+;             |sign_div_unsign_96h:divider| ; 116 (43)          ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated|sign_div_unsign_96h:divider                       ;
+;                |alt_u_div_00f:divider|    ; 73 (73)           ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated|sign_div_unsign_96h:divider|alt_u_div_00f:divider ;
+;    |lpm_mult0:inst2|                      ; 0 (0)             ; 0 (0)        ; 0           ; 0    ; 1            ; 1       ; 0         ; 0    ; 0            ; |calculator|lpm_mult0:inst2                                                                                                                   ;
+;       |lpm_mult:lpm_mult_component|       ; 0 (0)             ; 0 (0)        ; 0           ; 0    ; 1            ; 1       ; 0         ; 0    ; 0            ; |calculator|lpm_mult0:inst2|lpm_mult:lpm_mult_component                                                                                       ;
+;          |mult_g7o:auto_generated|        ; 0 (0)             ; 0 (0)        ; 0           ; 0    ; 1            ; 1       ; 0         ; 0    ; 0            ; |calculator|lpm_mult0:inst2|lpm_mult:lpm_mult_component|mult_g7o:auto_generated                                                               ;
+;    |mux_module:inst9|                     ; 34 (34)           ; 0 (0)        ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|mux_module:inst9                                                                                                                  ;
+;    |mystack:inst1|                        ; 651 (651)         ; 65 (65)      ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; |calculator|mystack:inst1                                                                                                                     ;
++-------------------------------------------+-------------------+--------------+-------------+------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 1           ;
+; Simple Multipliers (18-bit)           ; 0           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 1           ;
+; Signed Embedded Multipliers           ; 1           ;
+; Unsigned Embedded Multipliers         ; 0           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; mystack:inst1|s~3231                                   ;    ;
+; mystack:inst1|Mux110~14                                ;    ;
+; mystack:inst1|Mux39~13                                 ;    ;
+; rtl~30                                                 ;    ;
+; rtl~31                                                 ;    ;
+; rtl~0                                                  ;    ;
+; rtl~29                                                 ;    ;
+; rtl~27                                                 ;    ;
+; rtl~2                                                  ;    ;
+; rtl~28                                                 ;    ;
+; mystack:inst1|Add2~146                                 ;    ;
+; mystack:inst1|Mux63~14                                 ;    ;
+; mystack:inst1|Mux64~14                                 ;    ;
+; mystack:inst1|Mux65~14                                 ;    ;
+; mystack:inst1|Mux66~14                                 ;    ;
+; mystack:inst1|Mux67~14                                 ;    ;
+; mystack:inst1|Mux68~14                                 ;    ;
+; mystack:inst1|Mux69~22                                 ;    ;
+; mystack:inst1|s~3238                                   ;    ;
+; mystack:inst1|Mux40~13                                 ;    ;
+; rtl~26                                                 ;    ;
+; rtl~24                                                 ;    ;
+; rtl~3                                                  ;    ;
+; rtl~25                                                 ;    ;
+; mystack:inst1|Add2~145                                 ;    ;
+; mystack:inst1|s~3237                                   ;    ;
+; mystack:inst1|Mux41~13                                 ;    ;
+; rtl~4                                                  ;    ;
+; rtl~21                                                 ;    ;
+; rtl~23                                                 ;    ;
+; rtl~22                                                 ;    ;
+; mystack:inst1|Add2~144                                 ;    ;
+; mystack:inst1|s~3236                                   ;    ;
+; mystack:inst1|Mux42~13                                 ;    ;
+; rtl~20                                                 ;    ;
+; rtl~18                                                 ;    ;
+; rtl~5                                                  ;    ;
+; rtl~19                                                 ;    ;
+; mystack:inst1|Add2~143                                 ;    ;
+; mystack:inst1|s~3235                                   ;    ;
+; mystack:inst1|Mux43~13                                 ;    ;
+; rtl~6                                                  ;    ;
+; rtl~15                                                 ;    ;
+; rtl~17                                                 ;    ;
+; rtl~16                                                 ;    ;
+; mystack:inst1|Add2~142                                 ;    ;
+; mystack:inst1|s~3234                                   ;    ;
+; mystack:inst1|Mux44~13                                 ;    ;
+; rtl~14                                                 ;    ;
+; rtl~12                                                 ;    ;
+; rtl~7                                                  ;    ;
+; rtl~13                                                 ;    ;
+; mystack:inst1|Add2~141                                 ;    ;
+; mystack:inst1|s~3233                                   ;    ;
+; mystack:inst1|Mux45~13                                 ;    ;
+; rtl~8                                                  ;    ;
+; rtl~9                                                  ;    ;
+; rtl~11                                                 ;    ;
+; rtl~10                                                 ;    ;
+; mystack:inst1|Mux77~13                                 ;    ;
+; mystack:inst1|s~3232                                   ;    ;
+; mystack:inst1|Mux46~13                                 ;    ;
+; rtl~1                                                  ;    ;
+; mystack:inst1|Add2~140                                 ;    ;
+; mystack:inst1|s~3239                                   ;    ;
+; mystack:inst1|s~3230                                   ;    ;
+; mystack:inst1|Mux70~13                                 ;    ;
+; Number of logic cells representing combinational loops ; 67 ;
++--------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 65    ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 35    ;
+; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 19    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; mystack:inst1|empty                    ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |calculator|mystack:inst1|cnt[0]           ;
+; 14:1               ; 32 bits   ; 288 LEs       ; 128 LEs              ; 160 LEs                ; Yes        ; |calculator|mystack:inst1|s[1][5]          ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |calculator|mystack:inst1|dout2[5]         ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |calculator|mystack:inst1|cnt[3]           ;
+; 27:1               ; 3 bits    ; 54 LEs        ; 24 LEs               ; 30 LEs                 ; Yes        ; |calculator|mystack:inst1|output_sel[2]    ;
+; 28:1               ; 8 bits    ; 144 LEs       ; 96 LEs               ; 48 LEs                 ; Yes        ; |calculator|mystack:inst1|dout1[4]         ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|Mux76            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|Mux69            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|s~104            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|s~96             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|s~127            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|s~118            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |calculator|mystack:inst1|cnt~14           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |calculator|mystack:inst1|s~464            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |calculator|mystack:inst1|s~477            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |calculator|mystack:inst1|s~481            ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |calculator|mux_module:inst9|Mux0          ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; No         ; |calculator|mystack:inst1|s~460            ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 16 LEs               ; 64 LEs                 ; No         ; |calculator|mystack:inst1|Mux12            ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 16 LEs               ; 64 LEs                 ; No         ; |calculator|mystack:inst1|Mux8             ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 16 LEs               ; 64 LEs                 ; No         ; |calculator|mystack:inst1|Mux30            ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 16 LEs               ; 64 LEs                 ; No         ; |calculator|mystack:inst1|Mux25            ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|mystack_state~35 ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |calculator|mystack:inst1|mystack_state~33 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+
+
++--------------------------------------------------+
+; Source assignments for mystack:inst1             ;
++----------------+-------+------+------------------+
+; Assignment     ; Value ; From ; To               ;
++----------------+-------+------+------------------+
+; POWER_UP_LEVEL ; Low   ; -    ; cnt[0]           ;
+; POWER_UP_LEVEL ; Low   ; -    ; cnt[1]           ;
+; POWER_UP_LEVEL ; Low   ; -    ; cnt[2]           ;
+; POWER_UP_LEVEL ; Low   ; -    ; cnt[3]           ;
+; POWER_UP_LEVEL ; Low   ; -    ; last_state[0]    ;
+; POWER_UP_LEVEL ; Low   ; -    ; last_state[1]    ;
+; POWER_UP_LEVEL ; Low   ; -    ; last_state[2]    ;
+; POWER_UP_LEVEL ; Low   ; -    ; last_state[3]    ;
+; POWER_UP_LEVEL ; Low   ; -    ; mystack_state[0] ;
+; POWER_UP_LEVEL ; Low   ; -    ; mystack_state[1] ;
+; POWER_UP_LEVEL ; Low   ; -    ; mystack_state[2] ;
+; POWER_UP_LEVEL ; Low   ; -    ; mystack_state[3] ;
++----------------+-------+------+------------------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder8:inst10|74283:inst1 ;
++------------------------+------------+----------------------------------+
+; Parameter Name         ; Value      ; Type                             ;
++------------------------+------------+----------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                          ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                   ;
++------------------------+------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder8:inst10|74283:inst ;
++------------------------+------------+---------------------------------+
+; Parameter Name         ; Value      ; Type                            ;
++------------------------+------------+---------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                         ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                  ;
++------------------------+------------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder8:inst|74283:inst1 ;
++------------------------+------------+--------------------------------+
+; Parameter Name         ; Value      ; Type                           ;
++------------------------+------------+--------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                        ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                   ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                 ;
++------------------------+------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder8:inst|74283:inst ;
++------------------------+------------+-------------------------------+
+; Parameter Name         ; Value      ; Type                          ;
++------------------------+------------+-------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                       ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                ;
++------------------------+------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_mult0:inst2|lpm_mult:lpm_mult_component ;
++------------------------------------------------+------------+----------------------------+
+; Parameter Name                                 ; Value      ; Type                       ;
++------------------------------------------------+------------+----------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE             ;
+; LPM_WIDTHA                                     ; 8          ; Integer                    ;
+; LPM_WIDTHB                                     ; 8          ; Integer                    ;
+; LPM_WIDTHP                                     ; 16         ; Integer                    ;
+; LPM_WIDTHR                                     ; 0          ; Untyped                    ;
+; LPM_WIDTHS                                     ; 1          ; Integer                    ;
+; LPM_REPRESENTATION                             ; SIGNED     ; Untyped                    ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                    ;
+; LATENCY                                        ; 0          ; Untyped                    ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped                    ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                    ;
+; USE_EAB                                        ; OFF        ; Untyped                    ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped                    ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                    ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                    ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K        ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                    ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                    ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                    ;
+; CBXI_PARAMETER                                 ; mult_g7o   ; Untyped                    ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                    ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                    ;
++------------------------------------------------+------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_divide0:inst3|lpm_divide:lpm_divide_component ;
++------------------------+----------------+------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                 ;
++------------------------+----------------+------------------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Integer                                              ;
+; LPM_WIDTHD             ; 8              ; Integer                                              ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                              ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                              ;
+; CBXI_PARAMETER         ; lpm_divide_edp ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                       ;
++------------------------+----------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                      ;
++---------------------------------------+---------------------------------------------+
+; Name                                  ; Value                                       ;
++---------------------------------------+---------------------------------------------+
+; Number of entity instances            ; 1                                           ;
+; Entity Instance                       ; lpm_mult0:inst2|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 8                                           ;
+;     -- LPM_WIDTHB                     ; 8                                           ;
+;     -- LPM_WIDTHP                     ; 16                                          ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                      ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                          ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                          ;
+;     -- USE_EAB                        ; OFF                                         ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                        ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                          ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                          ;
++---------------------------------------+---------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 6.0 Build 178 04/27/2006 SJ Web Edition
+    Info: Processing started: Wed Jan 19 19:35:58 2011
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off calculator -c calculator
+Info: Found 1 design units, including 1 entities, in source file adder8.bdf
+    Info: Found entity 1: adder8
+Info: Found 2 design units, including 1 entities, in source file buma.vhd
+    Info: Found design unit 1: buma-behavior
+    Info: Found entity 1: buma
+Info: Found 2 design units, including 1 entities, in source file mystack.vhd
+    Info: Found design unit 1: mystack-a1
+    Info: Found entity 1: mystack
+Info: Found 1 design units, including 1 entities, in source file calculator.bdf
+    Info: Found entity 1: calculator
+Info: Found 2 design units, including 1 entities, in source file mux_module.vhd
+    Info: Found design unit 1: mux_module-archmux
+    Info: Found entity 1: mux_module
+Info: Found 2 design units, including 1 entities, in source file pro_process.vhd
+    Info: Found design unit 1: pro_process-behav
+    Info: Found entity 1: pro_process
+Info: Found 2 design units, including 1 entities, in source file divide_process.vhd
+    Info: Found design unit 1: divide_process-behav
+    Info: Found entity 1: divide_process
+Info: Elaborating entity "calculator" for the top level hierarchy
+Info: Elaborating entity "mystack" for hierarchy "mystack:inst1"
+Info: Elaborating entity "mux_module" for hierarchy "mux_module:inst9"
+Info: Elaborating entity "adder8" for hierarchy "adder8:inst10"
+Info: Found 1 design units, including 1 entities, in source file e:/altera/quartus60/libraries/others/maxplus2/74283.tdf
+    Info: Found entity 1: 74283
+Info: Elaborating entity "74283" for hierarchy "adder8:inst10|74283:inst1"
+Info: Elaborated megafunction instantiation "adder8:inst10|74283:inst1"
+Info: Found 1 design units, including 1 entities, in source file e:/altera/quartus60/libraries/others/maxplus2/f74283.bdf
+    Info: Found entity 1: f74283
+Info: Elaborating entity "f74283" for hierarchy "adder8:inst10|74283:inst1|f74283:sub"
+Info: Elaborated megafunction instantiation "adder8:inst10|74283:inst1|f74283:sub", which is child of megafunction instantiation "adder8:inst10|74283:inst1"
+Info: Elaborating entity "74283" for hierarchy "adder8:inst10|74283:inst"
+Info: Elaborated megafunction instantiation "adder8:inst10|74283:inst"
+Info: Elaborating entity "buma" for hierarchy "buma:inst8"
+Info: Elaborating entity "pro_process" for hierarchy "pro_process:inst13"
+Warning: Using design file lpm_mult0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: lpm_mult0-SYN
+    Info: Found entity 1: lpm_mult0
+Info: Elaborating entity "lpm_mult0" for hierarchy "lpm_mult0:inst2"
+Info: Found 1 design units, including 1 entities, in source file e:/altera/quartus60/libraries/megafunctions/lpm_mult.tdf
+    Info: Found entity 1: lpm_mult
+Info: Elaborating entity "lpm_mult" for hierarchy "lpm_mult0:inst2|lpm_mult:lpm_mult_component"
+Info: Elaborated megafunction instantiation "lpm_mult0:inst2|lpm_mult:lpm_mult_component"
+Info: Found 1 design units, including 1 entities, in source file db/mult_g7o.tdf
+    Info: Found entity 1: mult_g7o
+Info: Elaborating entity "mult_g7o" for hierarchy "lpm_mult0:inst2|lpm_mult:lpm_mult_component|mult_g7o:auto_generated"
+Info: Elaborating entity "divide_process" for hierarchy "divide_process:inst14"
+Warning: Using design file lpm_divide0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: lpm_divide0-SYN
+    Info: Found entity 1: lpm_divide0
+Info: Elaborating entity "lpm_divide0" for hierarchy "lpm_divide0:inst3"
+Info: Found 1 design units, including 1 entities, in source file e:/altera/quartus60/libraries/megafunctions/lpm_divide.tdf
+    Info: Found entity 1: lpm_divide
+Info: Elaborating entity "lpm_divide" for hierarchy "lpm_divide0:inst3|lpm_divide:lpm_divide_component"
+Info: Elaborated megafunction instantiation "lpm_divide0:inst3|lpm_divide:lpm_divide_component"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_edp.tdf
+    Info: Found entity 1: lpm_divide_edp
+Info: Elaborating entity "lpm_divide_edp" for hierarchy "lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_96h.tdf
+    Info: Found entity 1: sign_div_unsign_96h
+Info: Elaborating entity "sign_div_unsign_96h" for hierarchy "lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated|sign_div_unsign_96h:divider"
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_00f.tdf
+    Info: Found entity 1: alt_u_div_00f
+Info: Elaborating entity "alt_u_div_00f" for hierarchy "lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated|sign_div_unsign_96h:divider|alt_u_div_00f:divider"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info: Found entity 1: add_sub_lkc
+Info: Elaborating entity "add_sub_lkc" for hierarchy "lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated|sign_div_unsign_96h:divider|alt_u_div_00f:divider|add_sub_lkc:add_sub_0"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info: Found entity 1: add_sub_mkc
+Info: Elaborating entity "add_sub_mkc" for hierarchy "lpm_divide0:inst3|lpm_divide:lpm_divide_component|lpm_divide_edp:auto_generated|sign_div_unsign_96h:divider|alt_u_div_00f:divider|add_sub_mkc:add_sub_1"
+Info: Ignored 62 buffer(s)
+    Info: Ignored 18 CARRY buffer(s)
+    Info: Ignored 44 SOFT buffer(s)
+Info: Duplicate registers merged to single register
+    Info: Duplicate register "mystack:inst1|mystack_state[3]" merged to single register "mystack:inst1|mystack_state[0]"
+Info: Registers with preset signals will power-up high
+Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info: Implemented 887 device resources after synthesis - the final resource count might be different
+    Info: Implemented 18 input pins
+    Info: Implemented 12 output pins
+    Info: Implemented 856 logic cells
+    Info: Implemented 1 DSP elements
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Processing ended: Wed Jan 19 19:36:19 2011
+    Info: Elapsed time: 00:00:21
+
+
