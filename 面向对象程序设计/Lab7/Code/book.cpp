@@ -8,6 +8,7 @@ CBook::CBook()
 	book_name = NULL;
 	price = 0;
 	book_num++;
+	cout << "Base nil para construct! " << endl;
 }
 
 CBook::CBook(const char *i_name, float i_price)
@@ -19,6 +20,7 @@ CBook::CBook(const char *i_name, float i_price)
 	}
 	price = i_price;
 	book_num++;
+	cout << "Base para construct "  << book_name << endl;
 }
 
 CBook::CBook(const CBook &copy_c)
@@ -30,22 +32,42 @@ CBook::CBook(const CBook &copy_c)
 	}
 	price = copy_c.price;
 	book_num++;
+	cout << "Base copy construct " << book_name << endl;
 }
 
 CBook::~CBook()
 {
-	cout << "Deconstruct Basic:" << book_name << endl;
+	cout << "Deconstruct base:" << book_name << endl;
 	if(book_name != NULL)
 	{
-		delete []book_name;
+		delete[]book_name;
 	}
 	book_num--;
+	cout << "Base deconstruct! " << endl;
+}
+
+void CBook::changeBookName(void)
+{
+	char name_srting[20];
+	cout << "书的原名为：" << book_name << endl;
+	cout << "请输入新的书名：";
+	cin >> name_srting;
+	delete[]book_name;
+	book_name = new char[strlen(name_srting) + 1];
+	if (book_name != NULL)
+	{
+		strcpy(book_name, name_srting);
+	}
+	cout << "新的数目情况为：" << endl;
+	printInfo();
 }
 
 void CBook::printInfo(void)
 {
+	cout << "-------------------------------------" << endl;
 	cout << "书名：" << book_name << endl;
 	cout << "价格：" << price << endl;
+	cout << "-------------------------------------" << endl;
 }
 
 void CBook::printAllNum(void)

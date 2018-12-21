@@ -1,32 +1,32 @@
+//English.cpp
 #include "English.h"
 
 int CEnglish::English_num = 0;
 
 CEnglish::CEnglish() :CBook()
 {
+	complexity = EASY;
 	English_num++;
+	cout << "English nil para construct!" << endl;
 }
 
-CEnglish::CEnglish(const CEnglish &copy_c)
+CEnglish::CEnglish(const CEnglish &copy_c) : CBook(copy_c)
 {
-	book_name = new char[strlen(copy_c.book_name) + 1];
-	if (book_name != NULL)
-	{
-		strcpy(book_name, copy_c.book_name);
-	}
-	price = copy_c.price;
-	book_num++;
+	complexity = copy_c.complexity;
 	English_num++;
+	cout << "English copy construct " << book_name << endl;
 }
 
-CEnglish::CEnglish(const char *i_name, float i_price) : CBook(i_name, i_price)
+CEnglish::CEnglish(const char *i_name, float i_price, int level) : CBook(i_name, i_price)
 {
+	complexity = level;
 	English_num++;
+	cout << "English para construct " << book_name << endl;
 }
 
 CEnglish::~CEnglish()
 {
-	cout << "Deconstruct: " << book_name << endl;
+	cout << "English deconstruct: " << book_name << endl;
 	English_num--;
 }
 

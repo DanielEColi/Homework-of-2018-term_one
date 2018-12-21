@@ -1,0 +1,6 @@
+".\Objects\ADC.obj",
+".\Objects\main.obj",
+".\Objects\Seg8LED_Disp.obj",
+".\Objects\Uart.obj" 
+TO ".\Objects\Lab10_Prj" 
+PRINT(".\Listings\Lab10_Prj.m51") RAMSIZE(256) 

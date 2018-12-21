@@ -1,0 +1,76 @@
+C51 COMPILER V9.59.0.0   ADC                                                               12/19/2018 23:41:27 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE ADC
+OBJECT MODULE PLACED IN .\Objects\ADC.obj
+COMPILER INVOKED BY: F:\Keil C51\C51\BIN\C51.EXE ..\Code\ADC.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\Code) DEBUG OBJECTEXTE
+                    -ND PRINT(.\Listings\ADC.lst) TABS(2) OBJECT(.\Objects\ADC.obj)
+
+line level    source
+
+   1          #include "ADC.h"
+   2          
+   3          #define ADC_POWER   0x80
+   4          #define ADC_FLAG    0x10
+   5          #define ADC_START   0x08
+   6          #define ADC_SPEEDHH 0x60
+   7          #define ADC_CHANNEL 0x01
+   8          
+   9          static void setRst();
+  10          
+  11          static WORD result = 0;
+  12          
+  13          void InitADC()
+  14          {
+  15   1        P1ASF = 0x02;
+  16   1        ADC_RES = 0;
+  17   1        ADC_CONTR = ADC_POWER | ADC_SPEEDHH | ADC_START | ADC_CHANNEL;
+  18   1        Delay(2);
+  19   1        IE = 0xA0;
+  20   1      }
+  21          
+  22          void Delay(WORD n)
+  23          {
+  24   1        WORD x;
+  25   1        
+  26   1        while(n--)
+  27   1        {
+  28   2          x = 5000;
+  29   2          while(x--);
+  30   2        }
+  31   1      }
+  32          
+  33          void adc_isr()interrupt 5 using 1
+  34          {
+  35   1        ADC_CONTR &= !ADC_FLAG;
+  36   1        
+  37   1        SendData(ADC_RES);
+  38   1        SendData(ADC_RESL);
+  39   1        setRst();
+  40   1      }
+  41          
+  42          static void setRst()
+  43          {
+  44   1        result = ADC_RES * 4 + ADC_RESL;
+  45   1      }
+  46          
+  47          WORD getRst()
+  48          {
+  49   1        return result;
+  50   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    112    ----
+C51 COMPILER V9.59.0.0   ADC                                                               12/19/2018 23:41:27 PAGE 2   
+
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,375 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    12/19/2018  23:41:28  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+F:\KEIL C51\C51\BIN\BL51.EXE .\Objects\ADC.obj, .\Objects\main.obj, .\Objects\Seg8LED_Disp.obj, .\Objects\Uart.obj TO .\
+>> Objects\Lab10_Prj PRINT (.\Listings\Lab10_Prj.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\ADC.obj (ADC)
+  .\Objects\main.obj (MAIN)
+  .\Objects\Seg8LED_Disp.obj (SEG8LED_DISP)
+  .\Objects\Uart.obj (UART)
+  F:\KEIL C51\C51\LIB\C51S.LIB (?C_STARTUP)
+  F:\KEIL C51\C51\LIB\C51S.LIB (?C?UIDIV)
+  F:\KEIL C51\C51\LIB\C51S.LIB (?C?ULCMP)
+  F:\KEIL C51\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  .\Objects\Lab10_Prj (ADC)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            REG     0008H     0008H     ABSOLUTE     "REG BANK 1"
+            DATA    0010H     0014H     UNIT         ?DT?SEG8LED_DISP
+            DATA    0024H     0008H     UNIT         _DATA_GROUP_
+            DATA    002CH     0002H     UNIT         ?DT?ADC
+            IDATA   002EH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     0020H                  *** GAP ***
+            CODE    0023H     0003H     ABSOLUTE     
+                    0026H     0005H                  *** GAP ***
+            CODE    002BH     0003H     ABSOLUTE     
+                    002EH     07D2H                  *** GAP ***
+            CODE    0800H     014CH     UNIT         ?PR?_SHOWNUM?SEG8LED_DISP
+            CODE    094CH     008CH     UNIT         ?C_C51STARTUP
+            CODE    09D8H     0066H     UNIT         ?C?LIB_CODE
+            CODE    0A3EH     004AH     UNIT         ?PR?UART1_ISR?UART
+            CODE    0A88H     003AH     UNIT         ?PR?_SHOWEACHBIT?SEG8LED_DISP
+            CODE    0AC2H     0028H     UNIT         ?PR?ADC_ISR?ADC
+            CODE    0AEAH     001BH     UNIT         ?PR?_DELAY?ADC
+            CODE    0B05H     001BH     UNIT         ?C_INITSEG
+            CODE    0B20H     0015H     UNIT         ?PR?SETRST?ADC
+            CODE    0B35H     0013H     UNIT         ?PR?INITADC?ADC
+            CODE    0B48H     000EH     UNIT         ?PR?MAIN?MAIN
+            CODE    0B56H     000EH     UNIT         ?PR?INITUART?UART
+            CODE    0B64H     0008H     UNIT         ?PR?_SENDDATA?UART
+            CODE    0B6CH     0005H     UNIT         ?PR?GETRST?ADC
+            CODE    0B71H     0005H     UNIT         ?PR?__UART1_RECV_ISR?UART
+            CODE    0B76H     0001H     UNIT         ?PR?__UART1_SEND_ISR?UART
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/19/2018  23:41:28  PAGE 2
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\Lab10_Prj (ADC)
+
+
+SEGMENT                                 DATA_GROUP 
+  +--> CALLED SEGMENT                 START    LENGTH
+-----------------------------------------------------
+?PR?ADC_ISR?ADC                       -----    -----
+  +--> ?PR?_SENDDATA?UART
+  +--> ?PR?SETRST?ADC
+
+*** NEW ROOT ***************************************************
+
+?PR?UART1_ISR?UART                    -----    -----
+  +--> ?PR?__UART1_SEND_ISR?UART
+  +--> ?PR?__UART1_RECV_ISR?UART
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP                         -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                         -----    -----
+  +--> ?PR?INITUART?UART
+  +--> ?PR?INITADC?ADC
+  +--> ?PR?GETRST?ADC
+  +--> ?PR?_SHOWNUM?SEG8LED_DISP
+
+?PR?INITADC?ADC                       -----    -----
+  +--> ?PR?_DELAY?ADC
+
+?PR?_SHOWNUM?SEG8LED_DISP             0024H    0008H
+  +--> ?PR?_SHOWEACHBIT?SEG8LED_DISP
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\Lab10_Prj (ADC)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ADC
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0B20H         PUBLIC        setRst
+  D:00A8H         PUBLIC        IE
+  D:00BDH         PUBLIC        ADC_RES
+  D:00B8H         PUBLIC        IP
+  D:002CH         SYMBOL        result
+  D:00D8H         PUBLIC        CCON
+  D:00BCH         PUBLIC        ADC_CONTR
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:0AC2H         PUBLIC        adc_isr
+  D:009DH         PUBLIC        P1ASF
+  C:0B35H         PUBLIC        InitADC
+  D:00BEH         PUBLIC        ADC_RESL
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/19/2018  23:41:28  PAGE 3
+
+
+  C:0AEAH         PUBLIC        _Delay
+  D:00D0H         PUBLIC        PSW
+  C:0B6CH         PUBLIC        getRst
+  -------         PROC          INITADC
+  C:0B35H         LINE#         13
+  C:0B35H         LINE#         14
+  C:0B35H         LINE#         15
+  C:0B38H         LINE#         16
+  C:0B3BH         LINE#         17
+  C:0B3EH         LINE#         18
+  C:0B44H         LINE#         19
+  C:0B47H         LINE#         20
+  -------         ENDPROC       INITADC
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        x
+  -------         ENDDO         
+  C:0AEAH         LINE#         22
+  C:0AEAH         LINE#         23
+  C:0AEAH         LINE#         26
+  C:0AF4H         LINE#         27
+  C:0AF4H         LINE#         28
+  C:0AF8H         LINE#         29
+  C:0B04H         LINE#         30
+  C:0B04H         LINE#         31
+  -------         ENDPROC       _DELAY
+  -------         PROC          ADC_ISR
+  C:0AC2H         LINE#         33
+  C:0ACFH         LINE#         35
+  C:0AD2H         LINE#         37
+  C:0AD7H         LINE#         38
+  C:0ADCH         LINE#         39
+  C:0ADFH         LINE#         40
+  -------         ENDPROC       ADC_ISR
+  -------         PROC          SETRST
+  C:0B20H         LINE#         42
+  C:0B20H         LINE#         43
+  C:0B20H         LINE#         44
+  C:0B34H         LINE#         45
+  -------         ENDPROC       SETRST
+  -------         PROC          GETRST
+  C:0B6CH         LINE#         47
+  C:0B6CH         LINE#         48
+  C:0B6CH         LINE#         49
+  C:0B70H         LINE#         50
+  -------         ENDPROC       GETRST
+  -------         ENDMOD        ADC
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:0B48H         PUBLIC        main
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/19/2018  23:41:28  PAGE 4
+
+
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:0B48H         LINE#         6
+  C:0B48H         LINE#         7
+  C:0B48H         LINE#         8
+  C:0B4BH         LINE#         9
+  C:0B4EH         LINE#         11
+  C:0B4EH         LINE#         12
+  C:0B4EH         LINE#         13
+  C:0B54H         LINE#         14
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        SEG8LED_DISP
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:00A0H         PUBLIC        P2
+  D:0010H         PUBLIC        LEDNum
+  D:00A8H         PUBLIC        IE
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:0A88H         SYMBOL        _ShowEachBit
+  C:0800H         PUBLIC        _ShowNum
+  B:00A0H.0       PUBLIC        SM_G1
+  B:00A0H.1       PUBLIC        SM_G2
+  B:00A0H.2       PUBLIC        SM_G3
+  D:00D0H         PUBLIC        PSW
+  B:00A0H.3       PUBLIC        SM_G4
+  -------         PROC          _SHOWEACHBIT
+  D:0007H         SYMBOL        LEDbit
+  D:0005H         SYMBOL        num
+  C:0A88H         LINE#         13
+  C:0A88H         LINE#         14
+  C:0A88H         LINE#         15
+  C:0A95H         LINE#         16
+  C:0A95H         LINE#         17
+  C:0A95H         LINE#         18
+  C:0A97H         LINE#         19
+  C:0A99H         LINE#         20
+  C:0A99H         LINE#         21
+  C:0A99H         LINE#         22
+  C:0A9BH         LINE#         23
+  C:0A9BH         LINE#         24
+  C:0A9DH         LINE#         25
+  C:0A9FH         LINE#         26
+  C:0AA1H         LINE#         27
+  C:0AA3H         LINE#         28
+  C:0AA5H         LINE#         29
+  C:0AA5H         LINE#         30
+  C:0AA7H         LINE#         31
+  C:0AA9H         LINE#         32
+  C:0AABH         LINE#         33
+  C:0AADH         LINE#         34
+  C:0AAFH         LINE#         35
+  C:0AAFH         LINE#         36
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/19/2018  23:41:28  PAGE 5
+
+
+  C:0AB1H         LINE#         37
+  C:0AB3H         LINE#         38
+  C:0AB5H         LINE#         39
+  C:0AB7H         LINE#         40
+  C:0AB7H         LINE#         41
+  C:0AB7H         LINE#         42
+  C:0AB7H         LINE#         43
+  C:0AB7H         LINE#         45
+  C:0AC1H         LINE#         46
+  -------         ENDPROC       _SHOWEACHBIT
+  -------         PROC          _SHOWNUM
+  D:0002H         SYMBOL        num
+  -------         DO            
+  D:0024H         SYMBOL        i
+  D:0028H         SYMBOL        bit1
+  D:0029H         SYMBOL        bit2
+  D:002AH         SYMBOL        bit3
+  D:002BH         SYMBOL        bit4
+  -------         ENDDO         
+  C:0800H         LINE#         48
+  C:0804H         LINE#         49
+  C:0804H         LINE#         53
+  C:080DH         LINE#         54
+  C:080DH         LINE#         55
+  C:0811H         LINE#         56
+  C:0811H         LINE#         58
+  C:081EH         LINE#         59
+  C:0838H         LINE#         60
+  C:0852H         LINE#         61
+  C:085FH         LINE#         63
+  C:0866H         LINE#         64
+  C:089AH         LINE#         65
+  C:08A1H         LINE#         66
+  C:08D5H         LINE#         67
+  C:08DCH         LINE#         68
+  C:0910H         LINE#         69
+  C:0917H         LINE#         70
+  C:094BH         LINE#         71
+  -------         ENDPROC       _SHOWNUM
+  -------         ENDMOD        SEG8LED_DISP
+
+  -------         MODULE        UART
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A8H.7       PUBLIC        EA
+  C:0B64H         PUBLIC        _SendData
+  D:00A8H         PUBLIC        IE
+  B:00A8H.4       PUBLIC        ES
+  D:00B8H         PUBLIC        IP
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  C:0A3EH         PUBLIC        Uart1_ISR
+  D:00D8H         PUBLIC        CCON
+  D:0099H         PUBLIC        SBUF
+  D:0098H         PUBLIC        SCON
+  C:0B56H         PUBLIC        InitUart
+  D:0088H         PUBLIC        TCON
+  D:008EH         PUBLIC        AUXR
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/19/2018  23:41:28  PAGE 6
+
+
+  C:0B76H         SYMBOL        __Uart1_Send_ISR
+  C:0B71H         SYMBOL        __Uart1_Recv_ISR
+  D:009CH         PUBLIC        BRT
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          INITUART
+  C:0B56H         LINE#         10
+  C:0B56H         LINE#         11
+  C:0B56H         LINE#         12
+  C:0B59H         LINE#         13
+  C:0B5CH         LINE#         14
+  C:0B5FH         LINE#         15
+  C:0B61H         LINE#         16
+  C:0B63H         LINE#         17
+  -------         ENDPROC       INITUART
+  -------         PROC          UART1_ISR
+  C:0A3EH         LINE#         19
+  C:0A5BH         LINE#         21
+  C:0A5EH         LINE#         22
+  C:0A5EH         LINE#         23
+  C:0A60H         LINE#         24
+  C:0A63H         LINE#         25
+  C:0A65H         LINE#         26
+  C:0A68H         LINE#         27
+  C:0A68H         LINE#         28
+  C:0A6AH         LINE#         29
+  C:0A6DH         LINE#         30
+  C:0A6DH         LINE#         31
+  -------         ENDPROC       UART1_ISR
+  -------         PROC          _SENDDATA
+  D:0007H         SYMBOL        dat
+  C:0B64H         LINE#         33
+  C:0B64H         LINE#         34
+  C:0B64H         LINE#         35
+  C:0B67H         LINE#         36
+  C:0B69H         LINE#         37
+  C:0B6BH         LINE#         38
+  -------         ENDPROC       _SENDDATA
+  -------         PROC          __UART1_SEND_ISR
+  C:0B76H         LINE#         40
+  C:0B76H         LINE#         41
+  C:0B76H         LINE#         43
+  -------         ENDPROC       __UART1_SEND_ISR
+  -------         PROC          __UART1_RECV_ISR
+  -------         DO            
+  D:0007H         SYMBOL        Uart_Tmp
+  -------         ENDDO         
+  C:0B71H         LINE#         45
+  C:0B71H         LINE#         46
+  C:0B71H         LINE#         48
+  C:0B73H         LINE#         49
+  C:0B75H         LINE#         50
+  -------         ENDPROC       __UART1_RECV_ISR
+  -------         ENDMOD        UART
+
+  -------         MODULE        ?C?UIDIV
+  C:09D8H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  12/19/2018  23:41:28  PAGE 7
+
+
+
+  -------         MODULE        ?C?ULCMP
+  C:0A2DH         PUBLIC        ?C?ULCMP
+  -------         ENDMOD        ?C?ULCMP
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 028AH BYTE (31%) *
+******************************************************************************
+
+Program Size: data=47.0 xdata=0 code=896
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

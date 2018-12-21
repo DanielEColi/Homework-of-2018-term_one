@@ -1,32 +1,40 @@
+//poem.cpp
 #include "poem.h"
 
 int CPoem::poem_num = 0;
 
 CPoem::CPoem() :CBook()
 {
+	author = NULL;
 	poem_num++;
+	cout << "Poem nil para construct!" << endl;
 }
 
-CPoem::CPoem(const char *i_name, float i_price) :CBook(i_name, i_price)
+CPoem::CPoem(const char *i_name, float i_price, const char *i_author) :CBook(i_name, i_price)
 {
-	poem_num++;
-}
-
-CPoem::CPoem(const CPoem &copy_c)
-{
-	book_name = new char[strlen(copy_c.book_name) + 1];
-	if (book_name != NULL)
+	author = new char[strlen(i_author) + 1];
+	if (author != NULL)
 	{
-		strcpy(book_name, copy_c.book_name);
+		strcpy(author, i_author);
 	}
-	price = copy_c.price;
-	book_num++;
 	poem_num++;
+	cout << "Poem para construct " << book_name << endl;
+}
+
+CPoem::CPoem(const CPoem &copy_c)  :CBook(copy_c)
+{
+	author = new char[strlen(copy_c.author) + 1];
+	if (author != NULL)
+	{
+		strcpy(author, copy_c.author);
+	}
+	poem_num++;
+	cout << "Poem copy construct " << book_name << endl;
 }
 
 CPoem::~CPoem()
 {
-	cout << "Deconstruct: " << book_name << endl;
+	cout << "Poem deconstruct: " << book_name << endl;
 	poem_num--;
 }
 
