@@ -1,0 +1,31 @@
+Net "clk_50mhz_i" LOC=P129;
+Net "rst_n_i"     LOC=P85;
+
+Net "Beep_o"      LOC=P52;
+
+Net "col_i<3>"     LOC=P74;
+Net "col_i<2>"     LOC=P75;
+Net "col_i<1>"     LOC=P77;
+Net "col_i<0>"     LOC=P82;
+
+Net "row_o<0>"     LOC=P76;
+Net "row_o<1>"     LOC=P81;
+Net "row_o<2>"     LOC=P83;
+Net "row_o<3>"     LOC=P86;
+
+Net "col_i<3>"     PULLUP;
+Net "col_i<2>"     PULLUP;
+Net "col_i<1>"     PULLUP;
+Net "col_i<0>"     PULLUP;
+
+Net "lcd_rs_o"    LOC=P51;
+Net "lcd_wr_o"    LOC=P50;
+Net "lcd_en_o"    LOC=P44;
+Net "lcd_data_o[0]" LOC=P43;
+Net "lcd_data_o[1]" LOC=P39;
+Net "lcd_data_o[2]" LOC=P35;
+Net "lcd_data_o[3]" LOC=P34;
+Net "lcd_data_o[4]" LOC=P33;
+Net "lcd_data_o[5]" LOC=P32;
+Net "lcd_data_o[6]" LOC=P31;
+Net "lcd_data_o[7]" LOC=P26;

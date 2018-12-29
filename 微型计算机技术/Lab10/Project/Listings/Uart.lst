@@ -1,4 +1,4 @@
-C51 COMPILER V9.59.0.0   UART                                                              12/19/2018 23:41:27 PAGE 1   
+C51 COMPILER V9.59.0.0   UART                                                              12/25/2018 20:17:35 PAGE 1   
 
 
 C51 COMPILER V9.59.0.0, COMPILATION OF MODULE UART
@@ -20,10 +20,10 @@ line level    source
   10          void InitUart()
   11          {
   12   1        SCON = 0x50;
-  13   1        BRT = 0xfd;
-  14   1        AUXR = BRTR_OPEN | S1BRS_BRT_ON;
-  15   1        ES = 1;
-  16   1        EA = 1;
+  13   1        AUXR = BRTR_OPEN | S1BRS_BRT_ON;
+  14   1        BRT = 0xFD;
+  15   1        EA = 1;
+  16   1        ES = 1;
   17   1      }
   18          
   19          void Uart1_ISR() interrupt 4
@@ -40,30 +40,21 @@ line level    source
   30   2        }
   31   1      }
   32          
-  33          void SendData(BYTE dat)
+  33          static void __Uart1_Send_ISR()
   34          {
-  35   1        while(!TI);
-  36   1        TI = 0;
-  37   1        SBUF = dat;
-  38   1      }
-  39          
-  40          static void __Uart1_Send_ISR()
-  41          {
-  42   1        
+  35   1        
+  36   1      }
+  37          
+  38          static void __Uart1_Recv_ISR()
+  39          {
+  40   1        BYTE Uart_Tmp;
+  41   1        Uart_Tmp = SBUF;
+  42   1        SBUF = Uart_Tmp;
   43   1      }
-  44          
-  45          static void __Uart1_Recv_ISR()
-  46          {
-  47   1        BYTE Uart_Tmp;
-  48   1        Uart_Tmp = SBUF;
-  49   1        SBUF = Uart_Tmp;
-  50   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    102    ----
-C51 COMPILER V9.59.0.0   UART                                                              12/19/2018 23:41:27 PAGE 2   
-
+   CODE SIZE        =     94    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
@@ -71,6 +62,8 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
+
+C51 COMPILER V9.59.0.0   UART                                                              12/25/2018 20:17:35 PAGE 2   
 
 
 C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

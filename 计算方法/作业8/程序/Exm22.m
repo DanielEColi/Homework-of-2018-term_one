@@ -1,7 +1,7 @@
 clc;clear;close all;
 
 N = 7;
-x = 0;
+x = 1.5;
 
 for i = 1:1:N
     tmp_x = x;

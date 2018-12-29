@@ -1,0 +1,49 @@
+C51 COMPILER V9.59.0.0   TIMER                                                             12/25/2018 19:51:45 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE TIMER
+OBJECT MODULE PLACED IN .\Objects\Timer.obj
+COMPILER INVOKED BY: F:\Keil C51\C51\BIN\C51.EXE ..\TmpCode\Timer.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\TmpCode) DEBUG OB
+                    -JECTEXTEND PRINT(.\Listings\Timer.lst) TABS(2) OBJECT(.\Objects\Timer.obj)
+
+line level    source
+
+   1          #include "STC12C5A60S2.h"
+   2          #include "Timer.h"
+   3          #include "ADC.h"
+   4          
+   5          void InitTimer()    //初始化定时器中断
+   6          {
+   7   1        EA = 1;       //打开中断允许总控制  
+   8   1        ET0 = 1;      //打开定时器0中断
+   9   1        PT0 = 0;      //定时器中断优先级设置
+  10   1        TMOD = 0x01;  //设置定时器模式为16位定时器
+  11   1        TF0 = 0;      //清楚标志
+  12   1        TH0 = 0x3C;   //定时器0的高八位
+  13   1        TL0 = 0xAF;   //定时器0的低八位
+  14   1        TR0 = 1;      //开始计时
+  15   1      }
+  16          
+  17          void INT1_TIMER0() interrupt 1        //定时器0中断
+  18          {
+  19   1        TF0 = 0;                    //清除标志
+  20   1        TH0 = 0x3C;                 //定时器0的高八位
+  21   1        TL0 = 0xAF;                 //定时器0的低八位
+  22   1        TR0 = 1;                    //开始计时
+  23   1        
+  24   1        ADC_CONTR = ADC_POWER | ADC_SPEEDHH | ADC_START | ADC_CHANNEL;
+  25   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     34    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

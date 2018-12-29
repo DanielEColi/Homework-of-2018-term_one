@@ -1,0 +1,66 @@
+C51 COMPILER V9.59.0.0   ADC                                                               12/25/2018 19:53:58 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE ADC
+OBJECT MODULE PLACED IN .\Objects\ADC.obj
+COMPILER INVOKED BY: F:\Keil C51\C51\BIN\C51.EXE ..\TmpCode\ADC.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\TmpCode) DEBUG OBJE
+                    -CTEXTEND PRINT(.\Listings\ADC.lst) TABS(2) OBJECT(.\Objects\ADC.obj)
+
+line level    source
+
+   1          #include "ADC.h"
+   2          
+   3          static WORD result = 0;
+   4          
+   5          void InitADC()
+   6          {
+   7   1        P1ASF = 0x02;
+   8   1        ADC_RES = 0;
+   9   1        ADC_RESL = 0;
+  10   1        AUXR1 &= ~ADRJ_;
+  11   1        ADC_CONTR = ADC_POWER | ADC_SPEEDHH | ADC_START | ADC_CHANNEL;
+  12   1        Delay(2);
+  13   1        EADC = 1;
+  14   1      }
+  15          
+  16          void Delay(WORD n)
+  17          {
+  18   1        WORD i, j, k;
+  19   1        
+  20   1        for(k = 0; k < n; k++)
+  21   1          for(j = 0; j < 78; j++)
+  22   1            for(i = 0; i < 25; i++);
+  23   1      }
+  24          
+  25          void adc_isr()interrupt 5
+  26          {
+  27   1        if(ADC_CONTR & ADC_FLAG)
+  28   1        {
+  29   2          ADC_RESL &= 0x03;
+  30   2          result = ADC_RES * 4 + ADC_RESL;
+  31   2          SBUF = ADC_RES;
+  32   2          while(!TI);
+  33   2          TI = 0;
+  34   2          Delay(5);
+  35   2          ADC_CONTR = ADC_POWER | ADC_SPEEDHH | ADC_START | ADC_CHANNEL;
+  36   2        }
+  37   1      }
+  38          
+  39          WORD getRst()
+  40          {
+  41   1        return result;
+  42   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    166    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

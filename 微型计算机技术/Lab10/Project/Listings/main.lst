@@ -1,4 +1,4 @@
-C51 COMPILER V9.59.0.0   MAIN                                                              12/19/2018 23:41:27 PAGE 1   
+C51 COMPILER V9.59.0.0   MAIN                                                              12/25/2018 20:17:35 PAGE 1   
 
 
 C51 COMPILER V9.59.0.0, COMPILATION OF MODULE MAIN
@@ -8,21 +8,20 @@ COMPILER INVOKED BY: F:\Keil C51\C51\BIN\C51.EXE ..\Code\main.c OPTIMIZE(8,SPEED
 
 line level    source
 
-   1          #include "STC12C5A60S2.h"
-   2          #include "Uart.h"
-   3          #include "ADC.h"
-   4          #include "Seg8LED_Disp.h"
-   5          
-   6          void main()
-   7          {
-   8   1        InitUart();
-   9   1        InitADC();
-  10   1        
-  11   1        while(1)
-  12   1        {
-  13   2          ShowNum(getRst());
-  14   2        }
-  15   1      }
+   1          #include "Uart.h"
+   2          #include "ADC.h"
+   3          #include "Seg8LED_Disp.h"
+   4          
+   5          void main()
+   6          {
+   7   1        InitUart();
+   8   1        InitADC();
+   9   1        
+  10   1        while(1)
+  11   1        {
+  12   2          ShowNum(getRst());
+  13   2        }
+  14   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE

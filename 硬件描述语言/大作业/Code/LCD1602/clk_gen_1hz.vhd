@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_arith.all;use ieee.std_logic_unsigned.all;
 
-entity clk_gen_1hz is
+entity clk_gen_1MHz is
 	 generic(
-		CNT_MAX  : integer := 50000000;
-		CNT_HALF : integer := 2500000
+		CNT_MAX  : integer := 50;
+		CNT_HALF : integer := 25
 	 );
 
     Port ( 
@@ -13,9 +13,9 @@ entity clk_gen_1hz is
       clk_i : 		in  	STD_LOGIC;
       clk_o : 		out  	STD_LOGIC
 	 );
-end clk_gen_1hz;
+end clk_gen_1MHz;
 
-architecture rtl of clk_gen_1hz is
+architecture rtl of clk_gen_1MHz is
 	signal s_cnt : integer range 0 to CNT_MAX := 0;
 begin
 	

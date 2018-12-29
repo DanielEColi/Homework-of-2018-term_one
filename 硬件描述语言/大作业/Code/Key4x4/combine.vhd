@@ -11,7 +11,7 @@ end combine;
 architecture rtl of combine is
 
 begin
-	row_col_o <= row_i & col_i;
+	row_col_o <= row_i & col_i;       --将行和列拼接在一起输出
 
 end rtl;
 

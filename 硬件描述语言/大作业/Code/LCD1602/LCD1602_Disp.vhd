@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
-use work.my_data_types.all;
+use work.mypackage.all;
 
 entity LCD1602_Disp is
   generic(
@@ -17,8 +17,8 @@ entity LCD1602_Disp is
   port(
     clk_50mhz_i : in  std_logic;
     rst_n_i     : in  std_logic;
-    row1        : in  row;
-    row2        : in  row;
+    row1        : in  row(15 downto 0);
+    row2        : in  row(15 downto 0);
     lcd_rs_o    : out std_logic;
     lcd_wr_o    : out std_logic;
     lcd_en_o    : out std_logic;
@@ -152,8 +152,8 @@ Architecture rtl of LCD1602_Disp is
   signal s_lcd_ddram_addr : std_logic_vector(7 downto 0) := "10000000";
   signal s_lcd_ddram_data : std_logic_vector(7 downto 0) := "00100000";
   
-  signal s_row1 : row;
-  signal s_row2 : row;
+  signal s_row1 : row(15 downto 0);
+  signal s_row2 : row(15 downto 0);
 begin
   U_Clk_gen_1MHz : clk_gen_1MHz
   port map(

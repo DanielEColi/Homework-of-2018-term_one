@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
 entity Mutiply is
   port(
@@ -12,6 +12,5 @@ end Mutiply;
 
 architecture rtl of Mutiply is
 begin 
-  with Cs select
-    Prod <= A * B；
+    Prod <= A * B;
 end rtl;

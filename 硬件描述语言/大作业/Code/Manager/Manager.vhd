@@ -1,133 +1,99 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
 
 entity Manager is
-  Port(
-    wr_en_i : in std_logic;
-    rst_i   : in std_logic_vector(3 downto 0);
-    delay_wr_en : out std_logic;
-    real_rst_o : out std_logic_vector(3 downto 0);
-    Beep_o : out std_logic;
-    Stack_sel_o : out std_logic;
-    Num_o : out std_logic(7 downto 0);
-    Operator_o : out std_logic(1 downto 0);
-    clear_o : out std_logic;
-    calculate_o : out std_logic
+  port(
+    rst_n_i : in std_logic;
+	 wr_en : in std_logic;
+	 decode : in std_logic_vector(3 downto 0);
+	 set_rst : out std_logic;
+	 clear : out std_logic;
+	 div : out std_logic;
+	 A : out std_logic_vector(7 downto 0);
+	 B : out std_logic_vector(7 downto 0);
+	 sel : out std_logic_vector(1 downto 0)
   );
 end Manager;
 
-architecture rtl of Manager is
-  function sng2integer (data : std_logic_vector(3 downto 0)) return integer is
-    variable rlt : integer range 0 to 9;
-  begin
-    case data is
-      when "0001" => rlt := 1;
-      when "0010" => rlt := 2;
-      when "0011" => rlt := 3;
-      when "0100" => rlt := 4;
-      when "0101" => rlt := 5;
-      when "0110" => rlt := 6;
-      when "0111" => rlt := 7;
-      when "1000" => rlt := 8;
-      when "1001" => rlt := 9;
-      when "0000" => rlt := 0;
-    end case;
-    
-    return rlt;
-  end sng2integer;
-  
-  function judgeNum_OP (data : std_logic_vector(3 downto 0)) return boolean is
-    variable rlt : boolean;
-  begin
-    case data is
-      when "0001" => rlt := 1;
-      when "0010" => rlt := 1;
-      when "0011" => rlt := 1;
-      when "0100" => rlt := 1;
-      when "0101" => rlt := 1;
-      when "0110" => rlt := 1;
-      when "0111" => rlt := 1;
-      when "1000" => rlt := 1;
-      when "1001" => rlt := 1;
-      when "0000" => rlt := 1;
-      when others => rlt := 0;
-    end case;
-    
-    return rlt;
-  end judgeNum_OP;
-  
-  type state is	(BF_Operator, AF_Operator);
+architecture rtl of Manager is  
+  type state is (s_num, s_clear, s_operator, s_result);
   signal pr_state, nx_state : state;
+
+  signal s_trans : std_logic_vector(7 downto 0);
   
-  signal s_input : std_logic_vector(3 downto 0);
-  signal s_number : integer range 0 to 255;
-  signal s_stack_sel : std_logic;
-  signal s_operator : std_logic_vector(1 downto 0);
-  signal s_Beep : std_logic;
-  signal s_clear : std_logic;
-begin
-  s_input <= rst_i;
-------------------lower section---------------------
-  process(wr_en_i)
+begin 
+  process(decode)	
   begin
-    if(wr_en_i'event and wr_en_i = '1')then
-      pr_state <= nx_state;
-    end if;
+    case decode is
+      when "0001" => s_trans <= "00000001";
+      when "0010" => s_trans <= "00000010";
+      when "0011" => s_trans <= "00000011";
+      when "0100" => s_trans <= "00000100";
+      when "0101" => s_trans <= "00000101";
+      when "0110" => s_trans <= "00000110";
+      when "0111" => s_trans <= "00000111";
+      when "1000" => s_trans <= "00001000";
+      when "1001" => s_trans <= "00001001";
+      when "0000" => s_trans <= "00000000";
+		when others => null;
+    end case;
+  end process;  
+  
+  process(wr_en, rst_n_i, decode)
+  begin
+    if(rst_n_i = '0' or decode = "1110")then
+	  pr_state <= s_clear;
+	elsif(wr_en'event and wr_en = '1')then
+	  pr_state <= nx_state;
+	end if;
   end process;
------------------upper section----------------------
-  process(s_input, pr_state)
-    variable enable : boolean;
-    variable tmp : integer range 0 to 1000;
+  
+  process(pr_state, s_trans, decode)
+    variable flag : boolean;
   begin
     case pr_state is
-      when BF_Operator =>
-        if(judgeNum_OP(s_input))then
-          enable := 1;            
-          tmp :=                  --这里要判断是否大于255,如果大于255，就不再接收数字
-          if()then
-          end if;
-          s_number <= s_number + sng2integer(s_input);
-          nx_state <= BF_Operator;
-        else
-          if(enable)then
-            if(s_input = "1010")then
-              s_operator <= "00";
-              s_stack_sel <= '1';
-            elsif(s_input = "1011")then
-              s_operator <= "01";
-              s_stack_sel <= '1';
-            elsif(s_input = "1100")then
-              s_operator <= "10";
-              s_stack_sel <= '1';
-            elsif(s_input = "1101")then
-              s_operator <= "11";
-              s_stack_sel <= '1';
-            end if;
-            enable := 0;
-            nx_state <= AF_Operator;
-          else
-            s_Beep <= not s_Beep;    --这里要输出一个脉冲信号，触发蜂鸣器
-            nx_state <= BF_Operator;
-          end if;
-        end if;
-      when AF_Operator =>
-        if(judgeNum_OP(s_input))then
-          enable := 1;
-        else
-          if(enable)then
-            enable := 0;
-            nx_state <= 
-          else
-            s_Beep <= not s_Beep;
-            nx_state <= AF_Operator;
-          end if;
-        end if;
-    end case;
+	  when s_clear =>
+	   flag := false;
+	   clear <= '1';
+		A <= "00000001";
+		B <= "00000001";
+		sel <= "00";
+		set_rst <= '0';
+		div <= '1';
+		nx_state <= s_num;
+		
+	  when s_num =>
+	    if(flag = false)then
+	     flag := true;
+		  clear <= '0';
+		  A <= s_trans;
+		  nx_state <= s_operator;
+		else
+		  flag := false;
+		  clear <= '0';
+		  B <= s_trans;
+		  nx_state <= s_result;
+		end if;
+	    
+	  when s_operator =>
+	    case decode is
+		  when "1010" =>
+		    sel <= "00";
+		  when "1011" =>
+		    sel <= "01";
+		  when "1100" =>
+		    sel <= "10";
+		  when "1101" =>
+		    sel <= "11";
+			 div <= '0';
+		  when others => null;
+		end case;
+		
+		nx_state <= s_num;
+	  when s_result =>
+	    set_rst <= '1';
+		nx_state <= s_clear;
+	end case;
   end process;
   
-  Beep_o <= s_Beep;
-  Stack_sel_o <= s_stack_sel;
-  Operator_o <= s_operator;
 end rtl;
